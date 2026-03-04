@@ -64,6 +64,8 @@ async function fetchEvents(from, to, calendarIds) {
 }
 
 // Endpunkt 2: /api/calendars/{id}/appointments – Kalender-Termine
+// Die API gibt { appointment: {...}, calculatedDates: {...} } zurück.
+// Wiederkehrende Termine haben mehrere Einträge in calculatedDates.
 async function fetchAppointments(from, to, calendarIds) {
   let all = [];
   for (const calId of calendarIds) {
@@ -73,8 +75,30 @@ async function fetchAppointments(from, to, calendarIds) {
       let data;
       try { data = await apiGet(`/calendars/${calId}/appointments?${params}`); }
       catch { break; }
-      const items = (data.data || []).map(a => ({ ...a, calendarId: calId, _source: 'appointments' }));
-      all = all.concat(items);
+
+      for (const item of (data.data || [])) {
+        // API kann flat oder gewrappt sein
+        const appt = item.appointment || item;
+        const calculatedDates = item.calculatedDates || {};
+        const dates = Object.values(calculatedDates);
+
+        if (dates.length > 0) {
+          // Wiederkehrender Termin: ein Eintrag pro Vorkommen
+          for (const d of dates) {
+            all.push({
+              ...appt,
+              _source: 'appointments',
+              // Eindeutige ID pro Vorkommen: appointmentId_startDate
+              id: `${appt.id}_${d.startDate}`,
+              startDate: d.startDate,
+              endDate:   d.endDate,
+            });
+          }
+        } else {
+          all.push({ ...appt, _source: 'appointments' });
+        }
+      }
+
       const pg = data.meta?.pagination;
       if (!pg || page >= (pg.lastPage || 1)) break;
       page++;
@@ -84,16 +108,10 @@ async function fetchAppointments(from, to, calendarIds) {
   return all;
 }
 
+// Fallback: Bildsuche über Dateianhänge
 async function tryGetImage(event, destPath) {
-  // 1. Direktes Bildfeld im Event
-  const directUrl = event.imageUrl || event.image_url || event.picture || event.image;
-  if (directUrl) {
-    const full = directUrl.startsWith('http') ? directUrl : `${BASE_URL}${directUrl}`;
-    if (await downloadFile(full, destPath)) return true;
-  }
-
-  // 2. Dateianhänge (Events- und Appointments-Endpunkt)
-  for (const ep of [`/events/${event.id}/files`, `/appointments/${event.id}/files`]) {
+  const baseId = String(event.id).split('_')[0]; // bei recurring: nur die Basis-ID
+  for (const ep of [`/events/${baseId}/files`, `/appointments/${baseId}/files`]) {
     try {
       const { data: files = [] } = await apiGet(ep);
       const img = files.find(f => /\.(jpg|jpeg|png|gif|webp)$/i.test(f.name || f.filename || ''));
@@ -106,7 +124,6 @@ async function tryGetImage(event, destPath) {
       }
     } catch { /* kein Dateiendpunkt */ }
   }
-
   return false;
 }
 
@@ -166,32 +183,40 @@ async function main() {
     if (!startDate || new Date(startDate) < now) continue; // vergangene überspringen
 
     const id          = event.id;
-    const title       = event.caption || event.title || event.name || 'Termin';
+    const title       = event.title || event.caption || event.name || 'Termin';
     const endDate     = event.endDate || event.end_date || event.calculatedEndDate || startDate;
-    const calendarId  = event.calendarId || event.calendar_id || event.calendar?.id;
+    const calendarId  = event.calendar?.id || event.calendarId || event.calendar_id;
     const cal         = calendarMap[calendarId] || { name: 'Sonstige Veranstaltungen', color: '#27ae60' };
-    const location    = event.location || event.address || '';
-    const description = event.note || event.description || '';
+    const description = event.description || event.note || '';
 
-    // Bild herunterladen
-    let imagePath = 'assets/images/placeholder.jpg';
-    const destPath = path.join(IMAGES_DIR, `${id}.jpg`);
-    if (await tryGetImage(event, destPath)) {
-      imagePath = `assets/images/${id}.jpg`;
-      console.log(`  Bild: ${id}.jpg`);
+    // Adresse: Objekt oder String
+    const addr = event.address;
+    const location = addr && typeof addr === 'object'
+      ? [addr.name, addr.street, addr.city].filter(Boolean).join(', ')
+      : (event.location || '');
+
+    // Bild: direkt aus appointment.image.imageUrl oder fallback
+    const imageObj    = event.image;
+    const directImgUrl = (imageObj && (imageObj.imageUrl || imageObj.fileUrl))
+                      || event.imageUrl || event.image_url;
+
+    // Dateiname aus ID ableiten (Strings durch Unterstrich ersetzen)
+    const fileId   = String(id).replace(/[^a-zA-Z0-9]/g, '_');
+    const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
+    let imagePath  = 'assets/images/placeholder.jpg';
+
+    if (directImgUrl) {
+      const full = directImgUrl.startsWith('http') ? directImgUrl : `${BASE_URL}${directImgUrl}`;
+      if (await downloadFile(full, destPath)) {
+        imagePath = `assets/images/${fileId}.jpg`;
+        console.log(`  Bild: ${fileId}.jpg`);
+      }
+    } else if (await tryGetImage(event, destPath)) {
+      imagePath = `assets/images/${fileId}.jpg`;
+      console.log(`  Bild: ${fileId}.jpg`);
     }
 
-    termine.push({
-      id,
-      title,
-      startDate,
-      endDate,
-      category: cal.name,
-      color:    cal.color,
-      image:    imagePath,
-      location,
-      description,
-    });
+    termine.push({ id, title, startDate, endDate, category: cal.name, color: cal.color, image: imagePath, location, description });
   }
 
   termine.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
