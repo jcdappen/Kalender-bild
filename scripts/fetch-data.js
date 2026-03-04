@@ -63,50 +63,46 @@ async function fetchEvents(from, to, calendarIds) {
   return all;
 }
 
-// Endpunkt 2: /api/appointments – Kalender-Termine (alle Kalender auf einmal)
-// Die API gibt { appointment: {...}, calculatedDates: {...} } zurück.
-// Wiederkehrende Termine haben mehrere Einträge in calculatedDates.
+// Endpunkt 2: /api/calendars/{id}/appointments – Kalender-Termine pro Kalender
+// Jeder Listeneintrag = eine Occurrence: { appointment, calculated: {startDate, endDate}, ... }
 async function fetchAppointments(from, to, calendarIds) {
   let all = [];
-  let page = 1;
-  while (true) {
-    const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
-    calendarIds.forEach(id => params.append('calendarId[]', String(id)));
-    let data;
-    try {
-      data = await apiGet(`/appointments?${params}`);
-    } catch (e) {
-      console.warn('  /api/appointments Fehler:', e.message);
-      break;
-    }
-
-    for (const item of (data.data || [])) {
-      // API gibt { appointment: {...}, calculatedDates: {...} } zurück
-      const appt = item.appointment || item;
-      const calculatedDates = item.calculatedDates || {};
-      const dates = Object.values(calculatedDates);
-
-      if (dates.length > 0) {
-        // Wiederkehrender Termin: ein Eintrag pro Vorkommen
-        for (const d of dates) {
-          all.push({
-            ...appt,
-            _source: 'appointments',
-            id: `${appt.id}_${d.startDate}`,
-            startDate: d.startDate,
-            endDate:   d.endDate,
-          });
-        }
-      } else {
-        all.push({ ...appt, _source: 'appointments' });
+  for (const calId of calendarIds) {
+    let page = 1;
+    let countForCal = 0;
+    while (true) {
+      const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
+      let data;
+      try {
+        data = await apiGet(`/calendars/${calId}/appointments?${params}`);
+      } catch (e) {
+        console.warn(`  Kalender ${calId} Fehler: ${e.message}`);
+        break;
       }
-    }
 
-    const pg = data.meta?.pagination;
-    if (!pg || page >= (pg.lastPage || 1)) break;
-    page++;
+      for (const item of (data.data || [])) {
+        const appt = item.appointment || item;
+        // Jeder Listeneintrag ist bereits EINE Occurrence.
+        // item.calculated = { startDate: "...", endDate: "..." }
+        const startDate = item.calculated?.startDate || appt.startDate;
+        const endDate   = item.calculated?.endDate   || appt.endDate;
+        all.push({
+          ...appt,
+          _source: 'appointments',
+          id: `${appt.id}_${startDate}`,
+          startDate,
+          endDate,
+        });
+        countForCal++;
+      }
+
+      const pg = data.meta?.pagination;
+      if (!pg || page >= (pg.lastPage || 1)) break;
+      page++;
+    }
+    console.log(`  Kalender ${calId}: ${countForCal} Termine`);
   }
-  console.log(`  /api/appointments → ${all.length} Einträge`);
+  console.log(`  /api/calendars/.../appointments → ${all.length} gesamt`);
   return all;
 }
 
