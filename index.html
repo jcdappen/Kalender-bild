@@ -162,29 +162,15 @@
 
         .event-info {
             flex-grow: 1;
-            padding: 16px 24px;
+            padding: 24px 28px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 6px;
+            align-items: center;
             border-left-width: 4px;
             border-left-style: solid;
         }
 
-        .event-category {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.8px;
-            text-transform: uppercase;
-            padding: 2px 8px;
-            border-radius: 20px;
-            color: #fff;
-            align-self: flex-start;
-        }
-
         .event-title {
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
             color: var(--text-color);
             line-height: 1.4;
@@ -285,8 +271,7 @@
             .date-weekday { font-size: 9px; }
             .date-day { font-size: 24px; }
             .date-month { font-size: 11px; }
-            .event-info { padding: 12px 14px; gap: 4px; }
-            .event-category { font-size: 10px; padding: 2px 6px; }
+            .event-info { padding: 16px; }
             .event-title { font-size: 14px; }
             .event-details { padding: 0 16px; }
             .calendar-event.active .event-details { padding: 20px 16px 24px 16px; }
@@ -426,7 +411,6 @@
             const color      = termin.color || '#27ae60';
             const image      = escapeHtml(termin.image || PLACEHOLDER);
             const title      = escapeHtml(termin.title || 'Termin');
-            const category   = escapeHtml(termin.category || '');
 
             // Ist es ein Ganztages-Termin? (kein Zeitanteil im startDate)
             const isAllDay = !termin.startDate || !termin.startDate.includes('T');
@@ -467,9 +451,6 @@
                     </div>`;
             }
 
-            if (!detailsHTML) {
-                detailsHTML = '<div class="detail-item">Keine weiteren Informationen vorhanden.</div>';
-            }
 
             const wrapper = document.createElement('div');
             wrapper.className = 'calendar-event';
@@ -489,7 +470,6 @@
                         <div class="date-month">${monthShort}</div>
                     </div>
                     <div class="event-info" style="border-left-color: ${color};">
-                        ${category ? `<span class="event-category" style="background:${color};">${category}</span>` : ''}
                         <span class="event-title">${title}</span>
                     </div>
                 </div>

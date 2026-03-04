@@ -189,10 +189,15 @@ async function main() {
     const description = event.description || event.note || '';
 
     // Adresse: Objekt oder String
-    const addr = event.address;
-    const location = addr && typeof addr === 'object'
-      ? [addr.name, addr.street, addr.city].filter(Boolean).join(', ')
-      : (event.location || '');
+    const addr = event.address || event.location_object;
+    let location = '';
+    if (addr && typeof addr === 'object') {
+      const nameParts = [addr.name, addr.addition].filter(Boolean).join(' – ');
+      const cityPart  = [addr.zip, addr.city].filter(Boolean).join(' ');
+      location = [nameParts, addr.street, cityPart].filter(Boolean).join(', ');
+    } else {
+      location = event.location || event.meetingAt || '';
+    }
 
     // Bild: direkt aus appointment.image.imageUrl oder fallback
     const imageObj    = event.image;
