@@ -27,7 +27,7 @@
     "startDate": "2026-03-06T18:30:00Z",
     "endDate": "2026-03-06T20:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Arche, Eisenbahnstraße 21, 77833 Ottersweier",
     "description": "Leben mit dem Heiligen Geist"
@@ -38,7 +38,7 @@
     "startDate": "2026-03-07T09:00:00Z",
     "endDate": "2026-03-07T12:00:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche"
@@ -49,7 +49,7 @@
     "startDate": "2026-03-07T18:00:00Z",
     "endDate": "2026-03-07T20:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "Leben mit dem Heiligen Geist"
@@ -71,7 +71,7 @@
     "startDate": "2026-03-08T09:00:00Z",
     "endDate": "2026-03-08T10:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -170,7 +170,7 @@
     "startDate": "2026-03-15T09:00:00Z",
     "endDate": "2026-03-15T10:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -313,7 +313,7 @@
     "startDate": "2026-03-22T09:00:00Z",
     "endDate": "2026-03-22T10:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -445,7 +445,7 @@
     "startDate": "2026-03-29T08:00:00Z",
     "endDate": "2026-03-29T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -511,7 +511,7 @@
     "startDate": "2026-04-03T14:00:00Z",
     "endDate": "2026-04-03T15:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -533,7 +533,7 @@
     "startDate": "2026-04-05T08:00:00Z",
     "endDate": "2026-04-05T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -632,7 +632,7 @@
     "startDate": "2026-04-12T08:00:00Z",
     "endDate": "2026-04-12T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -753,7 +753,7 @@
     "startDate": "2026-04-19T08:00:00Z",
     "endDate": "2026-04-19T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -841,7 +841,7 @@
     "startDate": "2026-04-26T08:00:00Z",
     "endDate": "2026-04-26T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -940,7 +940,7 @@
     "startDate": "2026-05-03T08:00:00Z",
     "endDate": "2026-05-03T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -1017,7 +1017,7 @@
     "startDate": "2026-05-10T08:00:00Z",
     "endDate": "2026-05-10T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -1116,7 +1116,7 @@
     "startDate": "2026-05-17T08:00:00Z",
     "endDate": "2026-05-17T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -1226,7 +1226,7 @@
     "startDate": "2026-05-24T08:00:00Z",
     "endDate": "2026-05-24T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
@@ -1303,7 +1303,7 @@
     "startDate": "2026-05-31T08:00:00Z",
     "endDate": "2026-05-31T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#27ae60",
+    "color": "#f39c12",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "mit Kinderkirche und Livestream"
