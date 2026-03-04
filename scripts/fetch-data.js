@@ -16,8 +16,17 @@ if (!TOKEN) {
 const IMAGES_DIR   = path.resolve(__dirname, '..', 'assets', 'images');
 const TERMINE_FILE = path.resolve(__dirname, '..', 'data', 'termine.json');
 
-// Nur diese 5 öffentlichen Gemeinde-Kalender anzeigen
-const ALLOWED_CALENDAR_IDS = new Set([1, 2, 3, 10, 33]);
+// Kalender-IDs die abgefragt werden sollen
+const CALENDAR_IDS = [1, 2, 3, 10, 33];
+
+// Farben nach Kalender-Name (aus appointment.calendar.name)
+const COLOR_MAP = {
+  'Gottesdienste':          '#f39c12',
+  'Kinder':                 '#3498db',
+  'Senioren':               '#9b59b6',
+  'Jugend':                 '#e74c3c',
+  'Sonstige Veranstaltungen': '#27ae60',
+};
 
 async function apiGet(endpoint) {
   const url = `${API_BASE}${endpoint}`;
@@ -44,30 +53,11 @@ async function downloadFile(url, destPath) {
   }
 }
 
-// Endpunkt 1: /api/events – Gottesdienste & formale Veranstaltungen
-async function fetchEvents(from, to, calendarIds) {
-  let page = 1, all = [];
-  while (true) {
-    const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
-    calendarIds.forEach(id => params.append('calendarIds[]', String(id)));
-    let data;
-    try { data = await apiGet(`/events?${params}`); }
-    catch (e) { console.warn('  /api/events Fehler:', e.message); break; }
-    const items = (data.data || []).map(e => ({ ...e, _source: 'events' }));
-    all = all.concat(items);
-    const pg = data.meta?.pagination;
-    if (!pg || page >= (pg.lastPage || 1)) break;
-    page++;
-  }
-  console.log(`  /api/events → ${all.length} Einträge`);
-  return all;
-}
-
-// Endpunkt 2: /api/calendars/{id}/appointments – Kalender-Termine pro Kalender
-// Jeder Listeneintrag = eine Occurrence: { appointment, calculated: {startDate, endDate}, ... }
-async function fetchAppointments(from, to, calendarIds) {
-  let all = [];
-  for (const calId of calendarIds) {
+// /api/calendars/{id}/appointments
+// Jeder Eintrag: { appointment: {...}, calculated: { startDate, endDate } }
+async function fetchAppointments(from, to) {
+  const all = [];
+  for (const calId of CALENDAR_IDS) {
     let page = 1;
     let countForCal = 0;
     while (true) {
@@ -81,18 +71,11 @@ async function fetchAppointments(from, to, calendarIds) {
       }
 
       for (const item of (data.data || [])) {
-        const appt = item.appointment || item;
-        // Jeder Listeneintrag ist bereits EINE Occurrence.
-        // item.calculated = { startDate: "...", endDate: "..." }
-        const startDate = item.calculated?.startDate || appt.startDate;
-        const endDate   = item.calculated?.endDate   || appt.endDate;
-        all.push({
-          ...appt,
-          _source: 'appointments',
-          id: `${appt.id}_${startDate}`,
-          startDate,
-          endDate,
-        });
+        const appt       = item.appointment || item;
+        // Datum aus calculated (Wiederholungs-Occurrence) oder direkt
+        const startDate  = item.calculated?.startDate || appt.startDate;
+        const endDate    = item.calculated?.endDate   || appt.endDate;
+        all.push({ ...appt, _source: 'appointments', id: `${appt.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
 
@@ -102,27 +85,8 @@ async function fetchAppointments(from, to, calendarIds) {
     }
     console.log(`  Kalender ${calId}: ${countForCal} Termine`);
   }
-  console.log(`  /api/calendars/.../appointments → ${all.length} gesamt`);
+  console.log(`  Gesamt Appointments: ${all.length}`);
   return all;
-}
-
-// Fallback: Bildsuche über Dateianhänge
-async function tryGetImage(event, destPath) {
-  const baseId = String(event.id).split('_')[0]; // bei recurring: nur die Basis-ID
-  for (const ep of [`/events/${baseId}/files`, `/appointments/${baseId}/files`]) {
-    try {
-      const { data: files = [] } = await apiGet(ep);
-      const img = files.find(f => /\.(jpg|jpeg|png|gif|webp)$/i.test(f.name || f.filename || ''));
-      if (img) {
-        const fileUrl = img.fileUrl || img.file_url || img.url;
-        if (fileUrl) {
-          const full = fileUrl.startsWith('http') ? fileUrl : `${BASE_URL}${fileUrl}`;
-          if (await downloadFile(full, destPath)) return true;
-        }
-      }
-    } catch { /* kein Dateiendpunkt */ }
-  }
-  return false;
 }
 
 async function main() {
@@ -138,89 +102,52 @@ async function main() {
 
   console.log(`Lade Termine von ${from} bis ${to} …`);
 
-  // Kalender laden – nur erlaubte IDs behalten, Farbe aus API übernehmen
-  // calendarMap: id → { name, color }
-  const calendarMap = {};
-  try {
-    const { data: calendars = [] } = await apiGet('/calendars');
-    for (const cal of calendars) {
-      if (!ALLOWED_CALENDAR_IDS.has(cal.id)) continue;
-      calendarMap[cal.id] = {
-        name:  cal.nameTranslated || cal.name || 'Sonstige Veranstaltungen',
-        color: cal.color || '#27ae60',
-      };
-    }
-    const names = Object.values(calendarMap).map(c => c.name).join(', ');
-    console.log(`Kalender (${Object.keys(calendarMap).length}): ${names}`);
-    console.log(`  IDs: [${Object.keys(calendarMap).join(', ')}]`);
-  } catch (e) {
-    console.warn('Kalender konnten nicht geladen werden:', e.message);
-  }
-
-  const calendarIds = Object.keys(calendarMap).map(Number);
-
-  // Beide Endpunkte parallel abfragen
-  console.log('Lade Veranstaltungen …');
-  const [eventsRaw, appointmentsRaw] = await Promise.all([
-    fetchEvents(from, to, calendarIds),
-    fetchAppointments(from, to, calendarIds),
-  ]);
-
-  // Zusammenführen & deduplizieren (Events haben Vorrang bei gleicher ID)
-  const seenIds = new Set();
-  const allItems = [];
-  for (const e of [...eventsRaw, ...appointmentsRaw]) {
-    const key = String(e.id);
-    if (!seenIds.has(key)) { seenIds.add(key); allItems.push(e); }
-  }
-  console.log(`Gesamt: ${eventsRaw.length} Events + ${appointmentsRaw.length} Appointments = ${eventsRaw.length + appointmentsRaw.length}, nach Deduplizierung: ${allItems.length}`);
+  const allItems = await fetchAppointments(from, to);
 
   const termine = [];
 
   for (const event of allItems) {
-    const startDate = event.startDate || event.start_date || event.calculatedStartDate;
-    if (!startDate || new Date(startDate) < now) continue; // vergangene überspringen
+    // appointment.startDate / appointment.endDate
+    const startDate = event.startDate;
+    if (!startDate || new Date(startDate) < now) continue;
 
-    const id          = event.id;
-    const title       = event.title || event.caption || event.name || 'Termin';
-    const endDate     = event.endDate || event.end_date || event.calculatedEndDate || startDate;
-    const calendarId  = event.calendar?.id || event.calendars?.[0]?.id || event.calendarId || event.calendar_id;
-    const cal         = calendarMap[calendarId] || { name: 'Sonstige Veranstaltungen', color: '#27ae60' };
-    const description = event.description || event.note || '';
+    const id      = event.id;
+    const endDate = event.endDate || startDate;
 
-    // Adresse: Objekt oder String
-    const addr = event.address || event.location_object;
+    // appointment.title
+    const title = event.title || 'Termin';
+
+    // appointment.calendar.name → Farbe aus COLOR_MAP
+    const calendarName = event.calendar?.name || 'Sonstige Veranstaltungen';
+    const color        = COLOR_MAP[calendarName] || '#27ae60';
+
+    // appointment.description
+    const description = event.description || '';
+
+    // appointment.address.name + street + zip + city
+    const addr = event.address;
     let location = '';
     if (addr && typeof addr === 'object') {
-      const nameParts = [addr.name, addr.addition].filter(Boolean).join(' – ');
-      const cityPart  = [addr.zip, addr.city].filter(Boolean).join(' ');
-      location = [nameParts, addr.street, cityPart].filter(Boolean).join(', ');
-    } else {
-      location = event.location || event.meetingAt || '';
+      const namePart = [addr.name, addr.addition].filter(Boolean).join(' – ');
+      const cityPart = [addr.zip, addr.city].filter(Boolean).join(' ');
+      location = [namePart, addr.street, cityPart].filter(Boolean).join(', ');
     }
 
-    // Bild: direkt aus appointment.image.imageUrl oder fallback
-    const imageObj    = event.image;
-    const directImgUrl = (imageObj && (imageObj.imageUrl || imageObj.fileUrl))
-                      || event.imageUrl || event.image_url;
-
-    // Dateiname aus ID ableiten (Strings durch Unterstrich ersetzen)
+    // appointment.image.imageUrl (mit Token herunterladen, kann null sein)
+    const imageUrl = event.image?.imageUrl || event.image?.fileUrl || null;
     const fileId   = String(id).replace(/[^a-zA-Z0-9]/g, '_');
     const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
     let imagePath  = 'assets/images/placeholder.jpg';
 
-    if (directImgUrl) {
-      const full = directImgUrl.startsWith('http') ? directImgUrl : `${BASE_URL}${directImgUrl}`;
+    if (imageUrl) {
+      const full = imageUrl.startsWith('http') ? imageUrl : `${BASE_URL}${imageUrl}`;
       if (await downloadFile(full, destPath)) {
         imagePath = `assets/images/${fileId}.jpg`;
         console.log(`  Bild: ${fileId}.jpg`);
       }
-    } else if (await tryGetImage(event, destPath)) {
-      imagePath = `assets/images/${fileId}.jpg`;
-      console.log(`  Bild: ${fileId}.jpg`);
     }
 
-    termine.push({ id, title, startDate, endDate, category: cal.name, color: cal.color, image: imagePath, location, description });
+    termine.push({ id, title, startDate, endDate, category: calendarName, color, image: imagePath, location, description });
   }
 
   termine.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
