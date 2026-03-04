@@ -1,1 +1,189 @@
-[]
+[
+  {
+    "id": 2318,
+    "title": "FSQ Regio Konferenz",
+    "startDate": "2026-03-06T18:30:00Z",
+    "endDate": "2026-03-06T20:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "In  der Arche"
+  },
+  {
+    "id": 2324,
+    "title": "FSQ Regio Konferenz",
+    "startDate": "2026-03-07T09:00:00Z",
+    "endDate": "2026-03-07T12:00:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": 2327,
+    "title": "FSQ Regio Konferenz",
+    "startDate": "2026-03-07T18:00:00Z",
+    "endDate": "2026-03-07T20:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": 2189,
+    "title": "FSQ Regio Konferenz",
+    "startDate": "2026-03-08T09:00:00Z",
+    "endDate": "2026-03-08T10:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Ewald Zelmer \n\nFT: FSQ Regio\n\nBU"
+  },
+  {
+    "id": 2192,
+    "title": "Gottesdienst",
+    "startDate": "2026-03-15T09:00:00Z",
+    "endDate": "2026-03-15T10:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Fürbitte:\nFür soziale Gerechtigkeit, Entwicklungshilfe,Barmherzigkeit in dieser Welt, Frieden\nFür Erweckung von geistlichem Hunger in unserem Land\n\n\n\nAnsagen: Ev Team\n"
+  },
+  {
+    "id": 2195,
+    "title": "Gottesdienst",
+    "startDate": "2026-03-22T09:00:00Z",
+    "endDate": "2026-03-22T10:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Jochen"
+  },
+  {
+    "id": 2198,
+    "title": "Gottesdienst",
+    "startDate": "2026-03-29T08:00:00Z",
+    "endDate": "2026-03-29T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Mario Moisimann"
+  },
+  {
+    "id": 2321,
+    "title": "Karfreitags Gottesdienst",
+    "startDate": "2026-04-03T14:00:00Z",
+    "endDate": "2026-04-03T15:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Alicya\n\nAbendmahl"
+  },
+  {
+    "id": 2201,
+    "title": "Gottesdienst",
+    "startDate": "2026-04-05T08:00:00Z",
+    "endDate": "2026-04-05T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Albanien"
+  },
+  {
+    "id": 2204,
+    "title": "Gottesdienst",
+    "startDate": "2026-04-12T08:00:00Z",
+    "endDate": "2026-04-12T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Abendmahl"
+  },
+  {
+    "id": 2207,
+    "title": "Gottesdienst",
+    "startDate": "2026-04-19T08:00:00Z",
+    "endDate": "2026-04-19T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Henry\n\nFürbitte"
+  },
+  {
+    "id": 2210,
+    "title": "Gottesdienst",
+    "startDate": "2026-04-26T08:00:00Z",
+    "endDate": "2026-04-26T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: -"
+  },
+  {
+    "id": 2481,
+    "title": "Gottesdienst",
+    "startDate": "2026-05-03T08:00:00Z",
+    "endDate": "2026-05-03T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": 2216,
+    "title": "Gottesdienst",
+    "startDate": "2026-05-10T08:00:00Z",
+    "endDate": "2026-05-10T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Sudan"
+  },
+  {
+    "id": 2219,
+    "title": "Gottesdienst",
+    "startDate": "2026-05-17T08:00:00Z",
+    "endDate": "2026-05-17T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger: Bernhard\n\nFürbitte"
+  },
+  {
+    "id": 2222,
+    "title": "Gottesdienst",
+    "startDate": "2026-05-24T08:00:00Z",
+    "endDate": "2026-05-24T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": 2225,
+    "title": "Gottesdienst",
+    "startDate": "2026-05-31T08:00:00Z",
+    "endDate": "2026-05-31T09:30:00Z",
+    "category": "Sonstige Veranstaltungen",
+    "color": "#27ae60",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Prediger:Jochen"
+  }
+]
