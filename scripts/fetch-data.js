@@ -72,10 +72,12 @@ async function fetchAppointments(from, to) {
 
       for (const item of (data.data || [])) {
         const appt       = item.appointment || item;
+        // ChurchTools: Daten können in appt.base oder direkt in appt liegen
+        const base       = appt.base || appt;
         // Datum aus calculated (Wiederholungs-Occurrence) oder direkt
-        const startDate  = item.calculated?.startDate || appt.startDate;
-        const endDate    = item.calculated?.endDate   || appt.endDate;
-        all.push({ ...appt, _source: 'appointments', id: `${appt.id}_${startDate}`, startDate, endDate });
+        const startDate  = item.calculated?.startDate || base.startDate;
+        const endDate    = item.calculated?.endDate   || base.endDate;
+        all.push({ ...base, _source: 'appointments', id: `${base.id || item.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
 
@@ -114,15 +116,15 @@ async function main() {
     const id      = event.id;
     const endDate = event.endDate || startDate;
 
-    // appointment.title
-    const title = event.title || 'Termin';
+    // ChurchTools: caption (nicht title)
+    const title = event.caption || event.title || 'Termin';
 
     // appointment.calendar.name → Farbe aus COLOR_MAP
     const calendarName = event.calendar?.name || 'Sonstige Veranstaltungen';
     const color        = COLOR_MAP[calendarName] || '#27ae60';
 
-    // appointment.description
-    const description = event.description || '';
+    // ChurchTools: note (nicht description)
+    const description = event.note || event.description || '';
 
     // appointment.address.name + street + zip + city
     const addr = event.address;
