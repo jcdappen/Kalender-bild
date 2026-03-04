@@ -184,7 +184,7 @@ async function main() {
     const id          = event.id;
     const title       = event.title || event.caption || event.name || 'Termin';
     const endDate     = event.endDate || event.end_date || event.calculatedEndDate || startDate;
-    const calendarId  = event.calendar?.id || event.calendarId || event.calendar_id;
+    const calendarId  = event.calendar?.id || event.calendars?.[0]?.id || event.calendarId || event.calendar_id;
     const cal         = calendarMap[calendarId] || { name: 'Sonstige Veranstaltungen', color: '#27ae60' };
     const description = event.description || event.note || '';
 
