@@ -64,12 +64,16 @@ async function downloadFile(url, destPath) {
   }
 }
 
-async function fetchAllEvents(from, to) {
+async function fetchAllEvents(from, to, calendarIds = []) {
   let page = 1;
   let allEvents = [];
 
   while (true) {
     const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
+    // Alle Kalender-IDs explizit übergeben – ohne das liefert ChurchTools
+    // oft nur den ersten/Standard-Kalender zurück.
+    calendarIds.forEach(id => params.append('calendarIds[]', String(id)));
+
     const data = await apiGet(`/events?${params}`);
     const events = data.data || [];
     allEvents = allEvents.concat(events);
@@ -146,15 +150,17 @@ async function main() {
     calendars.forEach(cal => {
       calendarMap[cal.id] = cal.name || cal.nameTranslated || 'Sonstige Veranstaltungen';
     });
-    console.log(`${calendars.length} Kalender gefunden.`);
+    console.log(`${calendars.length} Kalender gefunden: ${Object.values(calendarMap).join(', ')}`);
   } catch (e) {
     console.warn('Kalender konnten nicht geladen werden:', e.message);
   }
 
-  // Events laden
+  const calendarIds = Object.keys(calendarMap);
+
+  // Events laden – alle Kalender-IDs übergeben
   let events = [];
   try {
-    events = await fetchAllEvents(from, to);
+    events = await fetchAllEvents(from, to, calendarIds);
     console.log(`${events.length} Termine gefunden.`);
   } catch (e) {
     console.error('Fehler beim Laden der Termine:', e.message);
