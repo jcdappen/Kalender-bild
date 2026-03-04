@@ -1,0 +1,71 @@
+name: Fetch Calendar Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # Alle 30 Minuten
+  workflow_dispatch:           # Manuell auslösbar
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ensure directories exist
+        run: mkdir -p assets/images data
+
+      - name: Create placeholder if missing
+        run: |
+          if [ ! -f assets/images/placeholder.jpg ]; then
+            echo "Erstelle Platzhalterbild …"
+            python3 - <<'PYEOF'
+          import struct, zlib, sys
+
+          def create_png(width, height, bg=(224, 224, 224)):
+              def u32(n): return struct.pack('>I', n)
+              def chunk(t, d):
+                  b = t + d
+                  return u32(len(d)) + b + u32(zlib.crc32(b) & 0xFFFFFFFF)
+              sig  = b'\x89PNG\r\n\x1a\n'
+              ihdr = chunk(b'IHDR', u32(width) + u32(height) + b'\x08\x02\x00\x00\x00')
+              raw  = b''.join(b'\x00' + bytes(bg) * width for _ in range(height))
+              idat = chunk(b'IDAT', zlib.compress(raw, 9))
+              iend = chunk(b'IEND', b'')
+              return sig + ihdr + idat + iend
+
+          with open('assets/images/placeholder.jpg', 'wb') as f:
+              f.write(create_png(800, 400))
+          print('Placeholder erstellt (800x400 grau).')
+          PYEOF
+          else
+            echo "Placeholder bereits vorhanden."
+          fi
+
+      - name: Fetch calendar data
+        env:
+          CHURCHTOOLS_TOKEN: ${{ secrets.CHURCHTOOLS_TOKEN }}
+        run: node scripts/fetch-data.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/termine.json assets/images/
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen – kein Commit nötig."
+          else
+            git commit -m "chore: update calendar data [skip ci]"
+            git push
+          fi
