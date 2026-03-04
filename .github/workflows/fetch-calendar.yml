@@ -5,6 +5,12 @@ on:
     - cron: '*/30 * * * *'   # Alle 30 Minuten
   workflow_dispatch:           # Manuell auslösbar
 
+# Verhindert parallele Runs (z.B. Cron + manuell gleichzeitig),
+# die zu doppelten GitHub-Pages-Deployments führen würden.
+concurrency:
+  group: fetch-calendar
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
