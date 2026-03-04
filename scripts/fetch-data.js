@@ -21,11 +21,13 @@ const CALENDAR_IDS = [1, 2, 3, 10, 33];
 
 // Farben nach Kalender-Name (aus appointment.calendar.name)
 const COLOR_MAP = {
-  'Gottesdienste':          '#f39c12',
-  'Kinder':                 '#3498db',
-  'Senioren':               '#9b59b6',
-  'Jugend':                 '#e74c3c',
+  'Gottesdienste':           '#f39c12',
+  'Gottesdienst':            '#f39c12',
+  'Kinder':                  '#3498db',
+  'Senioren':                '#9b59b6',
+  'Jugend':                  '#e74c3c',
   'Sonstige Veranstaltungen': '#27ae60',
+  'Sonstige Veranstaltung':  '#27ae60',
 };
 
 async function apiGet(endpoint) {
@@ -119,9 +121,9 @@ async function main() {
     // ChurchTools: caption (nicht title)
     const title = event.caption || event.title || 'Termin';
 
-    // appointment.calendar.name → Farbe aus COLOR_MAP
+    // appointment.calendar.name → Farbe aus COLOR_MAP, Fallback: direkte Farbe aus ChurchTools
     const calendarName = event.calendar?.name || 'Sonstige Veranstaltungen';
-    const color        = COLOR_MAP[calendarName] || '#27ae60';
+    const color        = COLOR_MAP[calendarName] || event.calendar?.color || '#27ae60';
 
     // ChurchTools: note (nicht description)
     const description = event.note || event.description || '';
