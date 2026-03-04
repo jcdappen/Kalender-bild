@@ -63,48 +63,50 @@ async function fetchEvents(from, to, calendarIds) {
   return all;
 }
 
-// Endpunkt 2: /api/calendars/{id}/appointments – Kalender-Termine
+// Endpunkt 2: /api/appointments – Kalender-Termine (alle Kalender auf einmal)
 // Die API gibt { appointment: {...}, calculatedDates: {...} } zurück.
 // Wiederkehrende Termine haben mehrere Einträge in calculatedDates.
 async function fetchAppointments(from, to, calendarIds) {
   let all = [];
-  for (const calId of calendarIds) {
-    let page = 1;
-    while (true) {
-      const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
-      let data;
-      try { data = await apiGet(`/calendars/${calId}/appointments?${params}`); }
-      catch { break; }
-
-      for (const item of (data.data || [])) {
-        // API kann flat oder gewrappt sein
-        const appt = item.appointment || item;
-        const calculatedDates = item.calculatedDates || {};
-        const dates = Object.values(calculatedDates);
-
-        if (dates.length > 0) {
-          // Wiederkehrender Termin: ein Eintrag pro Vorkommen
-          for (const d of dates) {
-            all.push({
-              ...appt,
-              _source: 'appointments',
-              // Eindeutige ID pro Vorkommen: appointmentId_startDate
-              id: `${appt.id}_${d.startDate}`,
-              startDate: d.startDate,
-              endDate:   d.endDate,
-            });
-          }
-        } else {
-          all.push({ ...appt, _source: 'appointments' });
-        }
-      }
-
-      const pg = data.meta?.pagination;
-      if (!pg || page >= (pg.lastPage || 1)) break;
-      page++;
+  let page = 1;
+  while (true) {
+    const params = new URLSearchParams({ from, to, limit: '100', page: String(page) });
+    calendarIds.forEach(id => params.append('calendarId[]', String(id)));
+    let data;
+    try {
+      data = await apiGet(`/appointments?${params}`);
+    } catch (e) {
+      console.warn('  /api/appointments Fehler:', e.message);
+      break;
     }
+
+    for (const item of (data.data || [])) {
+      // API gibt { appointment: {...}, calculatedDates: {...} } zurück
+      const appt = item.appointment || item;
+      const calculatedDates = item.calculatedDates || {};
+      const dates = Object.values(calculatedDates);
+
+      if (dates.length > 0) {
+        // Wiederkehrender Termin: ein Eintrag pro Vorkommen
+        for (const d of dates) {
+          all.push({
+            ...appt,
+            _source: 'appointments',
+            id: `${appt.id}_${d.startDate}`,
+            startDate: d.startDate,
+            endDate:   d.endDate,
+          });
+        }
+      } else {
+        all.push({ ...appt, _source: 'appointments' });
+      }
+    }
+
+    const pg = data.meta?.pagination;
+    if (!pg || page >= (pg.lastPage || 1)) break;
+    page++;
   }
-  console.log(`  /api/calendars/.../appointments → ${all.length} Einträge`);
+  console.log(`  /api/appointments → ${all.length} Einträge`);
   return all;
 }
 
@@ -154,6 +156,7 @@ async function main() {
     }
     const names = Object.values(calendarMap).map(c => c.name).join(', ');
     console.log(`Kalender (${Object.keys(calendarMap).length}): ${names}`);
+    console.log(`  IDs: [${Object.keys(calendarMap).join(', ')}]`);
   } catch (e) {
     console.warn('Kalender konnten nicht geladen werden:', e.message);
   }
@@ -174,7 +177,7 @@ async function main() {
     const key = String(e.id);
     if (!seenIds.has(key)) { seenIds.add(key); allItems.push(e); }
   }
-  console.log(`Gesamt nach Deduplizierung: ${allItems.length} Einträge`);
+  console.log(`Gesamt: ${eventsRaw.length} Events + ${appointmentsRaw.length} Appointments = ${eventsRaw.length + appointmentsRaw.length}, nach Deduplizierung: ${allItems.length}`);
 
   const termine = [];
 
