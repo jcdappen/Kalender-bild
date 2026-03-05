@@ -136,8 +136,11 @@ async function main() {
       location = [namePart, addr.street, cityPart].filter(Boolean).join(', ');
     }
 
-    // appointment.image.imageUrl (mit Token herunterladen, kann null sein)
-    const imageUrl = event.image?.imageUrl || event.image?.fileUrl || null;
+    // ChurchTools: image kann null, String-URL oder Objekt mit imageUrl/fileUrl/url sein
+    const img = event.image;
+    const imageUrl = typeof img === 'string'
+      ? img
+      : img?.imageUrl || img?.fileUrl || img?.url || img?.original || null;
     const fileId   = String(id).replace(/[^a-zA-Z0-9]/g, '_');
     const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
     let imagePath  = 'assets/images/placeholder.jpg';
