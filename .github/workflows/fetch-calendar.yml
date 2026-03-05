@@ -74,7 +74,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/termine.json data/debug_raw.json assets/images/
+          git add data/termine.json assets/images/
           if git diff --staged --quiet; then
             echo "Keine Änderungen – kein Commit nötig."
           else
