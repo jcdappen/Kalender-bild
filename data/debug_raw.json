@@ -1,0 +1,274 @@
+{
+  "appointment": {
+    "base": {
+      "id": 1108215,
+      "title": "Alpha Jünger",
+      "subtitle": "Jesus kennenlernen und Leben teilen",
+      "address": null,
+      "version": 5,
+      "calendar": {
+        "id": 1,
+        "name": "Sonstige Veranstaltung",
+        "nameTranslated": "Sonstige Veranstaltung",
+        "sortKey": 30,
+        "type": "church",
+        "color": "#16a765",
+        "randomUrl": "HpOp2CtkDW4MgLLFVsDfTeCuSCw3GpkG",
+        "iCalSourceUrl": null,
+        "syncToEvTermine": false,
+        "evTermineEventTypeId": null,
+        "campusId": null,
+        "eventTemplateId": null,
+        "meta": {
+          "createdDate": "2025-06-16T07:39:13Z",
+          "createdPerson": {
+            "id": -4
+          },
+          "modifiedDate": "2025-08-05T19:56:42Z",
+          "modifiedPerson": {
+            "id": 643
+          }
+        },
+        "@deprecated": {
+          "isPublic": "type",
+          "isPrivate": "type"
+        },
+        "isPublic": true,
+        "isPrivate": false
+      },
+      "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+      "image": null,
+      "link": null,
+      "isInternal": false,
+      "startDate": "2025-06-05T16:00:00Z",
+      "endDate": "2025-06-05T18:00:00Z",
+      "allDay": false,
+      "repeatId": 7,
+      "repeatFrequency": 1,
+      "repeatUntil": "2026-12-17",
+      "repeatOption": null,
+      "additionals": [],
+      "exceptions": [
+        {
+          "id": 3658,
+          "date": "2025-12-11",
+          "meta": {
+            "createdDate": "2025-12-11T14:12:48Z",
+            "createdPerson": {
+              "id": 255
+            },
+            "modifiedDate": "2025-12-11T14:12:48Z",
+            "modifiedPerson": {
+              "id": 255
+            }
+          }
+        },
+        {
+          "id": 3641,
+          "date": "2025-12-25",
+          "meta": {
+            "createdDate": "2025-11-18T11:38:16Z",
+            "createdPerson": {
+              "id": 255
+            },
+            "modifiedDate": "2025-11-18T11:38:16Z",
+            "modifiedPerson": {
+              "id": 255
+            }
+          }
+        },
+        {
+          "id": 3644,
+          "date": "2026-01-01",
+          "meta": {
+            "createdDate": "2025-11-18T11:38:45Z",
+            "createdPerson": {
+              "id": 255
+            },
+            "modifiedDate": "2025-11-18T11:38:45Z",
+            "modifiedPerson": {
+              "id": 255
+            }
+          }
+        },
+        {
+          "id": 3669,
+          "date": "2026-02-12",
+          "meta": {
+            "createdDate": "2026-02-12T06:13:53Z",
+            "createdPerson": {
+              "id": 255
+            },
+            "modifiedDate": "2026-02-12T06:13:53Z",
+            "modifiedPerson": {
+              "id": 255
+            }
+          }
+        }
+      ],
+      "signup": null,
+      "onBehalfOfPid": null,
+      "meta": {
+        "createdDate": "2025-06-05T14:54:49Z",
+        "createdPerson": {
+          "id": 255
+        },
+        "modifiedDate": "2026-02-12T06:13:54Z",
+        "modifiedPerson": {
+          "id": 255
+        }
+      },
+      "@deprecated": {
+        "additions": "additionals",
+        "caption": "title",
+        "note": "subtitle",
+        "information": "description"
+      },
+      "caption": "Alpha Jünger",
+      "note": "Jesus kennenlernen und Leben teilen",
+      "information": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+      "additions": []
+    },
+    "calculated": {
+      "startDate": "2026-03-05T17:00:00Z",
+      "endDate": "2026-03-05T19:00:00Z"
+    }
+  },
+  "@deprecated": {
+    "base": "appointment.base",
+    "calculated": "appointment.calculated"
+  },
+  "base": {
+    "id": 1108215,
+    "title": "Alpha Jünger",
+    "subtitle": "Jesus kennenlernen und Leben teilen",
+    "address": null,
+    "version": 5,
+    "calendar": {
+      "id": 1,
+      "name": "Sonstige Veranstaltung",
+      "nameTranslated": "Sonstige Veranstaltung",
+      "sortKey": 30,
+      "type": "church",
+      "color": "#16a765",
+      "randomUrl": "HpOp2CtkDW4MgLLFVsDfTeCuSCw3GpkG",
+      "iCalSourceUrl": null,
+      "syncToEvTermine": false,
+      "evTermineEventTypeId": null,
+      "campusId": null,
+      "eventTemplateId": null,
+      "meta": {
+        "createdDate": "2025-06-16T07:39:13Z",
+        "createdPerson": {
+          "id": -4
+        },
+        "modifiedDate": "2025-08-05T19:56:42Z",
+        "modifiedPerson": {
+          "id": 643
+        }
+      },
+      "@deprecated": {
+        "isPublic": "type",
+        "isPrivate": "type"
+      },
+      "isPublic": true,
+      "isPrivate": false
+    },
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "image": null,
+    "link": null,
+    "isInternal": false,
+    "startDate": "2025-06-05T16:00:00Z",
+    "endDate": "2025-06-05T18:00:00Z",
+    "allDay": false,
+    "repeatId": 7,
+    "repeatFrequency": 1,
+    "repeatUntil": "2026-12-17",
+    "repeatOption": null,
+    "additionals": [],
+    "exceptions": [
+      {
+        "id": 3658,
+        "date": "2025-12-11",
+        "meta": {
+          "createdDate": "2025-12-11T14:12:48Z",
+          "createdPerson": {
+            "id": 255
+          },
+          "modifiedDate": "2025-12-11T14:12:48Z",
+          "modifiedPerson": {
+            "id": 255
+          }
+        }
+      },
+      {
+        "id": 3641,
+        "date": "2025-12-25",
+        "meta": {
+          "createdDate": "2025-11-18T11:38:16Z",
+          "createdPerson": {
+            "id": 255
+          },
+          "modifiedDate": "2025-11-18T11:38:16Z",
+          "modifiedPerson": {
+            "id": 255
+          }
+        }
+      },
+      {
+        "id": 3644,
+        "date": "2026-01-01",
+        "meta": {
+          "createdDate": "2025-11-18T11:38:45Z",
+          "createdPerson": {
+            "id": 255
+          },
+          "modifiedDate": "2025-11-18T11:38:45Z",
+          "modifiedPerson": {
+            "id": 255
+          }
+        }
+      },
+      {
+        "id": 3669,
+        "date": "2026-02-12",
+        "meta": {
+          "createdDate": "2026-02-12T06:13:53Z",
+          "createdPerson": {
+            "id": 255
+          },
+          "modifiedDate": "2026-02-12T06:13:53Z",
+          "modifiedPerson": {
+            "id": 255
+          }
+        }
+      }
+    ],
+    "signup": null,
+    "onBehalfOfPid": null,
+    "meta": {
+      "createdDate": "2025-06-05T14:54:49Z",
+      "createdPerson": {
+        "id": 255
+      },
+      "modifiedDate": "2026-02-12T06:13:54Z",
+      "modifiedPerson": {
+        "id": 255
+      }
+    },
+    "@deprecated": {
+      "additions": "additionals",
+      "caption": "title",
+      "note": "subtitle",
+      "information": "description"
+    },
+    "caption": "Alpha Jünger",
+    "note": "Jesus kennenlernen und Leben teilen",
+    "information": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "additions": []
+  },
+  "calculated": {
+    "startDate": "2026-03-05T17:00:00Z",
+    "endDate": "2026-03-05T19:00:00Z"
+  }
+}
