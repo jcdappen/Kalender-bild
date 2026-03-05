@@ -45,12 +45,18 @@ async function apiGet(endpoint) {
 async function downloadFile(url, destPath) {
   try {
     const res = await fetch(url, { headers: { Authorization: `Login ${TOKEN}` } });
-    if (!res.ok) return false;
+    if (!res.ok) {
+      console.log(`  DEBUG download failed: ${res.status} ${res.statusText} – ${url}`);
+      return false;
+    }
+    const contentType = res.headers.get('content-type') || '';
     const buffer = Buffer.from(await res.arrayBuffer());
+    console.log(`  DEBUG download ok: ${buffer.length} bytes, content-type: ${contentType}`);
     if (buffer.length < 500) return false;
     fs.writeFileSync(destPath, buffer);
     return true;
-  } catch {
+  } catch (e) {
+    console.log(`  DEBUG download exception: ${e.message}`);
     return false;
   }
 }
