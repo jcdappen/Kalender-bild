@@ -72,6 +72,7 @@ async function fetchAppointments(from, to) {
         break;
       }
 
+      let firstItem = true;
       for (const item of (data.data || [])) {
         const appt       = item.appointment || item;
         // ChurchTools: Daten können in appt.base oder direkt in appt liegen
@@ -79,6 +80,11 @@ async function fetchAppointments(from, to) {
         // Datum aus calculated (Wiederholungs-Occurrence) oder direkt
         const startDate  = item.calculated?.startDate || base.startDate;
         const endDate    = item.calculated?.endDate   || base.endDate;
+        if (firstItem && all.length === 0) {
+          const debugFile = path.resolve(__dirname, '..', 'data', 'debug_raw.json');
+          fs.writeFileSync(debugFile, JSON.stringify(item, null, 2));
+          firstItem = false;
+        }
         all.push({ ...base, _source: 'appointments', id: `${base.id || item.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
