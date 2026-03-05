@@ -138,6 +138,9 @@ async function main() {
 
     // ChurchTools: image kann null, String-URL oder Objekt mit imageUrl/fileUrl/url sein
     const img = event.image;
+    if (img !== null && img !== undefined) {
+      console.log(`  DEBUG image [${event.caption || event.title}]: ${JSON.stringify(img)}`);
+    }
     const imageUrl = typeof img === 'string'
       ? img
       : img?.imageUrl || img?.fileUrl || img?.url || img?.original || null;
