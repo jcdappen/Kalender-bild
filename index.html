@@ -331,32 +331,14 @@
             .replace(/"/g, '&quot;');
     }
 
-    function getHeaderText(termine) {
-        if (termine.length === 0) return 'Nächste Termine';
-
-        const months = [...new Set(termine.map(t => {
-            const d = new Date(t.startDate);
-            return d.getFullYear() + '-' + d.getMonth();
-        }))];
-
-        if (months.length === 1) {
-            const d = new Date(termine[0].startDate);
-            return d.toLocaleString('de-DE', { month: 'long', year: 'numeric' });
-        }
-
-        const first = new Date(termine[0].startDate);
-        const last  = new Date(termine[termine.length - 1].startDate);
-
-        if (
-            first.getFullYear() === last.getFullYear() &&
-            last.getMonth() - first.getMonth() === 1
-        ) {
-            return first.toLocaleString('de-DE', { month: 'long' }) +
+    function getHeaderText(now) {
+        if (now.getDate() >= 28) {
+            const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+            return now.toLocaleString('de-DE', { month: 'long' }) +
                    ' / ' +
-                   last.toLocaleString('de-DE', { month: 'long', year: 'numeric' });
+                   nextMonth.toLocaleString('de-DE', { month: 'long', year: 'numeric' });
         }
-
-        return 'Nächste Termine';
+        return now.toLocaleString('de-DE', { month: 'long', year: 'numeric' });
     }
 
     /* ── Daten laden ── */
@@ -370,13 +352,21 @@
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const all = await res.json();
 
-            // Nur zukünftige Termine, maximal 10
             const now = new Date();
-            const termine = all
-                .filter(t => t.startDate && new Date(t.startDate) >= now)
-                .slice(0, 10);
+            const currentDay = now.getDate();
 
-            renderTermine(termine);
+            // Ab dem 28.: auch nächsten Monat anzeigen
+            const monthEnd = currentDay >= 28
+                ? new Date(now.getFullYear(), now.getMonth() + 2, 0, 23, 59, 59)
+                : new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+
+            const termine = all.filter(t => {
+                if (!t.startDate) return false;
+                const d = new Date(t.startDate);
+                return d >= now && d <= monthEnd;
+            });
+
+            renderTermine(termine, now);
         } catch (err) {
             console.error('Fehler beim Laden der Termine:', err);
             statusContainer.textContent = 'Termine konnten nicht geladen werden.';
@@ -385,7 +375,7 @@
 
     /* ── Darstellung ── */
 
-    function renderTermine(termine) {
+    function renderTermine(termine, now) {
         listContainer.innerHTML = '';
         statusContainer.style.display = 'none';
 
@@ -398,10 +388,11 @@
         // Monats-Header
         const header = document.createElement('div');
         header.className = 'month-header';
-        header.textContent = getHeaderText(termine);
+        header.textContent = getHeaderText(now);
         listContainer.appendChild(header);
 
-        termine.forEach(termin => {
+        termine.forEach((termin, index) => {
+            const showImage = index < 10;
             const startDate = new Date(termin.startDate);
             const endDate   = new Date(termin.endDate || termin.startDate);
 
@@ -455,14 +446,14 @@
             const wrapper = document.createElement('div');
             wrapper.className = 'calendar-event';
             wrapper.innerHTML = `
-                <div class="event-image">
+                ${showImage ? `<div class="event-image">
                     <img
                         src="${image}"
                         alt="${title}"
                         loading="lazy"
                         onerror="this.src='${PLACEHOLDER}'; this.onerror=null;"
                     >
-                </div>
+                </div>` : ''}
                 <div class="event-summary" tabindex="0" role="button" aria-expanded="false">
                     <div class="event-date">
                         <div class="date-weekday">${weekday}</div>
