@@ -78,12 +78,6 @@ async function fetchAppointments(from, to) {
         const base       = appt.base || appt;
         const startDate  = item.calculated?.startDate || base.startDate;
         const endDate    = item.calculated?.endDate   || base.endDate;
-        if (base.image !== null && base.image !== undefined) {
-          const debugFile = path.resolve(__dirname, '..', 'data', 'debug_image.json');
-          if (!require('fs').existsSync(debugFile)) {
-            require('fs').writeFileSync(debugFile, JSON.stringify({ base_image: base.image, base_id: base.id, base_title: base.title }, null, 2));
-          }
-        }
         all.push({ ...base, _source: 'appointments', id: `${base.id || item.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
@@ -142,8 +136,11 @@ async function main() {
       location = [namePart, addr.street, cityPart].filter(Boolean).join(', ');
     }
 
-    // appointment.image.imageUrl (mit Token herunterladen, kann null sein)
-    const imageUrl = event.image?.imageUrl || event.image?.fileUrl || null;
+    // ChurchTools: image kann null, String-URL oder Objekt mit imageUrl/fileUrl/url sein
+    const img = event.image;
+    const imageUrl = typeof img === 'string'
+      ? img
+      : img?.imageUrl || img?.fileUrl || img?.url || img?.original || null;
     const fileId   = String(id).replace(/[^a-zA-Z0-9]/g, '_');
     const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
     let imagePath  = 'assets/images/placeholder.jpg';
