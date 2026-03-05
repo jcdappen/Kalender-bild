@@ -50,8 +50,7 @@ async function downloadFile(url, destPath) {
     let res;
     try {
       res = await fetch(current, { redirect: 'manual' });
-    } catch (e) {
-      console.log(`  DEBUG download exception: ${e.message}`);
+    } catch {
       return false;
     }
     if (res.status >= 300 && res.status < 400) {
@@ -61,7 +60,6 @@ async function downloadFile(url, destPath) {
       continue;
     }
     if (!res.ok) {
-      console.log(`  DEBUG download failed: ${res.status} – ${current}`);
       return false;
     }
     const buffer = Buffer.from(await res.arrayBuffer());
@@ -69,7 +67,7 @@ async function downloadFile(url, destPath) {
     fs.writeFileSync(destPath, buffer);
     return true;
   }
-  console.log(`  DEBUG download: zu viele Redirects für ${url}`);
+  console.warn(`  Bild-Download: zu viele Redirects für ${url}`);
   return false;
 }
 
@@ -156,12 +154,6 @@ async function main() {
 
     // ChurchTools: image kann null, String-URL oder Objekt mit imageUrl/fileUrl/url sein
     const img = event.image;
-    if (img !== null && img !== undefined) {
-      console.log(`  DEBUG image [${event.caption || event.title}]: ${JSON.stringify(img)}`);
-    }
-    const imageUrl = typeof img === 'string'
-      ? img
-      : img?.imageUrl || img?.fileUrl || img?.url || img?.original || null;
     const fileId   = String(id).replace(/[^a-zA-Z0-9]/g, '_');
     const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
     let imagePath  = 'assets/images/placeholder.jpg';
