@@ -56,7 +56,7 @@ async function downloadFile(url, destPath) {
     fs.writeFileSync(destPath, buffer);
     return true;
   } catch (e) {
-    console.log(`  DEBUG download exception: ${e.message}`);
+    console.log(`  DEBUG download exception: ${e.message} | cause: ${e.cause?.message} | code: ${e.cause?.code}`);
     return false;
   }
 }
@@ -154,11 +154,17 @@ async function main() {
     const destPath = path.join(IMAGES_DIR, `${fileId}.jpg`);
     let imagePath  = 'assets/images/placeholder.jpg';
 
-    if (imageUrl) {
-      const full = imageUrl.startsWith('http') ? imageUrl : `${BASE_URL}${imageUrl}`;
+    const imageUrls = [];
+    if (img?.imageUrl) imageUrls.push(img.imageUrl);
+    if (img?.fileUrl)  imageUrls.push(img.fileUrl);
+    if (typeof img === 'string') imageUrls.push(img);
+
+    for (const u of imageUrls) {
+      const full = u.startsWith('http') ? u : `${BASE_URL}${u}`;
       if (await downloadFile(full, destPath)) {
         imagePath = `assets/images/${fileId}.jpg`;
-        console.log(`  Bild: ${fileId}.jpg`);
+        console.log(`  Bild: ${fileId}.jpg (von ${full})`);
+        break;
       }
     }
 
