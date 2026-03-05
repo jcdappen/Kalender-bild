@@ -159,8 +159,8 @@ async function main() {
     let imagePath  = 'assets/images/placeholder.jpg';
 
     const imageUrls = [];
-    if (img?.imageUrl) imageUrls.push(img.imageUrl);
     if (img?.fileUrl)  imageUrls.push(img.fileUrl);
+    if (img?.imageUrl) imageUrls.push(img.imageUrl);
     if (typeof img === 'string') imageUrls.push(img);
 
     for (const u of imageUrls) {
