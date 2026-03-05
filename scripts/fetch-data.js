@@ -78,6 +78,12 @@ async function fetchAppointments(from, to) {
         const base       = appt.base || appt;
         const startDate  = item.calculated?.startDate || base.startDate;
         const endDate    = item.calculated?.endDate   || base.endDate;
+        if (base.image !== null && base.image !== undefined) {
+          const debugFile = path.resolve(__dirname, '..', 'data', 'debug_image.json');
+          if (!require('fs').existsSync(debugFile)) {
+            require('fs').writeFileSync(debugFile, JSON.stringify({ base_image: base.image, base_id: base.id, base_title: base.title }, null, 2));
+          }
+        }
         all.push({ ...base, _source: 'appointments', id: `${base.id || item.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
