@@ -43,22 +43,34 @@ async function apiGet(endpoint) {
 }
 
 async function downloadFile(url, destPath) {
-  try {
-    const res = await fetch(url, { headers: { Authorization: `Login ${TOKEN}` } });
-    if (!res.ok) {
-      console.log(`  DEBUG download failed: ${res.status} ${res.statusText} – ${url}`);
+  // Bilder sind securityLevelId=0 (öffentlich) – kein Auth-Header nötig.
+  // Redirects manuell folgen um Loops durch den Auth-Header zu vermeiden.
+  let current = url;
+  for (let i = 0; i < 10; i++) {
+    let res;
+    try {
+      res = await fetch(current, { redirect: 'manual' });
+    } catch (e) {
+      console.log(`  DEBUG download exception: ${e.message}`);
       return false;
     }
-    const contentType = res.headers.get('content-type') || '';
+    if (res.status >= 300 && res.status < 400) {
+      const loc = res.headers.get('location');
+      if (!loc) break;
+      current = loc.startsWith('http') ? loc : new URL(loc, current).href;
+      continue;
+    }
+    if (!res.ok) {
+      console.log(`  DEBUG download failed: ${res.status} – ${current}`);
+      return false;
+    }
     const buffer = Buffer.from(await res.arrayBuffer());
-    console.log(`  DEBUG download ok: ${buffer.length} bytes, content-type: ${contentType}`);
     if (buffer.length < 500) return false;
     fs.writeFileSync(destPath, buffer);
     return true;
-  } catch (e) {
-    console.log(`  DEBUG download exception: ${e.message} | cause: ${e.cause?.message} | code: ${e.cause?.code}`);
-    return false;
   }
+  console.log(`  DEBUG download: zu viele Redirects für ${url}`);
+  return false;
 }
 
 // /api/calendars/{id}/appointments
