@@ -72,19 +72,12 @@ async function fetchAppointments(from, to) {
         break;
       }
 
-      let firstItem = true;
       for (const item of (data.data || [])) {
         const appt       = item.appointment || item;
-        // ChurchTools: Daten können in appt.base oder direkt in appt liegen
+        // ChurchTools: Daten in item.base (= item.appointment.base)
         const base       = appt.base || appt;
-        // Datum aus calculated (Wiederholungs-Occurrence) oder direkt
         const startDate  = item.calculated?.startDate || base.startDate;
         const endDate    = item.calculated?.endDate   || base.endDate;
-        if (firstItem && all.length === 0) {
-          const debugFile = path.resolve(__dirname, '..', 'data', 'debug_raw.json');
-          fs.writeFileSync(debugFile, JSON.stringify(item, null, 2));
-          firstItem = false;
-        }
         all.push({ ...base, _source: 'appointments', id: `${base.id || item.id}_${startDate}`, startDate, endDate });
         countForCal++;
       }
@@ -127,12 +120,12 @@ async function main() {
     // ChurchTools: caption (nicht title)
     const title = event.caption || event.title || 'Termin';
 
-    // appointment.calendar.name → Farbe aus COLOR_MAP, Fallback: direkte Farbe aus ChurchTools
     const calendarName = event.calendar?.name || 'Sonstige Veranstaltungen';
-    const color        = COLOR_MAP[calendarName] || event.calendar?.color || '#27ae60';
+    // Farbe: erst ChurchTools-Kalenderfarbe, dann COLOR_MAP, dann Standardfarbe
+    const color        = event.calendar?.color || COLOR_MAP[calendarName] || '#27ae60';
 
-    // ChurchTools: note (nicht description)
-    const description = event.note || event.description || '';
+    // ChurchTools: description = lange Beschreibung (note = veralteter Alias für subtitle)
+    const description = event.description || event.information || '';
 
     // appointment.address.name + street + zip + city
     const addr = event.address;
