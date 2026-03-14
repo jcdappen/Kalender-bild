@@ -28,6 +28,10 @@
             overflow-wrap: break-word;
         }
 
+        #ankuendigungen-wrapper {
+            container-type: inline-size;
+        }
+
         #ankuendigungen-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -109,7 +113,7 @@
         }
 
         /* ── Tablet ── */
-        @media (max-width: 900px) {
+        @container (max-width: 900px) {
             #ankuendigungen-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 18px;
@@ -117,7 +121,7 @@
         }
 
         /* ── Mobile ── */
-        @media (max-width: 600px) {
+        @container (max-width: 600px) {
             #ankuendigungen-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
@@ -142,8 +146,10 @@
     </style>
 </head>
 <body>
-<div id="ankuendigungen-grid"></div>
-<div id="ankuendigungen-status"></div>
+<div id="ankuendigungen-wrapper">
+    <div id="ankuendigungen-grid"></div>
+    <div id="ankuendigungen-status"></div>
+</div>
 
 <script>
 (function () {
