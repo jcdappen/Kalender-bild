@@ -29,6 +29,7 @@
         }
 
         #ankuendigungen-grid {
+            container-type: inline-size;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
@@ -109,7 +110,7 @@
         }
 
         /* ── Tablet ── */
-        @media (max-width: 900px) {
+        @container (max-width: 900px) {
             #ankuendigungen-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 18px;
@@ -117,7 +118,7 @@
         }
 
         /* ── Mobile ── */
-        @media (max-width: 600px) {
+        @container (max-width: 600px) {
             #ankuendigungen-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
