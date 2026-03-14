@@ -116,31 +116,27 @@
             }
         }
 
-        /* ── Mobile: horizontales Layout ── */
+        /* ── Mobile ── */
         @media (max-width: 600px) {
             #ankuendigungen-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
             }
 
-            .ankuendigung-card {
-                flex-direction: row;
-                align-items: stretch;
-            }
-
-            .card-image {
-                width: 100px;
-                min-width: 100px;
-                aspect-ratio: unset;
-                flex-shrink: 0;
-            }
-
             .card-body {
                 padding: 12px 14px 14px;
             }
 
-            .card-titel   { font-size: 15px; }
-            .card-beschreibung { font-size: 13px; margin-bottom: 10px; }
+            .card-titel { font-size: 15px; }
+
+            .card-beschreibung {
+                font-size: 13px;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
         }
 
         /* Touch: Link-Hover deaktivieren */
