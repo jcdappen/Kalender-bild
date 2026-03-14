@@ -26,6 +26,7 @@
             padding: 0;
             overflow-wrap: break-word;
             overflow-x: hidden;
+            overflow: hidden;
         }
 
         #ical-widget-container {
@@ -365,6 +366,15 @@
 
     loadTermine();
 })();
+</script>
+<script>
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+    window.parent.postMessage({ type: 'kalender-resize', height: height }, '*');
+  }
+  window.addEventListener('load', sendHeight);
+  const resizeObserver = new ResizeObserver(sendHeight);
+  resizeObserver.observe(document.body);
 </script>
 </body>
 </html>
