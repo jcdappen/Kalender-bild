@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankündigungen</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #bb2232;
+            --text-color: #1a202c;
+            --text-meta: #718096;
+            --text-desc: #4a5568;
+            --border-color: #e2e8f0;
+            --card-radius: 8px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+                         'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: transparent;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overflow-wrap: break-word;
+        }
+
+        #ankuendigungen-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 0;
+        }
+
+        /* ── Card ── */
+        .ankuendigung-card {
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+
+        .card-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 16px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-datum {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-meta);
+            margin-bottom: 6px;
+        }
+
+        .card-titel {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-color);
+            line-height: 1.35;
+            margin-bottom: 8px;
+        }
+
+        .card-beschreibung {
+            font-size: 14px;
+            color: var(--text-desc);
+            line-height: 1.55;
+            flex-grow: 1;
+            margin-bottom: 14px;
+        }
+
+        .card-link {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Status ── */
+        #ankuendigungen-status {
+            padding: 24px 0;
+            color: var(--text-meta);
+            font-size: 15px;
+        }
+
+        /* ── Tablet ── */
+        @media (max-width: 900px) {
+            #ankuendigungen-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 18px;
+            }
+        }
+
+        /* ── Mobile: horizontales Layout ── */
+        @media (max-width: 600px) {
+            #ankuendigungen-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .ankuendigung-card {
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .card-image {
+                width: 100px;
+                min-width: 100px;
+                aspect-ratio: unset;
+                flex-shrink: 0;
+            }
+
+            .card-body {
+                padding: 12px 14px 14px;
+            }
+
+            .card-titel   { font-size: 15px; }
+            .card-beschreibung { font-size: 13px; margin-bottom: 10px; }
+        }
+
+        /* Touch: Link-Hover deaktivieren */
+        @media (hover: none) and (pointer: coarse) {
+            .card-link:hover { text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+<div id="ankuendigungen-grid"></div>
+<div id="ankuendigungen-status"></div>
+
+<script>
+(function () {
+    'use strict';
+
+    const grid   = document.getElementById('ankuendigungen-grid');
+    const status = document.getElementById('ankuendigungen-status');
+    const PLACEHOLDER = 'assets/images/placeholder.jpg';
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    async function loadAnnouncements() {
+        status.textContent = 'Lade Ankündigungen …';
+
+        try {
+            const res = await fetch('data/ankuendigungen.json', { cache: 'no-store' });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const items = await res.json();
+            render(items);
+        } catch (err) {
+            console.error('Fehler beim Laden der Ankündigungen:', err);
+            status.textContent = 'Ankündigungen konnten nicht geladen werden.';
+        }
+    }
+
+    function render(items) {
+        status.textContent = '';
+
+        if (!items.length) {
+            status.textContent = 'Keine Ankündigungen vorhanden.';
+            return;
+        }
+
+        items.forEach(item => {
+            const bild  = escapeHtml(item.bild || PLACEHOLDER);
+            const titel = escapeHtml(item.titel || '');
+            const datum = escapeHtml(item.datum || '');
+            const desc  = escapeHtml(item.beschreibung || '');
+            const link  = escapeHtml(item.link || '');
+
+            const card = document.createElement('div');
+            card.className = 'ankuendigung-card';
+            card.innerHTML = `
+                <div class="card-image">
+                    <img
+                        src="${bild}"
+                        alt="${titel}"
+                        loading="lazy"
+                        onerror="this.src='${PLACEHOLDER}'; this.onerror=null;"
+                    >
+                </div>
+                <div class="card-body">
+                    ${datum ? `<div class="card-datum">${datum}</div>` : ''}
+                    <div class="card-titel">${titel}</div>
+                    ${desc ? `<div class="card-beschreibung">${desc}</div>` : ''}
+                    ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noopener">Mehr erfahren &rarr;</a>` : ''}
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        sendHeight();
+    }
+
+    function sendHeight() {
+        window.parent.postMessage(
+            { type: 'ankuendigungen-resize', height: document.body.scrollHeight },
+            '*'
+        );
+    }
+
+    window.addEventListener('load', sendHeight);
+    const resizeObserver = new ResizeObserver(sendHeight);
+    resizeObserver.observe(document.body);
+
+    loadAnnouncements();
+})();
+</script>
+</body>
+</html>
