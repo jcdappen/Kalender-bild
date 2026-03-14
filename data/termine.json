@@ -1,179 +1,25 @@
 [
   {
-    "id": "1108215_2026-03-05T17:00:00Z",
-    "title": "Alpha Jünger",
-    "startDate": "2026-03-05T17:00:00Z",
-    "endDate": "2026-03-05T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
-  },
-  {
-    "id": "1110916_2026-03-05T18:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-03-05T18:00:00Z",
-    "endDate": "2026-03-05T20:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": ""
-  },
-  {
-    "id": "1108790_2026-03-06T18:30:00Z",
-    "title": "FSQ Regio Konferenz",
-    "startDate": "2026-03-06T18:30:00Z",
-    "endDate": "2026-03-06T20:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Arche, Eisenbahnstraße 21, 77833 Ottersweier",
-    "description": "Leben mit dem Heiligen Geist"
-  },
-  {
-    "id": "1108793_2026-03-07T09:00:00Z",
-    "title": "FSQ Regio Konferenz",
-    "startDate": "2026-03-07T09:00:00Z",
-    "endDate": "2026-03-07T12:00:00Z",
-    "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche"
-  },
-  {
-    "id": "1108796_2026-03-07T18:00:00Z",
-    "title": "FSQ Regio Konferenz",
-    "startDate": "2026-03-07T18:00:00Z",
-    "endDate": "2026-03-07T20:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Leben mit dem Heiligen Geist"
-  },
-  {
-    "id": "1110922_2026-03-08T08:30:00Z",
-    "title": "Gebet vor dem Gottesdienst",
-    "startDate": "2026-03-08T08:30:00Z",
-    "endDate": "2026-03-08T08:45:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
-  },
-  {
-    "id": "1108799_2026-03-08T09:00:00Z",
-    "title": "FSQ Regio Konferenz",
-    "startDate": "2026-03-08T09:00:00Z",
-    "endDate": "2026-03-08T10:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
-  },
-  {
-    "id": "1109836_2026-03-09T14:30:00Z",
-    "title": "Espresso & mehr...",
-    "startDate": "2026-03-09T14:30:00Z",
-    "endDate": "2026-03-09T17:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
-    "description": ""
-  },
-  {
-    "id": "1110319_2026-03-09T18:30:00Z",
-    "title": "Gebetsabend - Leben mit Gott",
-    "startDate": "2026-03-09T18:30:00Z",
-    "endDate": "2026-03-09T20:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd"
-  },
-  {
-    "id": "1109919_2026-03-11T08:30:00Z",
-    "title": "Mamatreff",
-    "startDate": "2026-03-11T08:30:00Z",
-    "endDate": "2026-03-11T10:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": ""
-  },
-  {
-    "id": "1111076_2026-03-11T18:00:00Z",
-    "title": "Jüngerschaftsbegleiter 3/4",
-    "startDate": "2026-03-11T18:00:00Z",
-    "endDate": "2026-03-11T20:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Konkordia - Multiraum, Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Jüngerschaft ist nicht kompliziert – Jüngerschaft ist einfach.\nGott beruft und befähigt jeden Gläubigen zur Jüngerschaftsbegleitung. Der Kurs verfolgt einen bewusst niedrigschwelligen Ansatz."
-  },
-  {
-    "id": "1108215_2026-03-12T17:00:00Z",
-    "title": "Alpha Jünger",
-    "startDate": "2026-03-12T17:00:00Z",
-    "endDate": "2026-03-12T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
-  },
-  {
-    "id": "1110916_2026-03-12T18:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-03-12T18:00:00Z",
-    "endDate": "2026-03-12T20:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": ""
-  },
-  {
-    "id": "1110944_2026-03-13T18:00:00Z",
-    "title": "Men on Fire",
-    "startDate": "2026-03-13T18:00:00Z",
-    "endDate": "2026-03-13T21:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Ein Zeit  nur für Männer – völlig entspannt, mit guten Gesprächen und Raum zum Kraftschöpfen. Die Gemeinde Konkordia lädt herzlich ein zu Gemeinschaft, Impulsen und einer stärkenden Zeit."
-  },
-  {
     "id": "1110922_2026-03-15T08:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-03-15T08:30:00Z",
     "endDate": "2026-03-15T08:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_03_15T08_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-03-15T09:00:00Z",
+    "id": "1111183_2026-03-15T09:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-03-15T09:00:00Z",
     "endDate": "2026-03-15T10:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_03_15T09_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109561_2026-03-16",
@@ -181,7 +27,7 @@
     "startDate": "2026-03-16",
     "endDate": "2026-04-05",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -192,7 +38,7 @@
     "startDate": "2026-03-16T14:30:00Z",
     "endDate": "2026-03-16T17:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -203,7 +49,7 @@
     "startDate": "2026-03-16T18:30:00Z",
     "endDate": "2026-03-16T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Bühl und unsere Region. Wir beten für unsere Stadt und die Menschen hier vor Ort.\n\nOrt: Konkordia Raum wechselnd"
@@ -214,7 +60,7 @@
     "startDate": "2026-03-18T08:30:00Z",
     "endDate": "2026-03-18T10:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -225,7 +71,7 @@
     "startDate": "2026-03-18T14:30:00Z",
     "endDate": "2026-03-18T15:15:00Z",
     "category": "Kinder",
-    "color": "#3498db",
+    "color": "#4986e7",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -236,7 +82,7 @@
     "startDate": "2026-03-18T18:00:00Z",
     "endDate": "2026-03-18T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Konkordia - Multiraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Jüngerschaft ist nicht kompliziert – Jüngerschaft ist einfach.\nGott beruft und befähigt jeden Gläubigen zur Jüngerschaftsbegleitung. Der Kurs verfolgt einen bewusst niedrigschwelligen Ansatz."
@@ -247,10 +93,10 @@
     "startDate": "2026-03-19T17:00:00Z",
     "endDate": "2026-03-19T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-03-19T18:00:00Z",
@@ -258,7 +104,7 @@
     "startDate": "2026-03-19T18:00:00Z",
     "endDate": "2026-03-19T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -269,10 +115,10 @@
     "startDate": "2026-03-19T19:00:00Z",
     "endDate": "2026-03-19T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeindezentrum Johanneskirche, Johannesstr. 5, 77815 Bühl",
-    "description": "Gemeindezentrum der evangelischen Kirche"
+    "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben."
   },
   {
     "id": "1111117_2026-03-21T07:00:00Z",
@@ -280,7 +126,7 @@
     "startDate": "2026-03-21T07:00:00Z",
     "endDate": "2026-03-21T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -291,7 +137,7 @@
     "startDate": "2026-03-21T09:30:00Z",
     "endDate": "2026-03-21T11:30:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -302,21 +148,21 @@
     "startDate": "2026-03-22T08:30:00Z",
     "endDate": "2026-03-22T08:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_03_22T08_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-03-22T09:00:00Z",
+    "id": "1111183_2026-03-22T09:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-03-22T09:00:00Z",
     "endDate": "2026-03-22T10:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_03_22T09_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-03-23T14:30:00Z",
@@ -324,7 +170,7 @@
     "startDate": "2026-03-23T14:30:00Z",
     "endDate": "2026-03-23T17:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -335,7 +181,7 @@
     "startDate": "2026-03-23T18:30:00Z",
     "endDate": "2026-03-23T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd"
@@ -346,7 +192,7 @@
     "startDate": "2026-03-25T08:30:00Z",
     "endDate": "2026-03-25T10:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -357,7 +203,7 @@
     "startDate": "2026-03-25T18:00:00Z",
     "endDate": "2026-03-25T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -368,7 +214,7 @@
     "startDate": "2026-03-25T18:30:00Z",
     "endDate": "2026-03-25T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -379,10 +225,10 @@
     "startDate": "2026-03-26T14:00:00Z",
     "endDate": "2026-03-26T15:30:00Z",
     "category": "Senioren",
-    "color": "#9b59b6",
+    "color": "#a47ae2",
     "image": "assets/images/placeholder.jpg",
     "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
-    "description": "Senioren Cafe im CHD"
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!"
   },
   {
     "id": "1108215_2026-03-26T17:00:00Z",
@@ -390,10 +236,10 @@
     "startDate": "2026-03-26T17:00:00Z",
     "endDate": "2026-03-26T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-03-26T18:00:00Z",
@@ -401,7 +247,7 @@
     "startDate": "2026-03-26T18:00:00Z",
     "endDate": "2026-03-26T20:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -412,7 +258,7 @@
     "startDate": "2026-03-28T07:00:00Z",
     "endDate": "2026-03-28T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -423,7 +269,7 @@
     "startDate": "2026-03-28T09:30:00Z",
     "endDate": "2026-03-28T11:30:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -434,21 +280,21 @@
     "startDate": "2026-03-29T07:30:00Z",
     "endDate": "2026-03-29T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_03_29T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-03-29T08:00:00Z",
+    "id": "1111183_2026-03-29T08:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-03-29T08:00:00Z",
     "endDate": "2026-03-29T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_03_29T08_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1110328_2026-03-30T17:30:00Z",
@@ -456,10 +302,21 @@
     "startDate": "2026-03-30T17:30:00Z",
     "endDate": "2026-03-30T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd"
+  },
+  {
+    "id": "1111215_2026-03-31T17:30:00Z",
+    "title": "Gebetsabend - Das Kreuz im Blick",
+    "startDate": "2026-03-31T17:30:00Z",
+    "endDate": "2026-03-31T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
   },
   {
     "id": "1109928_2026-04-01T07:30:00Z",
@@ -467,7 +324,18 @@
     "startDate": "2026-04-01T07:30:00Z",
     "endDate": "2026-04-01T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": "1111215_2026-04-01T17:30:00Z",
+    "title": "Gebetsabend - Das Kreuz im Blick",
+    "startDate": "2026-04-01T17:30:00Z",
+    "endDate": "2026-04-01T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -478,7 +346,7 @@
     "startDate": "2026-04-02T14:00:00Z",
     "endDate": "2026-04-02T15:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -489,10 +357,10 @@
     "startDate": "2026-04-02T16:00:00Z",
     "endDate": "2026-04-02T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-04-02T17:00:00Z",
@@ -500,9 +368,20 @@
     "startDate": "2026-04-02T17:00:00Z",
     "endDate": "2026-04-02T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
+    "description": ""
+  },
+  {
+    "id": "1111215_2026-04-02T17:30:00Z",
+    "title": "Gebetsabend - Das Kreuz im Blick",
+    "startDate": "2026-04-02T17:30:00Z",
+    "endDate": "2026-04-02T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
     "description": ""
   },
   {
@@ -511,10 +390,10 @@
     "startDate": "2026-04-03T14:00:00Z",
     "endDate": "2026-04-03T15:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1110922_2026-04-05T07:30:00Z",
@@ -522,21 +401,21 @@
     "startDate": "2026-04-05T07:30:00Z",
     "endDate": "2026-04-05T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_04_05T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-04-05T08:00:00Z",
+    "id": "1111183_2026-04-05T08:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-04-05T08:00:00Z",
     "endDate": "2026-04-05T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_04_05T08_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1111005_2026-04-05T08:30:00Z",
@@ -544,7 +423,7 @@
     "startDate": "2026-04-05T08:30:00Z",
     "endDate": "2026-04-05T10:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -555,10 +434,10 @@
     "startDate": "2026-04-05T10:00:00Z",
     "endDate": "2026-04-05T12:30:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "„der Herr ist auferstanden!“"
+    "description": ""
   },
   {
     "id": "1110316_2026-04-06T17:30:00Z",
@@ -566,7 +445,7 @@
     "startDate": "2026-04-06T17:30:00Z",
     "endDate": "2026-04-06T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Gebet für die Gemeinde in der Konkordia. Wir kommen zusammen, um für die Anliegen der Gemeinde zu beten.\n\nOrt: Konkordia - Raum wechselnd"
@@ -577,7 +456,7 @@
     "startDate": "2026-04-08T07:30:00Z",
     "endDate": "2026-04-08T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -588,7 +467,7 @@
     "startDate": "2026-04-08T16:30:00Z",
     "endDate": "2026-04-08T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -599,10 +478,10 @@
     "startDate": "2026-04-09T16:00:00Z",
     "endDate": "2026-04-09T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-04-09T17:00:00Z",
@@ -610,7 +489,7 @@
     "startDate": "2026-04-09T17:00:00Z",
     "endDate": "2026-04-09T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -621,21 +500,21 @@
     "startDate": "2026-04-12T07:30:00Z",
     "endDate": "2026-04-12T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_04_12T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-04-12T08:00:00Z",
+    "id": "1111183_2026-04-12T08:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-04-12T08:00:00Z",
     "endDate": "2026-04-12T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_04_12T08_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-04-13T13:30:00Z",
@@ -643,7 +522,7 @@
     "startDate": "2026-04-13T13:30:00Z",
     "endDate": "2026-04-13T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -654,7 +533,7 @@
     "startDate": "2026-04-13T17:30:00Z",
     "endDate": "2026-04-13T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd"
@@ -665,7 +544,7 @@
     "startDate": "2026-04-15T07:30:00Z",
     "endDate": "2026-04-15T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -676,7 +555,7 @@
     "startDate": "2026-04-15T13:30:00Z",
     "endDate": "2026-04-15T14:15:00Z",
     "category": "Kinder",
-    "color": "#3498db",
+    "color": "#4986e7",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -687,10 +566,10 @@
     "startDate": "2026-04-16T16:00:00Z",
     "endDate": "2026-04-16T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-04-16T17:00:00Z",
@@ -698,7 +577,7 @@
     "startDate": "2026-04-16T17:00:00Z",
     "endDate": "2026-04-16T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -709,10 +588,10 @@
     "startDate": "2026-04-16T18:00:00Z",
     "endDate": "2026-04-16T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeindezentrum Johanneskirche, Johannesstr. 5, 77815 Bühl",
-    "description": "Gemeindezentrum der evangelischen Kirche"
+    "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben."
   },
   {
     "id": "1109564_2026-04-17T17:30:00Z",
@@ -720,7 +599,7 @@
     "startDate": "2026-04-17T17:30:00Z",
     "endDate": "2026-04-17T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -731,7 +610,7 @@
     "startDate": "2026-04-18T07:30:00Z",
     "endDate": "2026-04-18T10:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Du hast Lust auf ein Frühstück & nette Gespräche unter Frauen?  Dann komm vorbei - bringe deine Freundin, Mama, Oma oder Nachbarin mit und genießt zusammen mit uns den Vormittag. \n\nUm Anmeldung wird gebeten.\n www.gemeinde-konkordia.de/frauen\n\nDamit wir ein vielfältiges Frühstück haben, freuen wir uns, wenn du eine Kleinigkeit mitbringen würdest :)\n Für Brötchen, Wurst & Käse ist gesorgt."
@@ -742,21 +621,21 @@
     "startDate": "2026-04-19T07:30:00Z",
     "endDate": "2026-04-19T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_04_19T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
   {
-    "id": "1110925_2026-04-19T08:00:00Z",
+    "id": "1111183_2026-04-19T08:00:00Z",
     "title": "Gottesdienst",
     "startDate": "2026-04-19T08:00:00Z",
     "endDate": "2026-04-19T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#fbd75b",
+    "image": "assets/images/1111183_2026_04_19T08_00_00Z.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-04-20T13:30:00Z",
@@ -764,7 +643,7 @@
     "startDate": "2026-04-20T13:30:00Z",
     "endDate": "2026-04-20T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -775,7 +654,7 @@
     "startDate": "2026-04-20T17:30:00Z",
     "endDate": "2026-04-20T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Bühl und unsere Region. Wir beten für unsere Stadt und die Menschen hier vor Ort.\n\nOrt: Konkordia Raum wechselnd"
@@ -786,7 +665,7 @@
     "startDate": "2026-04-22T07:30:00Z",
     "endDate": "2026-04-22T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -797,10 +676,10 @@
     "startDate": "2026-04-23T13:00:00Z",
     "endDate": "2026-04-23T14:30:00Z",
     "category": "Senioren",
-    "color": "#9b59b6",
+    "color": "#a47ae2",
     "image": "assets/images/placeholder.jpg",
     "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
-    "description": "Senioren Cafe im CHD"
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!"
   },
   {
     "id": "1108215_2026-04-23T16:00:00Z",
@@ -808,10 +687,10 @@
     "startDate": "2026-04-23T16:00:00Z",
     "endDate": "2026-04-23T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-04-23T17:00:00Z",
@@ -819,7 +698,7 @@
     "startDate": "2026-04-23T17:00:00Z",
     "endDate": "2026-04-23T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -830,8 +709,8 @@
     "startDate": "2026-04-26T07:30:00Z",
     "endDate": "2026-04-26T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_04_26T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
@@ -841,10 +720,10 @@
     "startDate": "2026-04-26T08:00:00Z",
     "endDate": "2026-04-26T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-04-27T13:30:00Z",
@@ -852,20 +731,9 @@
     "startDate": "2026-04-27T13:30:00Z",
     "endDate": "2026-04-27T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
-    "description": ""
-  },
-  {
-    "id": "1109018_2026-04-27T17:30:00Z",
-    "title": "FSQ regionaler Gebetsabend in Bühl",
-    "startDate": "2026-04-27T17:30:00Z",
-    "endDate": "2026-04-27T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Konkordia - Multiraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
   },
   {
@@ -874,10 +742,21 @@
     "startDate": "2026-04-27T17:30:00Z",
     "endDate": "2026-04-27T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd"
+  },
+  {
+    "id": "1109018_2026-04-27T17:30:00Z",
+    "title": "FSQ regionaler Gebetsabend in Bühl",
+    "startDate": "2026-04-27T17:30:00Z",
+    "endDate": "2026-04-27T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Konkordia - Multiraum, Eisenbahnstraße 31, 77815 Bühl",
+    "description": ""
   },
   {
     "id": "1109940_2026-04-29T07:30:00Z",
@@ -885,7 +764,7 @@
     "startDate": "2026-04-29T07:30:00Z",
     "endDate": "2026-04-29T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -896,7 +775,7 @@
     "startDate": "2026-04-29T13:30:00Z",
     "endDate": "2026-04-29T14:15:00Z",
     "category": "Kinder",
-    "color": "#3498db",
+    "color": "#4986e7",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -907,10 +786,10 @@
     "startDate": "2026-04-30T16:00:00Z",
     "endDate": "2026-04-30T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-04-30T17:00:00Z",
@@ -918,7 +797,7 @@
     "startDate": "2026-04-30T17:00:00Z",
     "endDate": "2026-04-30T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -929,7 +808,7 @@
     "startDate": "2026-05-03T07:30:00Z",
     "endDate": "2026-05-03T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
@@ -940,10 +819,10 @@
     "startDate": "2026-05-03T08:00:00Z",
     "endDate": "2026-05-03T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-05-04T13:30:00Z",
@@ -951,7 +830,7 @@
     "startDate": "2026-05-04T13:30:00Z",
     "endDate": "2026-05-04T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -962,7 +841,7 @@
     "startDate": "2026-05-04T17:30:00Z",
     "endDate": "2026-05-04T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Gebet für die Gemeinde in der Konkordia. Wir kommen zusammen, um für die Anliegen der Gemeinde zu beten.\n\nOrt: Konkordia - Raum wechselnd"
@@ -973,7 +852,7 @@
     "startDate": "2026-05-06T07:30:00Z",
     "endDate": "2026-05-06T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -984,10 +863,10 @@
     "startDate": "2026-05-07T16:00:00Z",
     "endDate": "2026-05-07T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-05-07T17:00:00Z",
@@ -995,7 +874,7 @@
     "startDate": "2026-05-07T17:00:00Z",
     "endDate": "2026-05-07T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -1006,8 +885,8 @@
     "startDate": "2026-05-10T07:30:00Z",
     "endDate": "2026-05-10T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_05_10T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
@@ -1017,10 +896,10 @@
     "startDate": "2026-05-10T08:00:00Z",
     "endDate": "2026-05-10T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-05-11T13:30:00Z",
@@ -1028,7 +907,7 @@
     "startDate": "2026-05-11T13:30:00Z",
     "endDate": "2026-05-11T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -1039,7 +918,7 @@
     "startDate": "2026-05-11T17:30:00Z",
     "endDate": "2026-05-11T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd"
@@ -1050,7 +929,7 @@
     "startDate": "2026-05-13T07:30:00Z",
     "endDate": "2026-05-13T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1061,7 +940,7 @@
     "startDate": "2026-05-13T13:30:00Z",
     "endDate": "2026-05-13T14:15:00Z",
     "category": "Kinder",
-    "color": "#3498db",
+    "color": "#4986e7",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1072,7 +951,7 @@
     "startDate": "2026-05-13T17:30:00Z",
     "endDate": "2026-05-13T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1083,10 +962,10 @@
     "startDate": "2026-05-14T16:00:00Z",
     "endDate": "2026-05-14T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-05-14T17:00:00Z",
@@ -1094,7 +973,7 @@
     "startDate": "2026-05-14T17:00:00Z",
     "endDate": "2026-05-14T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -1105,8 +984,8 @@
     "startDate": "2026-05-17T07:30:00Z",
     "endDate": "2026-05-17T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_05_17T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
@@ -1116,10 +995,10 @@
     "startDate": "2026-05-17T08:00:00Z",
     "endDate": "2026-05-17T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-05-18T13:30:00Z",
@@ -1127,7 +1006,7 @@
     "startDate": "2026-05-18T13:30:00Z",
     "endDate": "2026-05-18T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -1138,7 +1017,7 @@
     "startDate": "2026-05-18T17:30:00Z",
     "endDate": "2026-05-18T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Bühl und unsere Region. Wir beten für unsere Stadt und die Menschen hier vor Ort.\n\nOrt: Konkordia Raum wechselnd"
@@ -1149,7 +1028,7 @@
     "startDate": "2026-05-20T07:30:00Z",
     "endDate": "2026-05-20T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1160,10 +1039,10 @@
     "startDate": "2026-05-21T13:00:00Z",
     "endDate": "2026-05-21T14:30:00Z",
     "category": "Senioren",
-    "color": "#9b59b6",
+    "color": "#a47ae2",
     "image": "assets/images/placeholder.jpg",
     "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
-    "description": "Senioren Cafe im CHD"
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!"
   },
   {
     "id": "1108215_2026-05-21T16:00:00Z",
@@ -1171,10 +1050,10 @@
     "startDate": "2026-05-21T16:00:00Z",
     "endDate": "2026-05-21T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-05-21T17:00:00Z",
@@ -1182,7 +1061,7 @@
     "startDate": "2026-05-21T17:00:00Z",
     "endDate": "2026-05-21T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -1193,10 +1072,10 @@
     "startDate": "2026-05-21T18:00:00Z",
     "endDate": "2026-05-21T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeindezentrum Johanneskirche, Johannesstr. 5, 77815 Bühl",
-    "description": "Gemeindezentrum der evangelischen Kirche"
+    "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben."
   },
   {
     "id": "1109570_2026-05-22T17:30:00Z",
@@ -1204,7 +1083,7 @@
     "startDate": "2026-05-22T17:30:00Z",
     "endDate": "2026-05-22T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1215,8 +1094,8 @@
     "startDate": "2026-05-24T07:30:00Z",
     "endDate": "2026-05-24T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_05_24T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
@@ -1226,10 +1105,10 @@
     "startDate": "2026-05-24T08:00:00Z",
     "endDate": "2026-05-24T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1109836_2026-05-25T13:30:00Z",
@@ -1237,7 +1116,7 @@
     "startDate": "2026-05-25T13:30:00Z",
     "endDate": "2026-05-25T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -1248,7 +1127,7 @@
     "startDate": "2026-05-25T17:30:00Z",
     "endDate": "2026-05-25T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd"
@@ -1259,7 +1138,7 @@
     "startDate": "2026-05-27T07:30:00Z",
     "endDate": "2026-05-27T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": ""
@@ -1270,10 +1149,10 @@
     "startDate": "2026-05-28T16:00:00Z",
     "endDate": "2026-05-28T18:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Jesus kennenlernen und Leben teilen"
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
   },
   {
     "id": "1110916_2026-05-28T17:00:00Z",
@@ -1281,7 +1160,7 @@
     "startDate": "2026-05-28T17:00:00Z",
     "endDate": "2026-05-28T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
     "description": ""
@@ -1292,8 +1171,8 @@
     "startDate": "2026-05-31T07:30:00Z",
     "endDate": "2026-05-31T07:45:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
-    "image": "assets/images/placeholder.jpg",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_05_31T07_30_00Z.jpg",
     "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
   },
@@ -1303,10 +1182,10 @@
     "startDate": "2026-05-31T08:00:00Z",
     "endDate": "2026-05-31T09:30:00Z",
     "category": "Gottesdienst",
-    "color": "#f39c12",
+    "color": "#fbd75b",
     "image": "assets/images/placeholder.jpg",
     "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "mit Kinderkirche und Livestream"
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
   },
   {
     "id": "1111142_2026-05-31T10:00:00Z",
@@ -1314,10 +1193,10 @@
     "startDate": "2026-05-31T10:00:00Z",
     "endDate": "2026-05-31T12:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Mitbringbuffet"
+    "description": ""
   },
   {
     "id": "1109836_2026-06-01T13:30:00Z",
@@ -1325,7 +1204,7 @@
     "startDate": "2026-06-01T13:30:00Z",
     "endDate": "2026-06-01T16:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": ""
@@ -1336,7 +1215,7 @@
     "startDate": "2026-06-01T17:30:00Z",
     "endDate": "2026-06-01T19:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Gebet für die Gemeinde in der Konkordia. Wir kommen zusammen, um für die Anliegen der Gemeinde zu beten.\n\nOrt: Konkordia - Raum wechselnd"
@@ -1347,9 +1226,119 @@
     "startDate": "2026-06-03T07:30:00Z",
     "endDate": "2026-06-03T09:00:00Z",
     "category": "Sonstige Veranstaltung",
-    "color": "#27ae60",
+    "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
+    "description": ""
+  },
+  {
+    "id": "1108215_2026-06-04T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-06-04T16:00:00Z",
+    "endDate": "2026-06-04T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
+  },
+  {
+    "id": "1110916_2026-06-04T17:00:00Z",
+    "title": "Hauskreis Reiner Schindler",
+    "startDate": "2026-06-04T17:00:00Z",
+    "endDate": "2026-06-04T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gruppenraum",
+    "description": ""
+  },
+  {
+    "id": "1110922_2026-06-07T07:30:00Z",
+    "title": "Gebet vor dem Gottesdienst",
+    "startDate": "2026-06-07T07:30:00Z",
+    "endDate": "2026-06-07T07:45:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_06_07T07_30_00Z.jpg",
+    "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
+    "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen."
+  },
+  {
+    "id": "1111071_2026-06-07T08:00:00Z",
+    "title": "Gottesdienst",
+    "startDate": "2026-06-07T08:00:00Z",
+    "endDate": "2026-06-07T09:30:00Z",
+    "category": "Gottesdienst",
+    "color": "#fbd75b",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Eisenbahnstraße 31, 77815 Bühl",
+    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander."
+  },
+  {
+    "id": "1109836_2026-06-08T13:30:00Z",
+    "title": "Espresso & mehr...",
+    "startDate": "2026-06-08T13:30:00Z",
+    "endDate": "2026-06-08T16:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
+    "description": ""
+  },
+  {
+    "id": "1110319_2026-06-08T17:30:00Z",
+    "title": "Gebetsabend - Leben mit Gott",
+    "startDate": "2026-06-08T17:30:00Z",
+    "endDate": "2026-06-08T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd"
+  },
+  {
+    "id": "1109949_2026-06-10T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-06-10T07:30:00Z",
+    "endDate": "2026-06-10T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": "1110043_2026-06-10T13:30:00Z",
+    "title": "Singkreis für kleine Kinder",
+    "startDate": "2026-06-10T13:30:00Z",
+    "endDate": "2026-06-10T14:15:00Z",
+    "category": "Kinder",
+    "color": "#4986e7",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": ""
+  },
+  {
+    "id": "1108215_2026-06-11T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-06-11T16:00:00Z",
+    "endDate": "2026-06-11T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen."
+  },
+  {
+    "id": "1110916_2026-06-11T17:00:00Z",
+    "title": "Hauskreis Reiner Schindler",
+    "startDate": "2026-06-11T17:00:00Z",
+    "endDate": "2026-06-11T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gruppenraum",
     "description": ""
   }
 ]
