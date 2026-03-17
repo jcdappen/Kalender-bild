@@ -53,6 +53,20 @@
         /* ── Termin-Zeile ── */
         .calendar-event {
             border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: stretch;
+        }
+
+        .event-color-bar {
+            width: 4px;
+            border-radius: 2px;
+            flex-shrink: 0;
+            margin: 16px 16px 16px 0;
+        }
+
+        .event-main {
+            flex: 1;
+            min-width: 0;
         }
 
         .event-summary {
@@ -277,6 +291,32 @@
             const title     = escapeHtml(termin.title || 'Termin');
             const image     = escapeHtml(termin.image || PLACEHOLDER);
             const meta      = escapeHtml(formatMeta(termin, startDate, endDate));
+            const color     = termin.color || '#718096';
+
+            // Kalender-URLs bauen
+            const isAllDay  = !termin.startDate.includes('T');
+            function toIcalDate(d, allDay) {
+                if (allDay) return d.toISOString().slice(0,10).replace(/-/g,'');
+                return d.toISOString().replace(/[-:]/g,'').slice(0,15) + 'Z';
+            }
+            const icalStart = toIcalDate(startDate, isAllDay);
+            const icalEnd   = toIcalDate(isAllDay ? new Date(endDate.getTime() + 86400000) : endDate, isAllDay);
+            const gcalUrl   = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+                + '&text=' + encodeURIComponent(termin.title || '')
+                + '&dates=' + icalStart + '/' + icalEnd
+                + (termin.description ? '&details=' + encodeURIComponent(termin.description) : '')
+                + (termin.location    ? '&location=' + encodeURIComponent(termin.location)   : '');
+            const icsContent = [
+                'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Konkordia//DE',
+                'BEGIN:VEVENT',
+                'DTSTART' + (isAllDay ? ';VALUE=DATE' : '') + ':' + icalStart,
+                'DTEND'   + (isAllDay ? ';VALUE=DATE' : '') + ':' + icalEnd,
+                'SUMMARY:' + (termin.title || '').replace(/,/g, '\\,'),
+                termin.description ? 'DESCRIPTION:' + termin.description.replace(/\n/g,'\\n').replace(/,/g,'\\,') : '',
+                termin.location    ? 'LOCATION:'    + termin.location.replace(/,/g,'\\,')    : '',
+                'END:VEVENT','END:VCALENDAR'
+            ].filter(Boolean).join('\r\n');
+            const icsUrl = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(icsContent);
 
             // Detail-Inhalt
             let detailsHTML = `<div class="details-inner">`;
@@ -322,16 +362,36 @@
                     </div>`;
             }
 
+            // Kalender-Buttons
+            detailsHTML += `
+                    <div class="detail-item" style="gap:10px;flex-wrap:wrap;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="flex-shrink:0;">
+                            <path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.89 3 3 3.9 3 5v14c0 1.1.89 2 2 2h14c1.1 0
+                                     2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                        </svg>
+                        <a href="${gcalUrl}" target="_blank" rel="noopener"
+                           style="color:var(--accent-color);text-decoration:none;font-weight:500;font-size:14px;">
+                            Google Calendar
+                        </a>
+                        <a href="${icsUrl}" download="${encodeURIComponent(termin.title || 'termin')}.ics"
+                           style="color:var(--accent-color);text-decoration:none;font-weight:500;font-size:14px;">
+                            Apple / iCal
+                        </a>
+                    </div>`;
+
             detailsHTML += `</div>`;
 
             const wrapper = document.createElement('div');
             wrapper.className = 'calendar-event';
             wrapper.innerHTML = `
-                <div class="event-summary" tabindex="0" role="button" aria-expanded="false">
-                    <div class="event-meta">${meta}</div>
-                    <div class="event-title">${title}</div>
+                <div class="event-color-bar" style="background:${color};"></div>
+                <div class="event-main">
+                    <div class="event-summary" tabindex="0" role="button" aria-expanded="false">
+                        <div class="event-meta">${meta}</div>
+                        <div class="event-title">${title}</div>
+                    </div>
+                    <div class="event-details">${detailsHTML}</div>
                 </div>
-                <div class="event-details">${detailsHTML}</div>
             `;
 
             listContainer.appendChild(wrapper);
