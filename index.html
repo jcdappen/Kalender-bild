@@ -442,12 +442,17 @@
 </script>
 <script>
   function sendHeight() {
-    const height = document.documentElement.scrollHeight;
+    const container = document.getElementById('ical-widget-container');
+    const height = Math.ceil(container.getBoundingClientRect().height);
     window.parent.postMessage({ type: 'kalender-resize', height: height }, '*');
   }
   window.addEventListener('load', sendHeight);
   const resizeObserver = new ResizeObserver(sendHeight);
-  resizeObserver.observe(document.body);
+  resizeObserver.observe(document.getElementById('ical-widget-container'));
+  // Nach Accordion-Transition nochmals messen (400 ms)
+  document.addEventListener('transitionend', function(e) {
+    if (e.propertyName === 'max-height') sendHeight();
+  });
 </script>
 </body>
 </html>
