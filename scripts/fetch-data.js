@@ -172,7 +172,9 @@ async function main() {
       }
     }
 
-    termine.push({ id, title, startDate, endDate, category: calendarName, color, image: imagePath, location, description });
+    const link = event.link || '';
+
+    termine.push({ id, title, startDate, endDate, category: calendarName, color, image: imagePath, location, description, link });
   }
 
   termine.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
