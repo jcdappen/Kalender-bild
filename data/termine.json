@@ -744,18 +744,6 @@
     "link": "https://www.gemeinde-konkordia.de/kinder"
   },
   {
-    "id": "1110325_2026-04-27T17:30:00Z",
-    "title": "Gebetsabend - Leben in der Welt",
-    "startDate": "2026-04-27T17:30:00Z",
-    "endDate": "2026-04-27T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd",
-    "link": ""
-  },
-  {
     "id": "1109018_2026-04-27T17:30:00Z",
     "title": "FSQ regionaler Gebetsabend in Bühl",
     "startDate": "2026-04-27T17:30:00Z",
@@ -765,6 +753,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "Konkordia - Multiraum, Eisenbahnstraße 31, 77815 Bühl",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1110325_2026-04-27T17:30:00Z",
+    "title": "Gebetsabend - Leben in der Welt",
+    "startDate": "2026-04-27T17:30:00Z",
+    "endDate": "2026-04-27T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd",
     "link": ""
   },
   {
