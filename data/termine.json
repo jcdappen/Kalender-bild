@@ -1,17 +1,5 @@
 [
   {
-    "id": "1109922_2026-03-18T08:30:00Z",
-    "title": "Mamatreff",
-    "startDate": "2026-03-18T08:30:00Z",
-    "endDate": "2026-03-18T10:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1109922_2026_03_18T08_30_00Z.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
-    "link": "https://www.gemeinde-konkordia.de/frauen"
-  },
-  {
     "id": "1110031_2026-03-18T14:30:00Z",
     "title": "Singkreis für kleine Kinder",
     "startDate": "2026-03-18T14:30:00Z",
@@ -142,6 +130,18 @@
     "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd",
     "link": ""
+  },
+  {
+    "id": "1109922_2026-03-25T08:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-03-25T08:30:00Z",
+    "endDate": "2026-03-25T10:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_03_25T08_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1109840_2026-03-25T18:00:00Z",
@@ -408,6 +408,18 @@
     "link": ""
   },
   {
+    "id": "1109922_2026-04-08T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-04-08T07:30:00Z",
+    "endDate": "2026-04-08T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_04_08T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
     "id": "1111040_2026-04-08T16:30:00Z",
     "title": "Gebetsteamtreffen",
     "startDate": "2026-04-08T16:30:00Z",
@@ -490,6 +502,18 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd",
     "link": ""
+  },
+  {
+    "id": "1109922_2026-04-15T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-04-15T07:30:00Z",
+    "endDate": "2026-04-15T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_04_15T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1110034_2026-04-15T13:30:00Z",
@@ -612,6 +636,18 @@
     "link": ""
   },
   {
+    "id": "1109922_2026-04-22T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-04-22T07:30:00Z",
+    "endDate": "2026-04-22T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_04_22T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
     "id": "1110244_2026-04-23T13:00:00Z",
     "title": "Gott und die Welt Cafe",
     "startDate": "2026-04-23T13:00:00Z",
@@ -684,6 +720,18 @@
     "link": "https://www.gemeinde-konkordia.de/kinder"
   },
   {
+    "id": "1110325_2026-04-27T17:30:00Z",
+    "title": "Gebetsabend - Leben in der Welt",
+    "startDate": "2026-04-27T17:30:00Z",
+    "endDate": "2026-04-27T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd",
+    "link": ""
+  },
+  {
     "id": "1109018_2026-04-27T17:30:00Z",
     "title": "FSQ regionaler Gebetsabend in Bühl",
     "startDate": "2026-04-27T17:30:00Z",
@@ -696,16 +744,16 @@
     "link": ""
   },
   {
-    "id": "1110325_2026-04-27T17:30:00Z",
-    "title": "Gebetsabend - Leben in der Welt",
-    "startDate": "2026-04-27T17:30:00Z",
-    "endDate": "2026-04-27T19:00:00Z",
+    "id": "1109922_2026-04-29T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-04-29T07:30:00Z",
+    "endDate": "2026-04-29T09:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl – Raum wechselnd, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Gemeinsames Gebet für Mission und Evangelisation weltweit sowie für Politik und Regierung.\n\nOrt: Konkordia Raum wechselnd",
-    "link": ""
+    "image": "assets/images/1109922_2026_04_29T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1110037_2026-04-29T13:30:00Z",
@@ -792,6 +840,18 @@
     "link": ""
   },
   {
+    "id": "1109922_2026-05-06T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-05-06T07:30:00Z",
+    "endDate": "2026-05-06T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_05_06T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
     "id": "1108215_2026-05-07T16:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-05-07T16:00:00Z",
@@ -862,6 +922,18 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Freiraum für Lobpreis, Anbetung, Stille, Gottes Stimme hören und Geistesgaben erleben. Wir nehmen uns gemeinsam Zeit, um Gott zu begegnen und seinen Geist wirken zu lassen.\n\nOrt: Konkordia Raum wechselnd",
     "link": ""
+  },
+  {
+    "id": "1109922_2026-05-13T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-05-13T07:30:00Z",
+    "endDate": "2026-05-13T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1109922_2026_05_13T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1110040_2026-05-13T13:30:00Z",
@@ -960,16 +1032,16 @@
     "link": ""
   },
   {
-    "id": "1109949_2026-05-20T07:30:00Z",
+    "id": "1109922_2026-05-20T07:30:00Z",
     "title": "Mamatreff",
     "startDate": "2026-05-20T07:30:00Z",
     "endDate": "2026-05-20T09:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
+    "image": "assets/images/1109922_2026_05_20T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1110244_2026-05-21T13:00:00Z",
@@ -1080,16 +1152,16 @@
     "link": ""
   },
   {
-    "id": "1109949_2026-05-27T07:30:00Z",
+    "id": "1109922_2026-05-27T07:30:00Z",
     "title": "Mamatreff",
     "startDate": "2026-05-27T07:30:00Z",
     "endDate": "2026-05-27T09:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
+    "image": "assets/images/1109922_2026_05_27T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1108215_2026-05-28T16:00:00Z",
@@ -1176,16 +1248,16 @@
     "link": ""
   },
   {
-    "id": "1109949_2026-06-03T07:30:00Z",
+    "id": "1109922_2026-06-03T07:30:00Z",
     "title": "Mamatreff",
     "startDate": "2026-06-03T07:30:00Z",
     "endDate": "2026-06-03T09:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
+    "image": "assets/images/1109922_2026_06_03T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1108215_2026-06-04T16:00:00Z",
@@ -1260,16 +1332,16 @@
     "link": ""
   },
   {
-    "id": "1109949_2026-06-10T07:30:00Z",
+    "id": "1109922_2026-06-10T07:30:00Z",
     "title": "Mamatreff",
     "startDate": "2026-06-10T07:30:00Z",
     "endDate": "2026-06-10T09:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
+    "image": "assets/images/1109922_2026_06_10T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1110043_2026-06-10T13:30:00Z",
