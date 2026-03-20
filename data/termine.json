@@ -816,6 +816,18 @@
     "link": ""
   },
   {
+    "id": "1111575_2026-05-08T15:00:00Z",
+    "title": "Teensabend",
+    "startDate": "2026-05-08T15:00:00Z",
+    "endDate": "2026-05-08T17:00:00Z",
+    "category": "Jugend",
+    "color": "#f691b2",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
     "id": "1110922_2026-05-10T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-05-10T07:30:00Z",
@@ -1316,6 +1328,18 @@
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "Gruppenraum",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": "1111578_2026-06-12T15:00:00Z",
+    "title": "Teensabend",
+    "startDate": "2026-06-12T15:00:00Z",
+    "endDate": "2026-06-12T17:00:00Z",
+    "category": "Jugend",
+    "color": "#f691b2",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
     "description": "",
     "link": ""
   },
