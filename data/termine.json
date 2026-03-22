@@ -1,17 +1,5 @@
 [
   {
-    "id": "1111183_2026-03-22T09:00:00Z",
-    "title": "Gottesdienst",
-    "startDate": "2026-03-22T09:00:00Z",
-    "endDate": "2026-03-22T10:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#fbd75b",
-    "image": "assets/images/1111183_2026_03_22T09_00_00Z.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
-  },
-  {
     "id": "1109836_2026-03-23T14:30:00Z",
     "title": "Espresso & mehr...",
     "startDate": "2026-03-23T14:30:00Z",
