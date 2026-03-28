@@ -15,7 +15,7 @@
             --text-meta: #000000;
             --text-desc: #4a5568;
             --border-color: #e2e8f0;
-            --card-radius: 8px;
+            --card-radius: 24px 24px 24px 8px;
         }
 
         body {
@@ -47,6 +47,13 @@
             display: flex;
             flex-direction: column;
             background: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .ankuendigung-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
         }
 
         .card-image {
@@ -54,6 +61,7 @@
             aspect-ratio: 16 / 9;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 24px 24px 0 0;
         }
 
         .card-image img {
@@ -68,6 +76,20 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            position: relative;
+        }
+
+        .card-body::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            width: 64px;
+            height: 64px;
+            background: rgba(187, 34, 50, 0.06);
+            border-radius: 60% 40% 55% 45% / 50% 65% 35% 50%;
+            pointer-events: none;
+            z-index: 0;
         }
 
         .card-datum {
@@ -94,15 +116,21 @@
         }
 
         .card-link {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
-            color: var(--primary);
+            color: #bb2232;
             text-decoration: none;
             display: inline-block;
+            border: 1.5px solid #bb2232;
+            border-radius: 999px;
+            padding: 6px 16px;
+            transition: background 0.2s ease, color 0.2s ease;
         }
 
         .card-link:hover {
-            text-decoration: underline;
+            background: #bb2232;
+            color: #fff;
+            text-decoration: none;
         }
 
         /* ── Status ── */
@@ -141,7 +169,10 @@
 
         /* Touch: Link-Hover deaktivieren */
         @media (hover: none) and (pointer: coarse) {
-            .card-link:hover { text-decoration: none; }
+            .card-link:hover {
+                background: transparent;
+                color: #bb2232;
+            }
         }
     </style>
 </head>
