@@ -67,13 +67,19 @@
             opacity: 0.9;
             margin-bottom: 3vh;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            background: rgba(0,0,0,0.35);
+            padding: 8px 24px;
+            border-radius: 999px;
+            display: inline-block;
         }
 
         .title-slide .church-name {
             font-size: clamp(20px, 3vw, 48px);
             opacity: 0.8;
-            margin-top: 4vh;
+            margin-top: 2vh;
+            padding-top: 2vh;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            border-top: 2px solid rgba(255,255,255,0.3);
         }
 
         /* Event-Slide */
@@ -103,6 +109,8 @@
             padding: clamp(30px, 4vh, 60px) clamp(40px, 6vw, 100px);
             text-align: center;
             width: 100%;
+            border-radius: 0 0 0 0;
+            border-left: 8px solid #edc544;
         }
 
         .event-title {
@@ -136,8 +144,10 @@
         /* Beschreibung */
         .event-description-middle {
             padding: clamp(20px, 3vh, 40px) clamp(30px, 4vw, 80px);
+            padding-left: calc(clamp(30px, 4vw, 80px) + 8px);
             text-align: center;
             width: 100%;
+            border-left: 4px solid rgba(255,255,255,0.3);
         }
 
         .event-description-middle .description-text {
@@ -146,6 +156,7 @@
             color: #ffffff;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
             font-weight: 400;
+            font-style: italic;
             word-wrap: break-word;
             display: -webkit-box;
             -webkit-line-clamp: 4;
@@ -164,6 +175,8 @@
             align-items: center;
             justify-content: space-between;
             gap: clamp(20px, 3vw, 60px);
+            border-radius: 0 24px 24px 0;
+            border-top: 3px solid #edc544;
         }
 
         .event-footer-text {
@@ -188,14 +201,14 @@
             font-size: clamp(20px, 2.5vw, 48px);
             font-weight: 400;
             margin-bottom: 0.5vh;
-            color: #333333;
+            color: #4a5568;
         }
 
         .event-date-big {
             font-size: clamp(28px, 3.5vw, 70px);
             font-weight: 900;
             margin-bottom: clamp(15px, 2vh, 25px);
-            color: #000000;
+            color: #bb2232;
         }
 
         .event-details {
@@ -218,7 +231,7 @@
             width: clamp(20px, 2.5vw, 44px);
             height: clamp(20px, 2.5vw, 44px);
             fill: none;
-            stroke: currentColor;
+            stroke: #bb2232;
             flex-shrink: 0;
         }
 
@@ -234,7 +247,7 @@
         .event-location svg {
             width: clamp(20px, 2.5vw, 44px);
             height: clamp(20px, 2.5vw, 44px);
-            fill: #000000;
+            fill: #bb2232;
             flex-shrink: 0;
         }
 
@@ -250,7 +263,7 @@
             max-width: 90vw;
             max-height: 90vh;
             object-fit: contain;
-            border-radius: clamp(10px, 1vw, 20px);
+            border-radius: 24px 24px 24px 8px;
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
         }
 
@@ -263,6 +276,9 @@
             opacity: 0.3;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            background: rgba(0,0,0,0.35);
+            padding: 4px 14px;
+            border-radius: 999px;
         }
 
         /* Ladebildschirm */
@@ -295,7 +311,7 @@
             height: clamp(4px, 0.5vh, 8px);
             background: #bb2232;
             transition: width linear;
-            box-shadow: 0 0 20px rgba(187, 34, 50, 0.6);
+            box-shadow: 0 0 16px rgba(187, 34, 50, 0.5);
             z-index: 1000;
         }
 
