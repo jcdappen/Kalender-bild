@@ -27,7 +27,7 @@
             justify-content: center;
         }
 
-        /* Slides Container */
+        /* ── Slides ── */
         .slide {
             width: 100vw;
             height: 100vh;
@@ -44,7 +44,7 @@
             opacity: 1;
         }
 
-        /* Titel-Slide */
+        /* ── Titel-Slide ── */
         .title-slide {
             flex-direction: column;
             justify-content: center;
@@ -82,176 +82,203 @@
             border-top: 2px solid rgba(255,255,255,0.3);
         }
 
-        /* Event-Slide */
+        /* ── Event-Slide: Splitscreen ── */
         .event-slide {
             width: 100%;
             height: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            padding: 3vh 5vw;
+            justify-content: center;
+            padding: 4vh 5vw;
         }
 
-        .event-content {
+        /* Äußere Karte */
+        .event-card {
+            width: 100%;
+            max-width: min(92vw, 1500px);
+            height: 72vh;
+            display: flex;
+            border-radius: 24px 24px 24px 8px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        /* ── Linke Spalte: Datum in Rot ── */
+        .event-left {
+            background: #bb2232;
+            width: 30%;
+            flex-shrink: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            max-width: min(90vw, 1400px);
-            gap: clamp(20px, 3vh, 60px);
+            padding: clamp(20px, 3vw, 50px);
+            position: relative;
+            gap: clamp(8px, 1.5vh, 20px);
         }
 
-        /* Roter Banner */
-        .event-header {
-            background: #bb2232;
-            padding: clamp(30px, 4vh, 60px) clamp(40px, 6vw, 100px);
-            text-align: center;
-            width: 100%;
-            border-radius: 0 0 0 0;
-            border-left: 8px solid #edc544;
+        /* Goldener Akzentstreifen oben in der linken Spalte */
+        .event-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #edc544;
+        }
+
+        .event-day-number {
+            font-size: clamp(60px, 9vw, 140px);
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .event-day-name {
+            font-size: clamp(16px, 2vw, 32px);
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .event-month-year {
+            font-size: clamp(13px, 1.5vw, 24px);
+            color: rgba(255,255,255,0.65);
+            font-weight: 400;
+        }
+
+        /* Goldene Trennlinie */
+        .event-left-divider {
+            width: 40px;
+            height: 3px;
+            background: #edc544;
+            border-radius: 999px;
+        }
+
+        /* Kategorie-Tag */
+        .event-category {
+            display: inline-block;
+            background: rgba(0,0,0,0.2);
+            color: rgba(255,255,255,0.9);
+            font-size: clamp(11px, 1.2vw, 18px);
+            font-weight: 700;
+            padding: clamp(4px, 0.6vh, 8px) clamp(12px, 1.5vw, 22px);
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.25);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* ── Rechte Spalte: Inhalt ── */
+        .event-right {
+            background: rgba(255,255,255,0.97);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: clamp(24px, 4vw, 70px);
+            gap: clamp(12px, 2vh, 28px);
+            position: relative;
+        }
+
+        /* Goldener Akzentstreifen oben in der rechten Spalte */
+        .event-right::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #edc544;
         }
 
         .event-title {
-            font-size: clamp(32px, 6vw, 120px);
+            font-size: clamp(28px, 4.5vw, 80px);
             font-weight: 900;
             line-height: 1.1;
-            color: #ffffff;
-            letter-spacing: clamp(2px, 0.3vw, 6px);
-            text-transform: uppercase;
+            color: #1a202c;
+            letter-spacing: -0.02em;
             word-wrap: break-word;
             hyphens: auto;
         }
 
-        .event-title.long-title {
-            font-size: clamp(28px, 5vw, 90px);
-            letter-spacing: clamp(1px, 0.2vw, 4px);
-        }
-
-        .event-title.very-long-title {
-            font-size: clamp(24px, 4vw, 70px);
-            letter-spacing: clamp(1px, 0.15vw, 3px);
-            line-height: 1.2;
-        }
-
-        .event-title.extremely-long-title {
-            font-size: clamp(20px, 3.5vw, 55px);
-            letter-spacing: clamp(0.5px, 0.1vw, 2px);
-            line-height: 1.3;
-        }
+        .event-title.long-title        { font-size: clamp(24px, 3.8vw, 66px); }
+        .event-title.very-long-title   { font-size: clamp(20px, 3.2vw, 54px); line-height: 1.2; }
+        .event-title.extremely-long-title { font-size: clamp(17px, 2.6vw, 44px); line-height: 1.3; }
 
         /* Beschreibung */
-        .event-description-middle {
-            padding: clamp(20px, 3vh, 40px) clamp(30px, 4vw, 80px);
-            padding-left: calc(clamp(30px, 4vw, 80px) + 8px);
-            text-align: center;
-            width: 100%;
-            border-left: 4px solid rgba(255,255,255,0.3);
-        }
-
-        .event-description-middle .description-text {
-            font-size: clamp(18px, 2.5vw, 48px);
-            line-height: 1.5;
-            color: #ffffff;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-            font-weight: 400;
+        .event-description {
+            font-size: clamp(14px, 1.8vw, 30px);
+            color: #4a5568;
             font-style: italic;
-            word-wrap: break-word;
+            line-height: 1.55;
+            border-left: 4px solid #edc544;
+            padding-left: clamp(12px, 1.5vw, 24px);
             display: -webkit-box;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            text-overflow: ellipsis;
         }
 
-        /* Weißer Bereich */
-        .event-footer {
-            background: #f5f5f5;
-            padding: clamp(25px, 3vh, 40px) clamp(40px, 5vw, 80px);
-            color: #000000;
-            width: 100%;
+        /* Pill-Badges für Zeit und Ort */
+        .event-badges {
             display: flex;
+            flex-wrap: wrap;
+            gap: clamp(8px, 1vw, 16px);
+        }
+
+        .event-badge {
+            display: inline-flex;
             align-items: center;
-            justify-content: space-between;
-            gap: clamp(20px, 3vw, 60px);
-            border-radius: 0 24px 24px 0;
-            border-top: 3px solid #edc544;
+            gap: clamp(6px, 0.8vw, 12px);
+            padding: clamp(6px, 1vh, 12px) clamp(14px, 1.8vw, 28px);
+            border-radius: 999px;
+            font-size: clamp(14px, 1.8vw, 30px);
+            font-weight: 600;
         }
 
-        .event-footer-text {
-            flex: 1;
-            text-align: center;
-        }
-
-        .event-footer-qr {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .event-footer-qr img {
-            width: clamp(80px, 12vw, 180px);
-            height: clamp(80px, 12vw, 180px);
-            object-fit: contain;
-        }
-
-        .event-weekday {
-            font-size: clamp(20px, 2.5vw, 48px);
-            font-weight: 400;
-            margin-bottom: 0.5vh;
-            color: #4a5568;
-        }
-
-        .event-date-big {
-            font-size: clamp(28px, 3.5vw, 70px);
-            font-weight: 900;
-            margin-bottom: clamp(15px, 2vh, 25px);
+        .event-badge-time {
+            background: rgba(187, 34, 50, 0.08);
+            border: 1.5px solid rgba(187, 34, 50, 0.3);
             color: #bb2232;
         }
 
-        .event-details {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: clamp(5px, 1vh, 10px);
+        .event-badge-location {
+            background: rgba(171, 208, 117, 0.15);
+            border: 1.5px solid rgba(171, 208, 117, 0.5);
+            color: #3B6D11;
         }
 
-        .event-time {
-            display: flex;
-            align-items: center;
-            font-size: clamp(18px, 2.4vw, 46px);
-            gap: clamp(10px, 1vw, 15px);
-            color: #000000;
-            font-weight: 500;
-        }
-
-        .event-time svg {
-            width: clamp(20px, 2.5vw, 44px);
-            height: clamp(20px, 2.5vw, 44px);
-            fill: none;
-            stroke: #bb2232;
+        .event-badge svg {
             flex-shrink: 0;
+            width: clamp(16px, 1.8vw, 28px);
+            height: clamp(16px, 1.8vw, 28px);
         }
 
-        .event-location {
-            display: flex;
-            align-items: center;
-            font-size: clamp(18px, 2.4vw, 46px);
-            gap: clamp(10px, 1vw, 15px);
-            color: #000000;
-            font-weight: 500;
+        /* QR-Code rechts unten */
+        .event-qr {
+            position: absolute;
+            bottom: clamp(16px, 2.5vh, 32px);
+            right: clamp(16px, 2.5vw, 40px);
+            opacity: 0.6;
         }
 
-        .event-location svg {
-            width: clamp(20px, 2.5vw, 44px);
-            height: clamp(20px, 2.5vw, 44px);
-            fill: #bb2232;
-            flex-shrink: 0;
+        .event-qr img {
+            width: clamp(50px, 7vw, 100px);
+            height: clamp(50px, 7vw, 100px);
+            object-fit: contain;
         }
 
-        /* Info-Slide */
+        /* ── Info-Slide ── */
         .info-slide {
             display: flex;
             justify-content: center;
@@ -264,24 +291,23 @@
             max-height: 90vh;
             object-fit: contain;
             border-radius: 24px 24px 24px 8px;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.7);
         }
 
-        /* Slide-Footer Nummerierung */
+        /* ── Seitenzahl ── */
         .slide-footer {
             position: absolute;
             bottom: clamp(10px, 2vh, 20px);
             right: clamp(20px, 3vw, 40px);
-            font-size: clamp(14px, 1.5vw, 28px);
-            opacity: 0.3;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: clamp(12px, 1.2vw, 22px);
+            color: #fff;
             background: rgba(0,0,0,0.35);
             padding: 4px 14px;
             border-radius: 999px;
+            opacity: 0.5;
         }
 
-        /* Ladebildschirm */
+        /* ── Ladebildschirm ── */
         .loading-slide {
             justify-content: center;
             align-items: center;
@@ -290,20 +316,10 @@
         .loading-text {
             font-size: clamp(28px, 4vw, 72px);
             color: #bb2232;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.98); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .slide.active .event-content {
-            animation: fadeIn 0.8s ease;
-        }
-
-        /* Progress Bar */
+        /* ── Progress Bar ── */
         .progress-bar {
             position: absolute;
             bottom: 0;
@@ -311,29 +327,31 @@
             height: clamp(4px, 0.5vh, 8px);
             background: #bb2232;
             transition: width linear;
-            box-shadow: 0 0 16px rgba(187, 34, 50, 0.5);
+            box-shadow: 0 0 16px rgba(187,34,50,0.5);
             z-index: 1000;
         }
 
+        /* ── Responsive ── */
         @media (max-width: 768px) {
-            .event-header { padding: 20px 30px; }
-            .event-footer {
-                padding: 20px 30px;
+            .event-card {
                 flex-direction: column;
-                gap: 20px;
+                height: auto;
+                max-height: 85vh;
             }
-            .event-content { gap: 20px; }
-            .event-footer-qr img { width: 100px; height: 100px; }
-        }
-
-        @media (max-width: 480px) {
-            .event-header { padding: 15px 20px; }
-            .event-description-middle { padding: 15px 20px; }
-            .event-footer { padding: 15px 20px; }
+            .event-left {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                padding: 20px 24px;
+                gap: 16px;
+            }
+            .event-left::before { height: 4px; }
+            .event-day-number { font-size: clamp(40px, 10vw, 64px); }
+            .event-left-divider { width: 3px; height: 40px; }
         }
 
         @media (min-width: 2560px) {
-            .event-content { max-width: 2000px; }
+            .event-card { max-width: 2200px; }
         }
     </style>
 </head>
@@ -355,9 +373,6 @@
         const INFO_SLIDE_TIME  = 6000;
         const TITLE_SLIDE_TIME = 5000;
 
-        // ----------------------------------------------------------------
-        // Daten aus data/termine.json laden (gleiche API wie index.html)
-        // ----------------------------------------------------------------
         async function loadEvents() {
             const res = await fetch('data/termine.json', { cache: 'no-store' });
             if (!res.ok) throw new Error('termine.json konnte nicht geladen werden');
@@ -373,9 +388,6 @@
             });
         }
 
-        // ----------------------------------------------------------------
-        // Info-Folien aus dem slides/-Verzeichnis suchen
-        // ----------------------------------------------------------------
         async function loadInfoSlides() {
             const candidates = [];
             for (const prefix of ['slide', 'folie', 'info', '']) {
@@ -385,21 +397,17 @@
                     }
                 }
             }
-            // Deduplizieren
             const unique = [...new Set(candidates)];
             const found = [];
             for (const path of unique) {
                 try {
                     const r = await fetch(path, { method: 'HEAD' });
                     if (r.ok) found.push(path);
-                } catch (_) { /* Datei fehlt */ }
+                } catch (_) {}
             }
             return found;
         }
 
-        // ----------------------------------------------------------------
-        // Slide-HTML erzeugen
-        // ----------------------------------------------------------------
         function createTitleSlide() {
             const now = new Date();
             const dateStr = now.toLocaleDateString('de-DE', {
@@ -417,10 +425,9 @@
             const startDate = new Date(event.startDate);
             const endDate   = new Date(event.endDate);
 
-            const weekday   = startDate.toLocaleDateString('de-DE', { weekday: 'long' });
-            const dayNum    = startDate.getDate();
+            const dayNumber = startDate.getDate();
+            const dayName   = startDate.toLocaleDateString('de-DE', { weekday: 'long' });
             const monthYear = startDate.toLocaleDateString('de-DE', { month: 'long', year: 'numeric' });
-            const dateStr   = `${dayNum}. ${monthYear}`;
 
             // Titelklasse nach Länge
             let titleClass = 'event-title';
@@ -429,19 +436,18 @@
             else if (len > 60) titleClass += ' very-long-title';
             else if (len > 40) titleClass += ' long-title';
 
-            // Uhrzeit (nur wenn kein Ganztages-Termin)
+            // Uhrzeit
             let timeHTML = '';
             const startTime = startDate.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
             const endTime   = endDate.toLocaleTimeString('de-DE',   { hour: '2-digit', minute: '2-digit' });
-            // Ganztags: Uhrzeit ist 00:00
             if (startTime !== '00:00') {
                 timeHTML = `
-                    <div class="event-time">
-                        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round">
+                    <div class="event-badge event-badge-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#bb2232" stroke-width="2" stroke-linecap="round">
                             <circle cx="12" cy="12" r="9"/>
                             <path d="M12 7v5l3.5 2"/>
                         </svg>
-                        <div>${startTime} – ${endTime} Uhr</div>
+                        ${startTime} – ${endTime} Uhr
                     </div>`;
             }
 
@@ -449,45 +455,50 @@
             let locationHTML = '';
             if (event.location) {
                 locationHTML = `
-                    <div class="event-location">
-                        <svg viewBox="0 0 24 24">
+                    <div class="event-badge event-badge-location">
+                        <svg viewBox="0 0 24 24" fill="#3B6D11">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5-2.5z"/>
                         </svg>
-                        <div>${event.location}</div>
+                        ${event.location}
                     </div>`;
             }
 
             // Beschreibung
-            let descriptionHTML = '';
+            let descHTML = '';
             if (event.description) {
-                const safeDesc = event.description.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
-                descriptionHTML = `
-                    <div class="event-description-middle">
-                        <div class="description-text">${safeDesc}</div>
-                    </div>`;
+                const safe = event.description
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/\n/g, ' ');
+                descHTML = `<div class="event-description">${safe}</div>`;
             }
 
             return `
                 <div class="slide">
                     <div class="event-slide">
-                        <div class="event-content">
-                            <div class="event-header">
-                                <div class="${titleClass}">${event.title}</div>
+                        <div class="event-card">
+
+                            <!-- Linke Spalte: Datum -->
+                            <div class="event-left">
+                                <div class="event-day-number">${dayNumber}</div>
+                                <div class="event-left-divider"></div>
+                                <div class="event-day-name">${dayName}</div>
+                                <div class="event-month-year">${monthYear}</div>
                             </div>
-                            ${descriptionHTML}
-                            <div class="event-footer">
-                                <div class="event-footer-text">
-                                    <div class="event-weekday">${weekday}</div>
-                                    <div class="event-date-big">${dateStr}</div>
-                                    <div class="event-details">
-                                        ${timeHTML}
-                                        ${locationHTML}
-                                    </div>
+
+                            <!-- Rechte Spalte: Inhalt -->
+                            <div class="event-right">
+                                <div class="${titleClass}">${event.title}</div>
+                                ${descHTML}
+                                <div class="event-badges">
+                                    ${timeHTML}
+                                    ${locationHTML}
                                 </div>
-                                <div class="event-footer-qr">
+                                <div class="event-qr">
                                     <img src="https://storage2.snappages.site/S74RKH/assets/files/QR_news.png" alt="QR Code">
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="slide-footer">${index} / ${total}</div>
@@ -502,9 +513,6 @@
                 </div>`;
         }
 
-        // ----------------------------------------------------------------
-        // Progress Bar
-        // ----------------------------------------------------------------
         function animateProgressBar(duration) {
             const bar = document.getElementById('progress-bar');
             bar.style.transition = 'none';
@@ -515,9 +523,6 @@
             }, 100);
         }
 
-        // ----------------------------------------------------------------
-        // Slide anzeigen
-        // ----------------------------------------------------------------
         function showSlide(index) {
             slideElements.forEach((el, i) => {
                 if (i === index) el.classList.add('active');
@@ -538,21 +543,16 @@
             }, duration);
         }
 
-        // ----------------------------------------------------------------
-        // Präsentation starten
-        // ----------------------------------------------------------------
         async function initPresentation() {
             try {
                 const [events, infoSlides] = await Promise.all([loadEvents(), loadInfoSlides()]);
 
                 const totalSlides = 1 + events.length + infoSlides.length;
-
                 let html = createTitleSlide();
                 let slideNum = 2;
                 let eIdx = 0;
                 let iIdx = 0;
 
-                // Rhythmus: 3 Termine → 1 Info-Folie → 3 Termine → …
                 while (eIdx < events.length || iIdx < infoSlides.length) {
                     for (let i = 0; i < 3 && eIdx < events.length; i++) {
                         html += createEventSlide(events[eIdx], slideNum, totalSlides);
@@ -592,7 +592,6 @@
         }
 
         initPresentation();
-        // Alle 5 Minuten neu laden
         setInterval(initPresentation, 5 * 60 * 1000);
     </script>
 </body>
