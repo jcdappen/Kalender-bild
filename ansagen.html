@@ -19,7 +19,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: #1a1a2e url('https://storage2.snappages.site/S74RKH/assets/files/hintergrund_Termine.jpg') center center / cover no-repeat;
+            background: #0a0a0a;
             color: white;
             position: relative;
             display: flex;
@@ -126,15 +126,7 @@
         }
 
         /* Goldener Akzentstreifen oben */
-        .event-left::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: #edc544;
-        }
+        .event-left::before { content: ''; display: none; }
 
         /* Dezenter Muster-Overlay in linker Spalte */
         .event-left::after {
@@ -204,15 +196,7 @@
         }
 
         /* Goldener Akzentstreifen oben */
-        .event-right::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: #edc544;
-        }
+        .event-right::before { content: ''; display: none; }
 
         .event-title {
             font-size: clamp(28px, 4.5vw, 82px);
