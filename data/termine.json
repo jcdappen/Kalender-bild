@@ -1,29 +1,5 @@
 [
   {
-    "id": "1111183_2026-04-05T08:00:00Z",
-    "title": "Gottesdienst",
-    "startDate": "2026-04-05T08:00:00Z",
-    "endDate": "2026-04-05T09:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#fbd75b",
-    "image": "assets/images/1111183_2026_04_05T08_00_00Z.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
-  },
-  {
-    "id": "1111005_2026-04-05T08:30:00Z",
-    "title": "Osterparty für Schulkinder",
-    "startDate": "2026-04-05T08:30:00Z",
-    "endDate": "2026-04-05T10:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1111139_2026-04-05T10:00:00Z",
     "title": "Gemeinsames Mittagessen mit Mitbringbuffet",
     "startDate": "2026-04-05T10:00:00Z",
