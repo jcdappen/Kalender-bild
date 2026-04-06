@@ -1,18 +1,4 @@
 [
-  {
-    "titel": "Fasten & Gebet",
-    "datum": "Ostern 2026 - 16. März bis 5. April",
-    "beschreibung": "In der Osterzeit wollen wir uns gemeinsam auf Jesus ausrichten – durch Fasten, Gebet und eine bewusste Hingabe an Gott. Dazu gibt es verschiedene Möglichkeiten mitzumachen:",
-    "bild": "assets/images/ankuendigungen/Fasten-2026.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gottistda"
-  },
-  {
-    "titel": "Ostern 2026 in der Konkordia",
-    "datum": "Gottesdienste zu Ostern für die ganze Familie",
-    "beschreibung": "Karfreitag um 16:00 Uhr und Ostersonntag um 10:00 Uhr",
-    "bild": "assets/images/ankuendigungen/Ostern-Ev.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienste"
-  },
      {
     "titel": "Jahreshauptversammlung 2026",
     "datum": "17.04.2026 um 19:30 in der Konkordia",
@@ -26,5 +12,12 @@
     "beschreibung": "Du hast Lust auf ein Frühstück und nette Gespräche unter Frauen?  Dann komm vorbei - bringe deine Freundin, Mama, Oma oder Nachbarin mit und genießt zusammen mit uns den Vormittag.  Damit wir ein vielfältiges Frühstück haben, freuen wir uns, wenn du eine Kleinigkeit mitbringen würdest :) Für Brötchen, Wurst & Käse ist gesorgt. Um Anmeldung wird gebeten.",
     "bild": "assets/images/ankuendigungen/Frauen-Fruehstueck.jpg",
     "link": "https://www.gemeinde-konkordia.de/frauen"
-    }
+    },  
+  {
+    "titel": "Gottesdienst mit Henry Marten",
+    "datum": "19.04.26 um 10:00 Uhr",
+    "beschreibung": "In der Osterzeit wollen wir uns gemeinsam auf Jesus ausrichten – durch Fasten, Gebet und eine bewusste Hingabe an Gott. Dazu gibt es verschiedene Möglichkeiten mitzumachen:",
+    "bild": "assets/images/ankuendigungen/herny.jpg",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  }
 ]
