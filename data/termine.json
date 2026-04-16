@@ -1116,18 +1116,6 @@
     "link": "https://www.gemeinde-konkordia.de/kinder"
   },
   {
-    "id": "1110328_2026-06-29T17:30:00Z",
-    "title": "Gebetsabend - Leben in Transformation",
-    "startDate": "2026-06-29T17:30:00Z",
-    "endDate": "2026-06-29T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd",
-    "link": ""
-  },
-  {
     "id": "1109024_2026-06-29T17:30:00Z",
     "title": "FSQ regionaler Gebetsabend in Rastatt",
     "startDate": "2026-06-29T17:30:00Z",
@@ -1137,6 +1125,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "Brücke zum Leben, Gutenbergstraße 3, 76437 Rastatt",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1110328_2026-06-29T17:30:00Z",
+    "title": "Gebetsabend - Leben in Transformation",
+    "startDate": "2026-06-29T17:30:00Z",
+    "endDate": "2026-06-29T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd",
     "link": ""
   },
   {
