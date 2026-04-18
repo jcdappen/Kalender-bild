@@ -1,5 +1,17 @@
 [
   {
+    "id": "1112365_2026-04-18T16:30:00Z",
+    "title": "Jugendabend",
+    "startDate": "2026-04-18T16:30:00Z",
+    "endDate": "2026-04-18T19:30:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
     "id": "1110922_2026-04-19T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-04-19T07:30:00Z",
