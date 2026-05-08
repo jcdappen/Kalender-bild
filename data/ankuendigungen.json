@@ -15,9 +15,16 @@
   },
     {
     "titel": "Konkordia Infoabend",
-    "datum": "Fr. 22. Mai 2026 · 19:30 – 21:00 Uhr",
-    "beschreibung": "Wir laden euch herzlich zu unserem Konkordia Infoabend ein. Als Leitungsteam möchten wir euch mitnehmen – was uns gerade bewegt, wohin wir gemeinsam unterwegs sind und was uns für die Zukunft der Gemeinde beschäftigt. Der Abend ist auch eine gute Gelegenheit, uns besser kennenzulernen und Gemeinschaft zu haben.",
+    "datum": "ENTFÄLLT",
+    "beschreibung": "",
     "bild": "assets/images/ankuendigungen/Infoabend.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt"
+  },
+      {
+    "titel": "Ökumenischer Lobpreisabend",
+    "datum": "22.05.26 um 19:00 Uhr am Friedenskreuz",
+    "beschreibung": "Bei Regen in der Arche Ottersweier, Eisenbahnstraße 21 in Ottersweier",
+    "bild": "assets/images/ankuendigungen/Lobpreis.jpg",
+    "link": "https://storage1.snappages.site/S74RKH/assets/files/kumenischer-Lobpreisabend-2026-Kopie-93.pdf"
   }
 ]
