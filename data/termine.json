@@ -1,17 +1,5 @@
 [
   {
-    "id": "1109836_2026-05-11T13:30:00Z",
-    "title": "Espresso & mehr...",
-    "startDate": "2026-05-11T13:30:00Z",
-    "endDate": "2026-05-11T16:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
-    "description": "",
-    "link": "https://www.gemeinde-konkordia.de/kinder"
-  },
-  {
     "id": "1110319_2026-05-11T17:30:00Z",
     "title": "Gebetsabend - Leben mit Gott",
     "startDate": "2026-05-11T17:30:00Z",
@@ -69,18 +57,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-05-14T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-05-14T17:00:00Z",
-    "endDate": "2026-05-14T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -165,18 +141,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-05-21T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-05-21T17:00:00Z",
-    "endDate": "2026-05-21T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -276,18 +240,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-05-28T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-05-28T17:00:00Z",
-    "endDate": "2026-05-28T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1110922_2026-05-31T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-05-31T07:30:00Z",
@@ -372,18 +324,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-06-04T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-06-04T17:00:00Z",
-    "endDate": "2026-06-04T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1110922_2026-06-07T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-06-07T07:30:00Z",
@@ -465,18 +405,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-06-11T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-06-11T17:00:00Z",
-    "endDate": "2026-06-11T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -585,18 +513,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-06-18T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-06-18T17:00:00Z",
-    "endDate": "2026-06-18T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -732,18 +648,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-06-25T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-06-25T17:00:00Z",
-    "endDate": "2026-06-25T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1110922_2026-06-28T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-06-28T07:30:00Z",
@@ -825,18 +729,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-07-02T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-07-02T17:00:00Z",
-    "endDate": "2026-07-02T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -948,18 +840,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-07-09T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-07-09T17:00:00Z",
-    "endDate": "2026-07-09T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1111903_2026-07-10T17:30:00Z",
     "title": "Bereichsleitertreffen",
     "startDate": "2026-07-10T17:30:00Z",
@@ -1041,18 +921,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-07-16T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-07-16T17:00:00Z",
-    "endDate": "2026-07-16T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
@@ -1164,18 +1032,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-07-23T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-07-23T17:00:00Z",
-    "endDate": "2026-07-23T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1109576_2026-07-25T14:00:00Z",
     "title": "Konkordia Sommerfest",
     "startDate": "2026-07-25T14:00:00Z",
@@ -1260,18 +1116,6 @@
     "link": ""
   },
   {
-    "id": "1110916_2026-07-30T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-07-30T17:00:00Z",
-    "endDate": "2026-07-30T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1111197_2026-07-31T15:00:00Z",
     "title": "5-tägige Kurzexerzitien",
     "startDate": "2026-07-31T15:00:00Z",
@@ -1353,18 +1197,6 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
-    "id": "1110916_2026-08-06T17:00:00Z",
-    "title": "Hauskreis Reiner Schindler",
-    "startDate": "2026-08-06T17:00:00Z",
-    "endDate": "2026-08-06T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gruppenraum",
-    "description": "",
     "link": ""
   },
   {
