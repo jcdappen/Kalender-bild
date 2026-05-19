@@ -13,18 +13,25 @@
     "bild": "assets/images/ankuendigungen/buchhaltung.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/Personalprofil-Buchhaltung-02_26.pdf"
   },
-    {
-    "titel": "Konkordia Infoabend - Entfällt",
-    "datum": "ENTFÄLLT",
-    "beschreibung": "Wir bitten euch alle fröhlich zum ökumenischen Lopreisabend zu gehen. Eure Gemeindeleitung",
-    "bild": "assets/images/ankuendigungen/Infoabend.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt"
-  },
       {
     "titel": "Ökumenischer Lobpreisabend",
     "datum": "22.05.26 um 19:00 Uhr am Friedenskreuz",
     "beschreibung": "Bei Regen in der Arche Ottersweier, Eisenbahnstraße 21 in Ottersweier",
     "bild": "assets/images/ankuendigungen/Lobpreis.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/kumenischer-Lobpreisabend-2026-Kopie-93.pdf"
+  },    
+  {
+    "titel": "Taufe",
+    "datum": "Sonntag 24.05.26 um 10:00 Uhr",
+    "beschreibung": "Wir feiern diesen Sonntag Taufe. Wenn du noch nicht getauft bist und deinen Weg mit Jesus weitergehen möchtest – oder einfach den nächsten Schritt wagen willst – dann melde dich bitte schnell bei mir. Damit du am Sonntag noch dabei sein kannst.",
+    "bild": "assets/images/ankuendigungen/Taufe.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt"
+  }, 
+  {
+    "titel": "Büro geschlossen",
+    "datum": "25.05. – 07.06.26",
+    "beschreibung": "Das Konkordia-Büro ist in den Pfingstferien geschlossen, aber per E-Mail erreichbar.",
+    "bild": "assets/images/ankuendigungen/Pfingsten.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt"
   }
 ]
