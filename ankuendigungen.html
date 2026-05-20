@@ -226,7 +226,8 @@
             const titel = escapeHtml(item.titel || '');
             const datum = escapeHtml(item.datum || '');
             const desc  = escapeHtml(item.beschreibung || '');
-            const link  = escapeHtml(item.link || '');
+            const link      = escapeHtml(item.link || '');
+            const linkText  = escapeHtml(item.linkText || 'Mehr erfahren');
 
             const card = document.createElement('div');
             card.className = 'ankuendigung-card';
@@ -243,7 +244,7 @@
                     ${datum ? `<div class="card-datum">${datum}</div>` : ''}
                     <div class="card-titel">${titel}</div>
                     ${desc ? `<div class="card-beschreibung">${desc}</div>` : ''}
-                    ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noopener">Mehr erfahren &rarr;</a>` : ''}
+                    ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noopener">${linkText} &rarr;</a>` : ''}
                 </div>
             `;
             grid.appendChild(card);
