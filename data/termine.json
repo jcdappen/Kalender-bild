@@ -1,17 +1,5 @@
 [
   {
-    "id": "1112479_2026-05-20T17:30:00Z",
-    "title": "Evangelisationsteamtreffen",
-    "startDate": "2026-05-20T17:30:00Z",
-    "endDate": "2026-05-20T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1112534_2026-05-21T13:00:00Z",
     "title": "Coaching",
     "startDate": "2026-05-21T13:00:00Z",
@@ -69,6 +57,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "Friedenskreuz",
     "description": "Bei Regen in der Arche Ottersweier, Eisenbahnstraße 21 in Ottersweier",
+    "link": ""
+  },
+  {
+    "id": "1112549_2026-05-23T07:00:00Z",
+    "title": "Dekoteam",
+    "startDate": "2026-05-23T07:00:00Z",
+    "endDate": "2026-05-23T10:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
     "link": ""
   },
   {
