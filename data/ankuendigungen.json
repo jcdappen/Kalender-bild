@@ -25,20 +25,30 @@
     "datum": "Sonntag 24.05.26 um 10:00 Uhr",
     "beschreibung": "Wir feiern diesen Sonntag Taufe. Wenn du noch nicht getauft bist und deinen Weg mit Jesus weitergehen möchtest – oder einfach den nächsten Schritt wagen willst – dann melde dich bitte schnell bei mir. Damit du am Sonntag noch dabei sein kannst.",
     "bild": "assets/images/ankuendigungen/Taufe.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt"
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
   }, 
   {
     "titel": "Büro geschlossen",
     "datum": "25.05. – 07.06.26",
     "beschreibung": "Das Konkordia-Büro ist in den Pfingstferien geschlossen, aber per E-Mail erreichbar.",
     "bild": "assets/images/ankuendigungen/Pfingsten.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt"
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
   },
     {
+    "titel": "Büro geschlossen",
+    "datum": "25.05. – 07.06.26",
+    "beschreibung": "Das Konkordia-Büro ist in den Pfingstferien geschlossen, aber per E-Mail erreichbar.",
+    "bild": "assets/images/ankuendigungen/Pfingsten.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Infos Gottesdienste"
+  },   
+  {
     "titel": "Visionsgottesdienst",
     "datum": "21.06.26 um 10:00 Uhr in der Konkordia",
     "beschreibung": "Beim Visionsgottesdienst wollen wir gemeinsam innehalten und nach vorne schauen. Unser Gemeinderat wird uns mit hineinnehmen in unsere Gemeindevision die wir 2024 gemeinsam erarbeitet haben und das, was Gott für unsere Gemeinde vorbereitet hat. Es gibt aktuelle Infos zu unseren Finanzen, zum Kinder- und Teenbereich und zum Projekt Lebenshaus. Und wir nehmen uns Zeit für deine Fragen. Wir freuen uns, wenn du dabei bist!",
     "bild": "assets/images/ankuendigungen/Vision.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt"
-  }
+  },
 ]
