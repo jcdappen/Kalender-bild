@@ -21,12 +21,20 @@
     "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Kontakt"
   },  
+    {
+    "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
+    "datum": "25.07. ab 16:00 Uhr",
+    "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders. Ob Grill, Getränke oder Dekoration – jede helfende Hand zählt. Melde dich gern im Büro. Gemeinsam wird es ein tolles Fest!",
+    "bild": "assets/images/ankuendigungen/Sommerfest.jpg",
+    "link": "https://storage1.snappages.site/S74RKH/assets/files/Kinderspass.pdf",
+    "linkText": "Kontakt"
+  }
   {
     "titel": "Visionsgottesdienst",
     "datum": "21.06.26 um 10:00 Uhr in der Konkordia",
     "beschreibung": "Beim Visionsgottesdienst wollen wir gemeinsam innehalten und nach vorne schauen. Unser Gemeinderat wird uns mit hineinnehmen in unsere Gemeindevision die wir 2024 gemeinsam erarbeitet haben und das, was Gott für unsere Gemeinde vorbereitet hat. Es gibt aktuelle Infos zu unseren Finanzen, zum Kinder- und Teenbereich und zum Projekt Lebenshaus. Und wir nehmen uns Zeit für deine Fragen. Wir freuen uns, wenn du dabei bist!",
     "bild": "assets/images/ankuendigungen/Vision.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienste",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Infos Gottesdienste"
   },
   {
@@ -35,6 +43,6 @@
     "beschreibung": "Bühl InAktion e.V. veranstaltet wieder im Rahmen der Bühler Samstage: einen Kinderspaß-Aktionstag mit vielen Spiel- und Erlebnisstationen. Und wir sind dabei mit einer Spielstation mit Cornhole-Wurfspiel, Tischkicker und einem Bibel-Quizz. Bitte betet und helft mit. Meldet euch bitte bei Gabi Trapp (g.trapp@gemeinde-konkrodia.de",
     "bild": "assets/images/ankuendigungen/Kinder.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/Kinderspass.pdf",
-    "linkText": "Infos Kinderspaß“
+    "linkText": "Infos Kinderspaß"
   }
 ]
