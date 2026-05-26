@@ -308,7 +308,7 @@
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "Ein Zeit  nur für Männer – völlig entspannt, mit guten Gesprächen und Raum zum Kraftschöpfen. Die Gemeinde Konkordia lädt herzlich ein zu Gemeinschaft, Impulsen und einer stärkenden Zeit.\n\nTreffpunkt wird bekannt gegeben",
+    "description": "Wir werden die Augenblick Runde Bühl wandern\n \nAugenBlick-Runde Bühl\n Die Wanderung startet um 13.00 Uhr- Treffpunkt ist der Parkplatz bei der Burg  Windeck, wobei Fahrgemeinschaften\nab der GidK möglich wären. Die Wanderzeit beträgt 2,5 Stunden bei einer Distanz von 7,6 km.\n \nDer gemeinsame Abschluss ist geplant im Kappler Lamm in Kappelwindeck (Änderung vorbehalten)\nMitzubringen wären gute Wanderschuhe, Getränke und ggf. ein kleines Vesper.\n \nDie Wanderung wird begleitet von kleinen biblischen Impulsen zum Nachdenken.",
     "link": "https://www.gemeinde-konkordia.de/maenner"
   },
   {
@@ -468,18 +468,6 @@
     "link": "https://www.gemeinde-konkordia.de/kinder"
   },
   {
-    "id": "1110328_2026-06-29T17:30:00Z",
-    "title": "Gebetsabend - Leben in Transformation",
-    "startDate": "2026-06-29T17:30:00Z",
-    "endDate": "2026-06-29T19:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd",
-    "link": ""
-  },
-  {
     "id": "1109024_2026-06-29T17:30:00Z",
     "title": "FSQ regionaler Gebetsabend in Rastatt",
     "startDate": "2026-06-29T17:30:00Z",
@@ -489,6 +477,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "Brücke zum Leben, Gutenbergstraße 3, 76437 Rastatt",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1110328_2026-06-29T17:30:00Z",
+    "title": "Gebetsabend - Leben in Transformation",
+    "startDate": "2026-06-29T17:30:00Z",
+    "endDate": "2026-06-29T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd",
     "link": ""
   },
   {
