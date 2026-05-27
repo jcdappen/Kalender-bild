@@ -1,17 +1,5 @@
 [
   {
-    "id": "1109922_2026-05-27T07:30:00Z",
-    "title": "Mamatreff",
-    "startDate": "2026-05-27T07:30:00Z",
-    "endDate": "2026-05-27T09:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1109922_2026_05_27T07_30_00Z.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
-    "link": "https://www.gemeinde-konkordia.de/frauen"
-  },
-  {
     "id": "1108215_2026-05-28T16:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-05-28T16:00:00Z",
@@ -70,18 +58,6 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Gebetsabend mit Gebet für die Gemeinde in der Konkordia. Wir kommen zusammen, um für die Anliegen der Gemeinde zu beten.\n\nOrt: Konkordia - Raum wechselnd",
     "link": ""
-  },
-  {
-    "id": "1109922_2026-06-03T07:30:00Z",
-    "title": "Mamatreff",
-    "startDate": "2026-06-03T07:30:00Z",
-    "endDate": "2026-06-03T09:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1109922_2026_06_03T07_30_00Z.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
-    "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
     "id": "1108215_2026-06-04T16:00:00Z",
@@ -536,8 +512,8 @@
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
     "location": "",
-    "description": "",
-    "link": ""
+    "description": "Bühl InAktion e.V. veranstaltet wieder im Rahmen der Bühler Samstage: einen Kinderspaß-Aktionstag mit vielen Spiel- und Erlebnisstationen. Und wir sind dabei mit einer Spielstation mit Cornhole-Wurfspiel, Tischkicker und einem Bibel-Quizz. Bitte betet und helft mit. Meldet euch bitte bei Gabi Trapp (g.trapp@gemeinde-konkordia.de)",
+    "link": "https://storage1.snappages.site/S74RKH/assets/files/Kinderspass.pdf"
   },
   {
     "id": "1110922_2026-07-05T07:30:00Z",
