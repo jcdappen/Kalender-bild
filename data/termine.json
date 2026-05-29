@@ -1162,5 +1162,17 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
     "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
+    "id": "1108215_2026-08-27T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-08-27T16:00:00Z",
+    "endDate": "2026-08-27T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
   }
 ]
