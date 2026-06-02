@@ -1150,5 +1150,29 @@
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  },
+  {
+    "id": "1109836_2026-08-31T13:30:00Z",
+    "title": "Espresso & mehr...",
+    "startDate": "2026-08-31T13:30:00Z",
+    "endDate": "2026-08-31T16:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
+    "description": "",
+    "link": "https://www.gemeinde-konkordia.de/kinder"
+  },
+  {
+    "id": "1110328_2026-08-31T17:30:00Z",
+    "title": "Gebetsabend - Leben in Transformation",
+    "startDate": "2026-08-31T17:30:00Z",
+    "endDate": "2026-08-31T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Gebet füreinander und für persönliche Anliegen – wir tragen gemeinsam, was uns bewegt.\n\nOrt: Konkordia Raum  wechselnd",
+    "link": ""
   }
 ]
