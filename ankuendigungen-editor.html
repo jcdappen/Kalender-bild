@@ -9,7 +9,6 @@
 
         :root {
             --primary: #bb2232;
-            --primary-dark: #921a26;
             --bg: #f7f8fa;
             --card-bg: #fff;
             --border: #e2e8f0;
@@ -37,247 +36,119 @@
             flex-wrap: wrap;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 700;
-        }
+        header h1 { margin: 0; font-size: 20px; font-weight: 700; }
 
-        .header-actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+        .header-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
-        .main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 32px 24px 64px;
-        }
+        .main { max-width: 900px; margin: 0 auto; padding: 32px 24px 64px; }
 
         /* ── Buttons ── */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 9px 18px;
-            border-radius: 999px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 9px 18px; border-radius: 999px; font-size: 14px;
+            font-weight: 600; cursor: pointer; border: none;
             transition: background 0.15s, color 0.15s, opacity 0.15s;
-            text-decoration: none;
         }
-
-        .btn-primary {
-            background: #fff;
-            color: var(--primary);
-        }
+        .btn-primary { background: #fff; color: var(--primary); }
         .btn-primary:hover { background: #fde8ea; }
-
-        .btn-outline {
-            background: transparent;
-            color: #fff;
-            border: 1.5px solid rgba(255,255,255,0.6);
-        }
+        .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.6); }
         .btn-outline:hover { background: rgba(255,255,255,0.15); }
-
-        .btn-danger {
-            background: #fff0f0;
-            color: #c0392b;
-            border: 1.5px solid #fbc8c8;
-        }
+        .btn-danger { background: #fff0f0; color: #c0392b; border: 1.5px solid #fbc8c8; }
         .btn-danger:hover { background: #fde0e0; }
-
-        .btn-ghost {
-            background: transparent;
-            color: var(--primary);
-            border: 1.5px solid var(--border);
-        }
+        .btn-ghost { background: transparent; color: var(--primary); border: 1.5px solid var(--border); }
         .btn-ghost:hover { background: #fde8ea; border-color: var(--primary); }
-
         .btn:disabled { opacity: 0.4; cursor: default; }
 
-        /* ── Toolbar ── */
-        .toolbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 24px;
-            gap: 12px;
-            flex-wrap: wrap;
+        /* ── Setup modal ── */
+        #setup-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 500; padding: 24px;
         }
 
+        #setup-overlay.hidden { display: none; }
+
+        .setup-box {
+            background: #fff; border-radius: 16px; padding: 32px;
+            max-width: 480px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .setup-box h2 { margin: 0 0 8px; font-size: 20px; }
+        .setup-box p { margin: 0 0 20px; color: var(--text-muted); font-size: 14px; line-height: 1.5; }
+
+        .setup-field { margin-bottom: 14px; }
+        .setup-field label { display: block; font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px; }
+        .setup-field input { width: 100%; border: 1.5px solid var(--border); border-radius: 8px; padding: 9px 12px; font-size: 14px; font-family: inherit; }
+        .setup-field input:focus { outline: none; border-color: var(--primary); }
+
+        .setup-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+        .setup-hint { background: #f0f7ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #2b6cb0; margin-bottom: 16px; }
+        .setup-hint a { color: #2b6cb0; }
+
+        /* ── Toolbar ── */
+        .toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; gap: 12px; flex-wrap: wrap; }
         .toolbar-left { display: flex; gap: 10px; flex-wrap: wrap; }
 
-        #file-info {
-            font-size: 13px;
-            color: var(--text-muted);
-            padding: 6px 12px;
-            background: #fff;
-            border: 1px solid var(--border);
-            border-radius: 999px;
+        #status-badge {
+            font-size: 13px; color: var(--text-muted); padding: 6px 12px;
+            background: #fff; border: 1px solid var(--border); border-radius: 999px;
+            cursor: pointer;
         }
+        #status-badge:hover { border-color: var(--primary); color: var(--primary); }
 
         /* ── Cards ── */
         .entry-list { display: flex; flex-direction: column; gap: 16px; }
 
-        .entry-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-        }
+        .entry-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 
-        .entry-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 16px;
-            background: #fafafa;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            user-select: none;
-        }
-
+        .entry-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #fafafa; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
         .entry-header:hover { background: #f3f4f6; }
 
-        .entry-number {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--primary);
-            background: #fde8ea;
-            border-radius: 999px;
-            padding: 2px 8px;
-            flex-shrink: 0;
-        }
-
-        .entry-title-preview {
-            font-weight: 600;
-            font-size: 15px;
-            flex: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
+        .entry-number { font-size: 12px; font-weight: 700; color: var(--primary); background: #fde8ea; border-radius: 999px; padding: 2px 8px; flex-shrink: 0; }
+        .entry-title-preview { font-weight: 600; font-size: 15px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .entry-title-preview.empty { color: var(--text-muted); font-style: italic; }
-
-        .entry-toggle {
-            font-size: 18px;
-            color: var(--text-muted);
-            transition: transform 0.2s;
-        }
-
+        .entry-toggle { font-size: 18px; color: var(--text-muted); transition: transform 0.2s; }
         .entry-card.open .entry-toggle { transform: rotate(180deg); }
 
-        .entry-body {
-            display: none;
-            padding: 20px;
-        }
-
+        .entry-body { display: none; padding: 20px; }
         .entry-card.open .entry-body { display: block; }
 
         /* ── Form fields ── */
-        .field-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-            margin-bottom: 14px;
-        }
-
+        .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
         .field-full { grid-column: 1 / -1; }
 
-        .field label {
-            display: block;
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 5px;
-        }
-
+        .field label { display: block; font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px; }
         .field label .required { color: var(--primary); margin-left: 2px; }
 
-        .field input,
-        .field textarea {
-            width: 100%;
-            border: 1.5px solid var(--border);
-            border-radius: 8px;
-            padding: 9px 12px;
-            font-size: 14px;
-            font-family: inherit;
-            color: var(--text);
-            background: #fff;
-            transition: border-color 0.15s;
-            resize: vertical;
+        .field input, .field textarea {
+            width: 100%; border: 1.5px solid var(--border); border-radius: 8px;
+            padding: 9px 12px; font-size: 14px; font-family: inherit;
+            color: var(--text); background: #fff; transition: border-color 0.15s; resize: vertical;
         }
-
-        .field input:focus,
-        .field textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-
+        .field input:focus, .field textarea:focus { outline: none; border-color: var(--primary); }
         .field textarea { min-height: 120px; line-height: 1.5; }
+        .field-hint { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
 
-        .field-hint {
-            font-size: 12px;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
+        .entry-actions { display: flex; justify-content: flex-end; gap: 8px; padding-top: 8px; border-top: 1px solid var(--border); margin-top: 16px; }
 
-        .entry-actions {
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            padding-top: 8px;
-            border-top: 1px solid var(--border);
-            margin-top: 16px;
-        }
-
-        /* ── Markdown hint ── */
-        .md-hint {
-            background: #f0f7ff;
-            border: 1px solid #bee3f8;
-            border-radius: 8px;
-            padding: 10px 14px;
-            font-size: 12px;
-            color: #2b6cb0;
-            margin-top: 6px;
-        }
-
+        .md-hint { background: #f0f7ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #2b6cb0; margin-top: 6px; }
         .md-hint strong { color: #1a365d; }
 
         /* ── Empty state ── */
-        .empty-state {
-            text-align: center;
-            padding: 48px 24px;
-            color: var(--text-muted);
-        }
+        .empty-state { text-align: center; padding: 48px 24px; color: var(--text-muted); }
         .empty-state .icon { font-size: 40px; margin-bottom: 12px; }
         .empty-state p { font-size: 15px; margin: 0 0 16px; }
 
         /* ── Toast ── */
         #toast {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
+            position: fixed; bottom: 24px; left: 50%;
             transform: translateX(-50%) translateY(80px);
-            background: #1a202c;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 999px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: transform 0.3s ease;
-            z-index: 1000;
-            pointer-events: none;
-            white-space: nowrap;
+            background: #1a202c; color: #fff; padding: 12px 20px;
+            border-radius: 999px; font-size: 14px; font-weight: 500;
+            transition: transform 0.3s ease; z-index: 1000;
+            pointer-events: none; white-space: nowrap;
         }
-
         #toast.show { transform: translateX(-50%) translateY(0); }
         #toast.success { background: #276749; }
         #toast.error { background: #c0392b; }
@@ -291,10 +162,36 @@
 </head>
 <body>
 
+<!-- Setup Modal -->
+<div id="setup-overlay">
+    <div class="setup-box">
+        <h2>🔑 JSONBin.io Verbindung</h2>
+        <p>Einmalige Einrichtung. API-Key und Bin-ID werden sicher in deinem Browser gespeichert.</p>
+
+        <div class="setup-hint">
+            Noch kein Account? Kostenlos auf <a href="https://jsonbin.io" target="_blank">jsonbin.io</a> registrieren,
+            ein neues Bin mit <code>[]</code> erstellen und API-Key + Bin-ID hier eintragen.
+        </div>
+
+        <div class="setup-field">
+            <label>API-Key</label>
+            <input type="password" id="input-apikey" placeholder="$2a$10$…" autocomplete="off">
+        </div>
+        <div class="setup-field">
+            <label>Bin-ID</label>
+            <input type="text" id="input-binid" placeholder="64abc123def456…" autocomplete="off">
+        </div>
+
+        <div class="setup-actions">
+            <button class="btn btn-ghost" id="btn-setup-cancel" style="color:#718096">Abbrechen</button>
+            <button class="btn btn-primary" id="btn-setup-save" style="background:var(--primary);color:#fff">Verbinden</button>
+        </div>
+    </div>
+</div>
+
 <header>
     <h1>📢 Ankündigungen Editor</h1>
     <div class="header-actions">
-        <button class="btn btn-outline" id="btn-open">📂 JSON öffnen</button>
         <button class="btn btn-primary" id="btn-save" disabled>💾 Speichern</button>
     </div>
 </header>
@@ -304,14 +201,13 @@
         <div class="toolbar-left">
             <button class="btn btn-ghost" id="btn-add">+ Eintrag hinzufügen</button>
         </div>
-        <span id="file-info">Noch keine Datei geöffnet</span>
+        <span id="status-badge" title="Klicken zum Ändern der Verbindung">Nicht verbunden</span>
     </div>
 
     <div id="entry-list" class="entry-list">
         <div class="empty-state">
-            <div class="icon">📄</div>
-            <p>Noch keine Ankündigungen geladen.</p>
-            <button class="btn btn-ghost" onclick="openFile()">📂 JSON-Datei öffnen</button>
+            <div class="icon">🔌</div>
+            <p>Noch nicht verbunden. Bitte JSONBin-Zugangsdaten eingeben.</p>
         </div>
     </div>
 </div>
@@ -322,13 +218,18 @@
 (function () {
     'use strict';
 
-    let fileHandle = null;
-    let items = [];
+    const STORAGE_KEY_API  = 'jb_apikey';
+    const STORAGE_KEY_BIN  = 'jb_binid';
 
-    const listEl    = document.getElementById('entry-list');
-    const saveBtn   = document.getElementById('btn-save');
-    const fileInfo  = document.getElementById('file-info');
-    const toast     = document.getElementById('toast');
+    let items = [];
+    let apiKey = '';
+    let binId  = '';
+
+    const listEl      = document.getElementById('entry-list');
+    const saveBtn     = document.getElementById('btn-save');
+    const statusBadge = document.getElementById('status-badge');
+    const overlay     = document.getElementById('setup-overlay');
+    const toast       = document.getElementById('toast');
     let toastTimer;
 
     // ── Toast ──────────────────────────────────────────────────────────────
@@ -336,62 +237,79 @@
         clearTimeout(toastTimer);
         toast.textContent = msg;
         toast.className = 'show ' + type;
-        toastTimer = setTimeout(() => { toast.className = ''; }, 3000);
+        toastTimer = setTimeout(() => { toast.className = ''; }, 3500);
     }
 
-    // ── File API ───────────────────────────────────────────────────────────
-    // Öffnen immer via <input type="file"> (funktioniert in allen Browsern
-    // und auch über file://)
-    function openFile() {
-        const input = document.createElement('input');
-        input.type = 'file';
-        input.accept = '.json,application/json';
-        input.style.display = 'none';
-        document.body.appendChild(input);
-
-        input.addEventListener('change', async () => {
-            const file = input.files[0];
-            document.body.removeChild(input);
-            if (!file) return;
-            try {
-                const text = await file.text();
-                items = JSON.parse(text);
-                fileHandle = null;
-                fileInfo.textContent = file.name;
-                saveBtn.disabled = false;
-                render();
-                showToast('Datei geladen ✓', 'success');
-            } catch (e) {
-                showToast('JSON-Fehler: ' + e.message, 'error');
-            }
-        });
-
-        input.click();
+    // ── Setup modal ────────────────────────────────────────────────────────
+    function showSetup() {
+        document.getElementById('input-apikey').value = apiKey;
+        document.getElementById('input-binid').value  = binId;
+        overlay.classList.remove('hidden');
     }
 
-    async function saveFile() {
+    function hideSetup() {
+        overlay.classList.add('hidden');
+    }
+
+    document.getElementById('btn-setup-cancel').addEventListener('click', hideSetup);
+
+    document.getElementById('btn-setup-save').addEventListener('click', async () => {
+        const key = document.getElementById('input-apikey').value.trim();
+        const bin = document.getElementById('input-binid').value.trim();
+        if (!key || !bin) { showToast('Bitte beide Felder ausfüllen.', 'error'); return; }
+
+        apiKey = key;
+        binId  = bin;
+        localStorage.setItem(STORAGE_KEY_API, apiKey);
+        localStorage.setItem(STORAGE_KEY_BIN, binId);
+        hideSetup();
+        await loadFromJsonBin();
+    });
+
+    // ── JSONBin API ────────────────────────────────────────────────────────
+    async function loadFromJsonBin() {
+        if (!apiKey || !binId) { showSetup(); return; }
+        statusBadge.textContent = 'Lade …';
+        try {
+            const res = await fetch(`https://api.jsonbin.io/v3/b/${binId}/latest`, {
+                headers: { 'X-Master-Key': apiKey }
+            });
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.message || `HTTP ${res.status}`);
+            items = Array.isArray(data.record) ? data.record : [];
+            statusBadge.textContent = `Bin ${binId.slice(0, 8)}… • ${items.length} Einträge`;
+            saveBtn.disabled = false;
+            render();
+            showToast('Daten geladen ✓', 'success');
+        } catch (e) {
+            statusBadge.textContent = 'Fehler beim Laden';
+            showToast('Laden fehlgeschlagen: ' + e.message, 'error');
+        }
+    }
+
+    async function saveToJsonBin() {
+        if (!apiKey || !binId) { showSetup(); return; }
         collectFromDom();
-        const json = JSON.stringify(items, null, 2);
-
-        if (fileHandle) {
-            try {
-                const writable = await fileHandle.createWritable();
-                await writable.write(json);
-                await writable.close();
-                showToast('Gespeichert ✓', 'success');
-            } catch (e) {
-                showToast('Speichern fehlgeschlagen: ' + e.message, 'error');
-            }
-        } else {
-            // Fallback download
-            const blob = new Blob([json], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'ankuendigungen.json';
-            a.click();
-            URL.revokeObjectURL(url);
-            showToast('JSON heruntergeladen ✓', 'success');
+        saveBtn.disabled = true;
+        saveBtn.textContent = '⏳ Speichert …';
+        try {
+            const res = await fetch(`https://api.jsonbin.io/v3/b/${binId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Master-Key': apiKey
+                },
+                body: JSON.stringify(items)
+            });
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.message || `HTTP ${res.status}`);
+            statusBadge.textContent = `Bin ${binId.slice(0, 8)}… • ${items.length} Einträge`;
+            showToast('Gespeichert ✓ GitHub Action holt die Daten beim nächsten Run.', 'success');
+        } catch (e) {
+            showToast('Speichern fehlgeschlagen: ' + e.message, 'error');
+        } finally {
+            saveBtn.disabled = false;
+            saveBtn.innerHTML = '💾 Speichern';
         }
     }
 
@@ -400,19 +318,12 @@
         items = [];
         document.querySelectorAll('.entry-card').forEach(card => {
             const get = key => card.querySelector(`[data-field="${key}"]`)?.value.trim() ?? '';
-            // Convert real newlines in textarea back to \n sequences — JSON.stringify handles escaping
-            const item = {
-                titel: get('titel'),
-                datum: get('datum'),
-            };
+            const item = { titel: get('titel'), datum: get('datum') };
             const desc = card.querySelector('[data-field="beschreibung"]')?.value ?? '';
             if (desc.trim()) item.beschreibung = desc.trim();
-            const bild = get('bild');
-            if (bild) item.bild = bild;
-            const link = get('link');
-            if (link) item.link = link;
-            const linkText = get('linkText');
-            if (linkText) item.linkText = linkText;
+            const bild = get('bild');     if (bild)     item.bild     = bild;
+            const link = get('link');     if (link)     item.link     = link;
+            const lt   = get('linkText'); if (lt)       item.linkText = lt;
             items.push(item);
         });
     }
@@ -431,14 +342,11 @@
         const idx = index !== null ? index : document.querySelectorAll('.entry-card').length;
         const card = document.createElement('div');
         card.className = 'entry-card open';
-        card.dataset.index = idx;
-
-        const titlePreview = item.titel || '';
 
         card.innerHTML = `
             <div class="entry-header">
                 <span class="entry-number">#${idx + 1}</span>
-                <span class="entry-title-preview ${titlePreview ? '' : 'empty'}">${titlePreview || 'Neuer Eintrag'}</span>
+                <span class="entry-title-preview ${item.titel ? '' : 'empty'}">${esc(item.titel || 'Neuer Eintrag')}</span>
                 <span class="entry-toggle">▾</span>
             </div>
             <div class="entry-body">
@@ -453,7 +361,7 @@
                     </div>
                     <div class="field field-full">
                         <label>Beschreibung</label>
-                        <textarea data-field="beschreibung" placeholder="Text hier eingeben. Einfach Enter drücken für Absatz oder neue Zeile.">${escTextarea(item.beschreibung || '')}</textarea>
+                        <textarea data-field="beschreibung" placeholder="Text hier eingeben. Enter = neue Zeile, Leerzeile = neuer Absatz.">${escTextarea(item.beschreibung || '')}</textarea>
                         <div class="md-hint">
                             <strong>Formatierung:</strong>
                             &nbsp;**fett**&nbsp; · &nbsp;*kursiv*&nbsp; · &nbsp;Leerzeile = neuer Absatz&nbsp; · &nbsp;• Text = Aufzählungspunkt
@@ -479,24 +387,16 @@
             </div>
         `;
 
-        // Toggle open/close
-        card.querySelector('.entry-header').addEventListener('click', () => {
-            card.classList.toggle('open');
-        });
+        card.querySelector('.entry-header').addEventListener('click', () => card.classList.toggle('open'));
 
-        // Live title preview
         card.querySelector('[data-field="titel"]').addEventListener('input', e => {
             const preview = card.querySelector('.entry-title-preview');
             preview.textContent = e.target.value || 'Neuer Eintrag';
             preview.classList.toggle('empty', !e.target.value);
         });
 
-        // Delete
         card.querySelector('.btn-delete').addEventListener('click', () => {
-            if (confirm('Diesen Eintrag wirklich löschen?')) {
-                card.remove();
-                renumberCards();
-            }
+            if (confirm('Diesen Eintrag wirklich löschen?')) { card.remove(); renumberCards(); }
         });
 
         listEl.appendChild(card);
@@ -510,27 +410,34 @@
 
     // ── Helpers ────────────────────────────────────────────────────────────
     function esc(str) {
-        return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 
     function escTextarea(str) {
-        // JSON stores \n as escape sequences; textarea needs real newlines
-        return str.replace(/\\n/g, '\n').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return String(str).replace(/\\n/g, '\n').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 
-    // ── Event listeners ────────────────────────────────────────────────────
-    window.openFile = openFile; // für onclick im Empty-State
-    document.getElementById('btn-open').addEventListener('click', openFile);
-    document.getElementById('btn-save').addEventListener('click', saveFile);
+    // ── Init ───────────────────────────────────────────────────────────────
+    apiKey = localStorage.getItem(STORAGE_KEY_API) || '';
+    binId  = localStorage.getItem(STORAGE_KEY_BIN) || '';
+
+    statusBadge.addEventListener('click', showSetup);
+    document.getElementById('btn-save').addEventListener('click', saveToJsonBin);
     document.getElementById('btn-add').addEventListener('click', () => {
-        // Close empty state if present
         const empty = listEl.querySelector('.empty-state');
         if (empty) empty.remove();
         addCard();
         renumberCards();
-        // Scroll to new card
+        saveBtn.disabled = false;
         listEl.lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+
+    if (apiKey && binId) {
+        overlay.classList.add('hidden');
+        loadFromJsonBin();
+    } else {
+        showSetup();
+    }
 
 })();
 </script>
