@@ -115,6 +115,23 @@
             margin-bottom: 14px;
         }
 
+        .card-beschreibung p {
+            margin: 0 0 0.6em;
+        }
+
+        .card-beschreibung p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-beschreibung ul {
+            margin: 0.4em 0;
+            padding-left: 1.4em;
+        }
+
+        .card-beschreibung li {
+            margin-bottom: 0.25em;
+        }
+
         .card-link {
             font-size: 15px;
             font-weight: 600;
@@ -199,6 +216,42 @@
             .replace(/"/g, '&quot;');
     }
 
+    function renderMarkdown(str) {
+        if (!str) return '';
+        // Escape HTML first for safety, then apply formatting
+        let s = escapeHtml(str);
+
+        // Split into blocks by double newline (paragraphs)
+        const blocks = s.split(/\n{2,}/);
+        const rendered = blocks.map(block => {
+            const lines = block.split('\n');
+
+            // Check if all non-empty lines are bullet points
+            const bulletLines = lines.filter(l => l.trim() !== '');
+            const isList = bulletLines.length > 0 && bulletLines.every(l => /^[•\-]/.test(l.trim()));
+
+            if (isList) {
+                const items = lines
+                    .filter(l => l.trim() !== '')
+                    .map(l => `<li>${applyInline(l.replace(/^[•\-]\s*/, ''))}</li>`)
+                    .join('');
+                return `<ul>${items}</ul>`;
+            }
+
+            // Regular paragraph — single newlines become <br>
+            const content = lines.map(l => applyInline(l)).join('<br>');
+            return `<p>${content}</p>`;
+        });
+
+        return rendered.join('');
+    }
+
+    function applyInline(s) {
+        return s
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g, '<em>$1</em>');
+    }
+
     async function loadAnnouncements() {
         status.textContent = 'Lade Ankündigungen …';
 
@@ -225,7 +278,7 @@
             const bild  = escapeHtml(item.bild || PLACEHOLDER);
             const titel = escapeHtml(item.titel || '');
             const datum = escapeHtml(item.datum || '');
-            const desc  = escapeHtml(item.beschreibung || '');
+            const desc  = renderMarkdown(item.beschreibung || '');
             const link      = escapeHtml(item.link || '');
             const linkText  = escapeHtml(item.linkText || 'Mehr erfahren');
 
