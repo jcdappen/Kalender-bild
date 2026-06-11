@@ -1,5 +1,5 @@
 [
-    {
+  {
     "titel": "UNITED Conference 2026 – signs & wonders",
     "datum": "03. & 04. Juli 2026 | GospelHouse Baden-Baden",
     "beschreibung": "Gemeinsam als UNITED Netzwerk kommen wir auch 2026 wieder zusammen, um zwei Tage voller Begegnung, Worship und kraftvoller Impulse zu erleben.\n\nDie UNITED Conference ist ein Ort, an dem wir unsere Leidenschaft für Jesus neu entfachen, Gemeinschaft feiern und erwarten, dass Gott wirkt – sichtbar, spürbar, übernatürlich. Unter dem diesjährigen Thema **signs & wonders** wollen wir Raum schaffen für das, was Gott tun möchte: Heilung, Freiheit, Ermutigung und Momente, die Herzen verändern.\n\nSei dabei und erlebe, wie Gott in unserer Mitte Zeichen setzt und Wunder tut!",
@@ -20,7 +20,7 @@
     "bild": "assets/images/ankuendigungen/buchhaltung.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/Personalprofil-Buchhaltung-02_26.pdf"
   },
-    {
+  {
     "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
     "datum": "25.07. ab 16:00 Uhr",
     "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders. Ob Grill, Getränke oder Dekoration – jede helfende Hand zählt. Melde dich gern im Büro. Gemeinsam wird es ein tolles Fest!",
@@ -28,7 +28,7 @@
     "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Kontakt"
   },
-     {
+  {
     "titel": "Men on Fire - Wanderung",
     "datum": "20. Juni Treffpunkt um 13:00 Uhr",
     "beschreibung": "Am 20. Juni sind wir unterwegs. Gemeinsam wandern wir die **AugenBlick-Runde Bühl** – 7,6 km durch die Natur rund um Windeck. Start ist um 13 Uhr am Parkplatz bei der Burg Windeck. Fahrgemeinschaften ab der Konkordia sind möglich.\n\nUnterwegs erwarten dich kleine Impulse aus der Bibel – zum Innehalten und Nachdenken. Den Abschluss feiern wir gemeinsam im Kappler Lamm in Kappelwindeck.\n\nMitbringen:\n\n• gute Wanderschuhe\n• Getränke\n• ein kleines Vesper\n\nDie Wanderung findet im Rahmen von Men on Fire+ statt. *Anmeldung erforderlich.*",
@@ -51,5 +51,12 @@
     "bild": "assets/images/ankuendigungen/Kinder.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/Kinderspass.pdf",
     "linkText": "Infos Kinderspaß"
+  },
+  {
+    "titel": "Bundespräsident Frank-Walter Steinmeier empfängt die Leitung der VEF im Schloss Bellevue",
+    "datum": "",
+    "beschreibung": "Nachdem Bundespräsident Frank-Walter Steinmeiner verhindert war und nicht an der Festveranstaltung zum 100-jährigen Jubiläum der Vereinigung Evangelischer Freikirchen (VEF) teilnehmen konnte, hat er eine Delegation der VEF im Schloss Bellevue empfangen. **Mit dabei unser Gemeindemitglied Jochen Geiselhart.**",
+    "bild": "assets/images/ankuendigungen/vef.jpg",
+    "link": "https://www.vef.de/aktuelles/news/bundesprasident"
   }
 ]
