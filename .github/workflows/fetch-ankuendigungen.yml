@@ -1,0 +1,44 @@
+name: Fetch Ankündigungen from JSONBin
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # Alle 2 Stunden
+  workflow_dispatch:          # Manuell auslösbar
+
+concurrency:
+  group: fetch-ankuendigungen
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch from JSONBin and write JSON
+        env:
+          JSONBIN_API_KEY: ${{ secrets.JSONBIN_API_KEY }}
+          JSONBIN_BIN_ID:  ${{ secrets.JSONBIN_BIN_ID }}
+        run: |
+          curl -sf \
+            -H "X-Master-Key: $JSONBIN_API_KEY" \
+            "https://api.jsonbin.io/v3/b/$JSONBIN_BIN_ID/latest" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d['record'], ensure_ascii=False, indent=2))" \
+            > data/ankuendigungen.json
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/ankuendigungen.json
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen."
+          else
+            git commit -m "chore: update ankuendigungen from JSONBin [skip ci]"
+            git push
+          fi
