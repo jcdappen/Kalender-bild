@@ -531,6 +531,7 @@
     }
 
     // ── Event listeners ────────────────────────────────────────────────────
+    window.openFile = openFile; // für onclick im Empty-State
     document.getElementById('btn-open').addEventListener('click', openFile);
     document.getElementById('btn-save').addEventListener('click', saveFile);
     document.getElementById('btn-add').addEventListener('click', () => {
