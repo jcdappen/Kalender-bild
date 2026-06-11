@@ -340,45 +340,33 @@
     }
 
     // ── File API ───────────────────────────────────────────────────────────
-    async function openFile() {
-        if (!window.showOpenFilePicker) {
-            // Fallback: classic <input type="file">
-            const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = '.json,application/json';
-            input.onchange = async () => {
-                const file = input.files[0];
-                if (!file) return;
-                try {
-                    const text = await file.text();
-                    items = JSON.parse(text);
-                    fileHandle = null;
-                    fileInfo.textContent = file.name + ' (Fallback-Modus: Download statt direktes Speichern)';
-                    saveBtn.disabled = false;
-                    render();
-                    showToast('Datei geladen ✓', 'success');
-                } catch (e) {
-                    showToast('JSON-Fehler: ' + e.message, 'error');
-                }
-            };
-            input.click();
-            return;
-        }
+    // Öffnen immer via <input type="file"> (funktioniert in allen Browsern
+    // und auch über file://)
+    function openFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.style.display = 'none';
+        document.body.appendChild(input);
 
-        try {
-            [fileHandle] = await window.showOpenFilePicker({
-                types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }]
-            });
-            const file = await fileHandle.getFile();
-            const text = await file.text();
-            items = JSON.parse(text);
-            fileInfo.textContent = file.name;
-            saveBtn.disabled = false;
-            render();
-            showToast('Datei geladen ✓', 'success');
-        } catch (e) {
-            if (e.name !== 'AbortError') showToast('Fehler: ' + e.message, 'error');
-        }
+        input.addEventListener('change', async () => {
+            const file = input.files[0];
+            document.body.removeChild(input);
+            if (!file) return;
+            try {
+                const text = await file.text();
+                items = JSON.parse(text);
+                fileHandle = null;
+                fileInfo.textContent = file.name;
+                saveBtn.disabled = false;
+                render();
+                showToast('Datei geladen ✓', 'success');
+            } catch (e) {
+                showToast('JSON-Fehler: ' + e.message, 'error');
+            }
+        });
+
+        input.click();
     }
 
     async function saveFile() {
