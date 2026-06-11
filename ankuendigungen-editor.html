@@ -268,13 +268,14 @@
 
     // ── JSONBin API ────────────────────────────────────────────────────────
     async function loadFromJsonBin() {
+        if (!apiKey || !binId) { showSetup(); return; }
         statusBadge.textContent = 'Lade …';
         try {
             const res = await fetch(`https://api.jsonbin.io/v3/b/${binId}/latest`, {
                 headers: { 'X-Master-Key': apiKey }
             });
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const data = await res.json();
+            if (!res.ok) throw new Error(data.message || `HTTP ${res.status}`);
             items = Array.isArray(data.record) ? data.record : [];
             statusBadge.textContent = `Bin ${binId.slice(0, 8)}… • ${items.length} Einträge`;
             saveBtn.disabled = false;
@@ -287,6 +288,7 @@
     }
 
     async function saveToJsonBin() {
+        if (!apiKey || !binId) { showSetup(); return; }
         collectFromDom();
         saveBtn.disabled = true;
         saveBtn.textContent = '⏳ Speichert …';
@@ -299,7 +301,8 @@
                 },
                 body: JSON.stringify(items)
             });
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.message || `HTTP ${res.status}`);
             statusBadge.textContent = `Bin ${binId.slice(0, 8)}… • ${items.length} Einträge`;
             showToast('Gespeichert ✓ GitHub Action holt die Daten beim nächsten Run.', 'success');
         } catch (e) {
