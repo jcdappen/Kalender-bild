@@ -898,5 +898,17 @@
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
+  },
+  {
+    "id": "1109579_2026-09-11",
+    "title": "Zwetschgenfest",
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-14",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
