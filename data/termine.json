@@ -886,5 +886,29 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1108805_2026-09-13T08:00:00Z",
+    "title": "Ökumenischer Gottesdienst zum Zwetschgenfest",
+    "startDate": "2026-09-13T08:00:00Z",
+    "endDate": "2026-09-13T09:00:00Z",
+    "category": "Gottesdienst",
+    "color": "#fbd75b",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": "1110978_2026-09-13T11:45:00Z",
+    "title": "Zwetschgenfestumzug",
+    "startDate": "2026-09-13T11:45:00Z",
+    "endDate": "2026-09-13T13:15:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
