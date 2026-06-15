@@ -504,18 +504,6 @@
     "link": ""
   },
   {
-    "id": "1109576_2026-07-25T14:00:00Z",
-    "title": "Konkordia Sommerfest",
-    "startDate": "2026-07-25T14:00:00Z",
-    "endDate": "2026-07-25T17:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1110922_2026-07-26T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-07-26T07:30:00Z",
@@ -538,6 +526,18 @@
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  },
+  {
+    "id": "1109576_2026-07-26T09:30:00Z",
+    "title": "Konkordia Sommerfest",
+    "startDate": "2026-07-26T09:30:00Z",
+    "endDate": "2026-07-26T13:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   },
   {
     "id": "1109836_2026-07-27T13:30:00Z",
