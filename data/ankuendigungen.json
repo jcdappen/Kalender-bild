@@ -1,6 +1,6 @@
 [
   {
-    "titel": "UNITED Conference 2026 – signs & wonders!!",
+    "titel": "UNITED Conference 2026 – signs & wonders",
     "datum": "03. & 04. Juli 2026 | GospelHouse Baden-Baden",
     "beschreibung": "Gemeinsam als UNITED Netzwerk kommen wir auch 2026 wieder zusammen, um zwei Tage voller Begegnung, Worship und kraftvoller Impulse zu erleben.\n\nDie UNITED Conference ist ein Ort, an dem wir unsere Leidenschaft für Jesus neu entfachen, Gemeinschaft feiern und erwarten, dass Gott wirkt – sichtbar, spürbar, übernatürlich. Unter dem diesjährigen Thema **signs & wonders** wollen wir Raum schaffen für das, was Gott tun möchte: Heilung, Freiheit, Ermutigung und Momente, die Herzen verändern.\n\nSei dabei und erlebe, wie Gott in unserer Mitte Zeichen setzt und Wunder tut!",
     "bild": "assets/images/ankuendigungen/united.jpg",
@@ -21,8 +21,8 @@
     "link": "https://storage1.snappages.site/S74RKH/assets/files/Personalprofil-Buchhaltung-02_26.pdf"
   },
   {
-    "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
-    "datum": "25.07. ab 16:00 Uhr",
+    "titel": "Konkordia Sommerfest",
+    "datum": "26.07. nach dem Gottesdienst",
     "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders. Ob Grill, Getränke oder Dekoration – jede helfende Hand zählt. Melde dich gern im Büro. Gemeinsam wird es ein tolles Fest!",
     "bild": "assets/images/ankuendigungen/Sommerfest.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt",
@@ -55,8 +55,20 @@
   {
     "titel": "Bundespräsident Frank-Walter Steinmeier empfängt die Leitung der VEF im Schloss Bellevue",
     "datum": "",
-    "beschreibung": "Nachdem Bundespräsident Frank-Walter Steinmeiner verhindert war und nicht an der Festveranstaltung zum 100-jährigen Jubiläum der Vereinigung Evangelischer Freikirchen (VEF) teilnehmen konnte, hat er eine Delegation der VEF im Schloss Bellevue empfangen.\n\n**Mit dabei unser Gemeindemitglied Jochen Geiselhart.**",
+    "beschreibung": "Nachdem Bundespräsident Frank-Walter Steinmeiner verhindert war und nicht an der Festveranstaltung zum 100-jährigen Jubiläum der Vereinigung Evangelischer Freikirchen (VEF) teilnehmen konnte, hat er eine Delegation der VEF im Schloss Bellevue empfangen.\n\n**Mit dabei unser Gemeindemitglied Jochen Geiselhart.**\n\nBildnachweis: Bundesregierung / Sandra Steins",
     "bild": "assets/images/ankuendigungen/vef.jpg",
     "link": "https://www.vef.de/aktuelles/news/bundesprasident"
+  },
+  {
+    "titel": "Konkordia Infoabend",
+    "datum": "10.07. um 19:30 Uhr | Konkordia",
+    "beschreibung": "wir laden euch herzlich zu unserem **nfoabend** ein. An diesem Abend stellen wir unsere neue Gemeindestruktur vor – wie wir zusammen arbeiten und noch besser funktionieren können. Danach haben wir Zeit für echte Gemeinschaft, gute Gespräche und eure Fragen. Lasst uns gemeinsam schauen, wohin Gott uns führt. Kommt vorbei, wir freuen uns auf euch!",
+    "bild": "assets/images/ankuendigungen/Infoabend.jpg"
+  },
+  {
+    "titel": "Mamatreff macht Sommerpause",
+    "datum": "Vom 01.07 bis zum 13.09.",
+    "beschreibung": "Der erste Mamatreff nach den Sommerferien wird am 16.09. sein!\nWir freuen uns auch euch!",
+    "bild": "assets/images/ankuendigungen/mamatreff.jpg"
   }
 ]
