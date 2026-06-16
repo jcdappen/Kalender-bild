@@ -70,5 +70,13 @@
     "datum": "Vom 01.07 bis zum 13.09.",
     "beschreibung": "Der erste Mamatreff nach den Sommerferien wird am 16.09. sein!\nWir freuen uns auch euch!",
     "bild": "assets/images/ankuendigungen/mamatreff.jpg"
+  },
+  {
+    "titel": "Abwesenheitsnotiz",
+    "datum": "22. bis 27. Juni",
+    "beschreibung": "Unser Pastor Johannes Dappen ist vom 22. bis 27. Juni nicht erreichbar.\nIn dieser Zeit übernimmt der Gemeinderat die Vertretung.\ngemeinderat(a)gemeinde-konkordia.de",
+    "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
   }
 ]
