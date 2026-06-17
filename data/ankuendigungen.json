@@ -22,7 +22,7 @@
   },
   {
     "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
-    "datum": "25.07. ab 16:00 Uhr",
+    "datum": "26.07. nach dem Gottesdienst",
     "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders. Ob Grill, Getränke oder Dekoration – jede helfende Hand zählt. Melde dich gern im Büro. Gemeinsam wird es ein tolles Fest!",
     "bild": "assets/images/ankuendigungen/Sommerfest.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt",
@@ -55,8 +55,30 @@
   {
     "titel": "Bundespräsident Frank-Walter Steinmeier empfängt die Leitung der VEF im Schloss Bellevue",
     "datum": "",
-    "beschreibung": "Nachdem Bundespräsident Frank-Walter Steinmeiner verhindert war und nicht an der Festveranstaltung zum 100-jährigen Jubiläum der Vereinigung Evangelischer Freikirchen (VEF) teilnehmen konnte, hat er eine Delegation der VEF im Schloss Bellevue empfangen.\n\n**Mit dabei unser Gemeindemitglied Jochen Geiselhart.**",
+    "beschreibung": "Nachdem Bundespräsident Frank-Walter Steinmeiner verhindert war und nicht an der Festveranstaltung zum 100-jährigen Jubiläum der Vereinigung Evangelischer Freikirchen (VEF) teilnehmen konnte, hat er eine Delegation der VEF im Schloss Bellevue empfangen.\n\n**Mit dabei unser Gemeindemitglied Jochen Geiselhart.**\n\nBild: Bundesregierung / Sandra Steins",
     "bild": "assets/images/ankuendigungen/vef.jpg",
     "link": "https://www.vef.de/aktuelles/news/bundesprasident"
+  },
+  {
+    "titel": "Konkordia Infoabend",
+    "datum": "10.07. | 19:30 | Konkordia",
+    "beschreibung": "wir laden euch herzlich zu unserem Infoabend ein. An diesem Abend stellen wir unsere neue Gemeindestruktur vor – wie wir zusammen arbeiten und noch besser funktionieren können. Danach haben wir Zeit für echte Gemeinschaft, gute Gespräche und eure Fragen. Wir möchten auch darüber austauschen, wie wir das gemeinsame Gebet weiter gestalten wollen. Lasst uns gemeinsam schauen, wohin Gott uns führt. Kommt vorbei, wir freuen uns auf euch!",
+    "bild": "assets/images/ankuendigungen/Infoabend.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
+  },
+  {
+    "titel": "Abwesenheitsnotiz",
+    "datum": "22. bis 27. Juni",
+    "beschreibung": "Unser Pastor Johannes Dappen ist vom 22. bis 27. Juni nicht erreichbar.\nIn dieser Zeit übernimmt der Gemeinderat die Vertretung.\nBei dringenden Fragen erreichen Sie das Gemeindebüro oder einen Gemeinderat.",
+    "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
+  },
+  {
+    "titel": "Mamatreff macht Sommerpause",
+    "datum": "01.07. bis 13.09.",
+    "beschreibung": "Der erste Mamatreff nach der Sommerpause ist am 16.09. zur gewohnten Zeit. Wir freuen uns auf euch!",
+    "bild": "assets/images/ankuendigungen/mamatreff.jpg"
   }
 ]
