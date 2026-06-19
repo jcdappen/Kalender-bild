@@ -862,5 +862,29 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1108215_2026-09-17T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-09-17T16:00:00Z",
+    "endDate": "2026-09-17T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
+    "id": "1112546_2026-09-17T16:30:00Z",
+    "title": "Ökumenisches Stadtgebet",
+    "startDate": "2026-09-17T16:30:00Z",
+    "endDate": "2026-09-17T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1112546_2026_09_17T16_30_00Z.jpg",
+    "location": "Gemeindezentrum Johanneskirche Raum 5, Johannesstr. 5, 77815 Bühl",
+    "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben.",
+    "link": ""
   }
 ]
