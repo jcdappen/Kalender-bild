@@ -1,29 +1,5 @@
 [
   {
-    "id": "1110922_2026-06-21T07:30:00Z",
-    "title": "Gebet vor dem Gottesdienst",
-    "startDate": "2026-06-21T07:30:00Z",
-    "endDate": "2026-06-21T07:45:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1110922_2026_06_21T07_30_00Z.jpg",
-    "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen.",
-    "link": ""
-  },
-  {
-    "id": "1111071_2026-06-21T08:00:00Z",
-    "title": "Gottesdienst",
-    "startDate": "2026-06-21T08:00:00Z",
-    "endDate": "2026-06-21T09:30:00Z",
-    "category": "Gottesdienst",
-    "color": "#fbd75b",
-    "image": "assets/images/1111071_2026_06_21T08_00_00Z.jpg",
-    "location": "Eisenbahnstraße 31, 77815 Bühl",
-    "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
-  },
-  {
     "id": "1110503_2026-06-21T10:00:00Z",
     "title": "Alpha Abschluss",
     "startDate": "2026-06-21T10:00:00Z",
