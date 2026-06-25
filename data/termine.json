@@ -1,17 +1,5 @@
 [
   {
-    "id": "1108215_2026-06-25T16:00:00Z",
-    "title": "Alpha Jünger",
-    "startDate": "2026-06-25T16:00:00Z",
-    "endDate": "2026-06-25T18:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
     "id": "1110922_2026-06-28T07:30:00Z",
     "title": "Gebet vor dem Gottesdienst",
     "startDate": "2026-06-28T07:30:00Z",
@@ -274,6 +262,18 @@
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": "",
     "link": "https://www.gemeinde-konkordia.de/kinder"
+  },
+  {
+    "id": "1112771_2026-07-21T07:30:00Z",
+    "title": "Coaching",
+    "startDate": "2026-07-21T07:30:00Z",
+    "endDate": "2026-07-21T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   },
   {
     "id": "1110052_2026-07-22T13:30:00Z",
