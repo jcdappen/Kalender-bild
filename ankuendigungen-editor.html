@@ -102,8 +102,26 @@
 
         .entry-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 
-        .entry-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #fafafa; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
+        .entry-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #fafafa; border-bottom: 1px solid var(--border); user-select: none; }
         .entry-header:hover { background: #f3f4f6; }
+
+        .drag-handle {
+            cursor: grab; color: var(--text-muted); font-size: 18px; line-height: 1;
+            padding: 2px 4px; border-radius: 4px; flex-shrink: 0;
+        }
+        .drag-handle:hover { background: #e2e8f0; color: var(--text); }
+        .drag-handle:active { cursor: grabbing; }
+
+        .entry-card.dragging { opacity: 0.4; }
+        .entry-card.drag-over { outline: 2px dashed var(--primary); outline-offset: 2px; }
+
+        .move-btns { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
+        .move-btn {
+            background: none; border: none; cursor: pointer; color: var(--text-muted);
+            font-size: 13px; line-height: 1; padding: 1px 4px; border-radius: 3px;
+        }
+        .move-btn:hover { background: #e2e8f0; color: var(--text); }
+        .move-btn:disabled { opacity: 0.2; cursor: default; }
 
         .entry-number { font-size: 12px; font-weight: 700; color: var(--primary); background: #fde8ea; border-radius: 999px; padding: 2px 8px; flex-shrink: 0; }
         .entry-title-preview { font-weight: 600; font-size: 15px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -224,6 +242,7 @@
     let items = [];
     let apiKey = '';
     let binId  = '';
+    let dragSrc = null;
 
     const listEl      = document.getElementById('entry-list');
     const saveBtn     = document.getElementById('btn-save');
@@ -345,9 +364,14 @@
 
         card.innerHTML = `
             <div class="entry-header">
+                <span class="drag-handle" title="Ziehen zum Verschieben">⠿</span>
+                <div class="move-btns">
+                    <button class="move-btn btn-move-up" title="Nach oben">▲</button>
+                    <button class="move-btn btn-move-down" title="Nach unten">▼</button>
+                </div>
                 <span class="entry-number">#${idx + 1}</span>
                 <span class="entry-title-preview ${item.titel ? '' : 'empty'}">${esc(item.titel || 'Neuer Eintrag')}</span>
-                <span class="entry-toggle">▾</span>
+                <span class="entry-toggle" style="cursor:pointer">▾</span>
             </div>
             <div class="entry-body">
                 <div class="field-grid">
@@ -387,7 +411,61 @@
             </div>
         `;
 
-        card.querySelector('.entry-header').addEventListener('click', () => card.classList.toggle('open'));
+        // toggle open on header click (but not on drag handle / buttons)
+        card.querySelector('.entry-toggle').addEventListener('click', () => card.classList.toggle('open'));
+        card.querySelector('.entry-number').addEventListener('click', () => card.classList.toggle('open'));
+        card.querySelector('.entry-title-preview').addEventListener('click', () => card.classList.toggle('open'));
+
+        // move up / down buttons
+        card.querySelector('.btn-move-up').addEventListener('click', () => {
+            const prev = card.previousElementSibling;
+            if (prev && prev.classList.contains('entry-card')) {
+                listEl.insertBefore(card, prev);
+                renumberCards();
+            }
+        });
+        card.querySelector('.btn-move-down').addEventListener('click', () => {
+            const next = card.nextElementSibling;
+            if (next && next.classList.contains('entry-card')) {
+                listEl.insertBefore(next, card);
+                renumberCards();
+            }
+        });
+
+        // drag-and-drop
+        card.setAttribute('draggable', 'true');
+
+        card.querySelector('.drag-handle').addEventListener('mousedown', () => {
+            card.setAttribute('draggable', 'true');
+        });
+
+        card.addEventListener('dragstart', e => {
+            e.dataTransfer.effectAllowed = 'move';
+            dragSrc = card;
+            setTimeout(() => card.classList.add('dragging'), 0);
+        });
+        card.addEventListener('dragend', () => {
+            card.classList.remove('dragging');
+            document.querySelectorAll('.entry-card.drag-over').forEach(c => c.classList.remove('drag-over'));
+            dragSrc = null;
+        });
+        card.addEventListener('dragover', e => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            if (dragSrc && dragSrc !== card) card.classList.add('drag-over');
+        });
+        card.addEventListener('dragleave', () => card.classList.remove('drag-over'));
+        card.addEventListener('drop', e => {
+            e.preventDefault();
+            card.classList.remove('drag-over');
+            if (!dragSrc || dragSrc === card) return;
+            const cards = [...listEl.querySelectorAll('.entry-card')];
+            const srcIdx  = cards.indexOf(dragSrc);
+            const destIdx = cards.indexOf(card);
+            if (srcIdx < destIdx) listEl.insertBefore(dragSrc, card.nextElementSibling);
+            else                  listEl.insertBefore(dragSrc, card);
+            renumberCards();
+        });
 
         card.querySelector('[data-field="titel"]').addEventListener('input', e => {
             const preview = card.querySelector('.entry-title-preview');
@@ -403,8 +481,11 @@
     }
 
     function renumberCards() {
-        document.querySelectorAll('.entry-card').forEach((card, i) => {
+        const cards = [...document.querySelectorAll('.entry-card')];
+        cards.forEach((card, i) => {
             card.querySelector('.entry-number').textContent = '#' + (i + 1);
+            card.querySelector('.btn-move-up').disabled   = (i === 0);
+            card.querySelector('.btn-move-down').disabled = (i === cards.length - 1);
         });
     }
 
