@@ -1,17 +1,5 @@
 [
   {
-    "id": "1109573_2026-07-03",
-    "title": "United Netzwerk Konferenz",
-    "startDate": "2026-07-03",
-    "endDate": "2026-07-04",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1109573_2026_07_03.jpg",
-    "location": "Gospelhouse, Wilhelm-Drapp-Straße 7, 76532 Baden-Baden",
-    "description": "Gemeinsam als UNITED Netzwerk kommen wir auch 2026 wieder zusammen, um zwei Tage voller Begegnung, Worship und kraftvoller Impulse zu erleben.\n\nDie UNITED Conference ist ein Ort, an dem wir unsere Leidenschaft für Jesus neu entfachen, Gemeinschaft feiern und erwarten, dass Gott wirkt – sichtbar, spürbar, übernatürlich. Unter dem diesjährigen Thema signs & wonders wollen wir Raum schaffen für das, was Gott tun möchte: Heilung, Freiheit, Ermutigung und Momente, die Herzen verändern.\n\nSei dabei und erlebe, wie Gott in unserer Mitte Zeichen setzt und Wunder tut!",
-    "link": "https://www.gospelhouse.de/united-conference"
-  },
-  {
     "id": "1110972_2026-07-04T08:00:00Z",
     "title": "Bühler Samstag KinderSpaß Spielstraße Innenstadt",
     "startDate": "2026-07-04T08:00:00Z",
@@ -837,6 +825,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1108215_2026-10-01T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-10-01T16:00:00Z",
+    "endDate": "2026-10-01T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
   }
 ]
