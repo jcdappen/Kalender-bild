@@ -1,32 +1,19 @@
 [
   {
-    "titel": "Kinderspaß",
-    "datum": "04.07.26 von 10 - 16 Uhr",
-    "beschreibung": "Bühl InAktion e.V. veranstaltet wieder im Rahmen der Bühler Samstage: einen Kinderspaß-Aktionstag mit vielen Spiel- und Erlebnisstationen. Und wir sind dabei mit einer Spielstation mit Cornhole-Wurfspiel, Tischkicker und einem Bibel-Quizz. Bitte betet und helft mit. Meldet euch bitte bei Gabi Trapp (g.trapp@gemeinde-konkordia.de)",
-    "bild": "assets/images/ankuendigungen/Kinder.jpg",
-    "link": "https://storage1.snappages.site/S74RKH/assets/files/Kinderspass.pdf",
-    "linkText": "Infos Kinderspaß"
-  },
-  {
-    "titel": "Aussendung Brigitte & Jochen",
-    "datum": "05.07.26 | 10:00 Uhr | Konkordia",
-    "beschreibung": "Am kommenden Sonntag ist es soweit: Wir senden Brigitte und Jochen Geiselhardt aus, um in Haslach im Kinzigtal eine neue Gemeinde zu gründen. Das ist ein besonderer Moment für unsere ganze Konkordia-Familie – Gott eröffnet ein neues Kapitel, und wir dürfen mit dabei sein, wie er es schreibt. Wir freuen uns auf dein Kommen!",
-    "bild": "assets/images/ankuendigungen/sendung.jpg"
-  },
-  {
-    "titel": "UNITED Conference 2026 – signs & wonders",
-    "datum": "03. & 04. Juli 2026 | GospelHouse Baden-Baden",
-    "beschreibung": "Gemeinsam als UNITED Netzwerk kommen wir auch 2026 wieder zusammen, um zwei Tage voller Begegnung, Worship und kraftvoller Impulse zu erleben.\n\nDie UNITED Conference ist ein Ort, an dem wir unsere Leidenschaft für Jesus neu entfachen, Gemeinschaft feiern und erwarten, dass Gott wirkt – sichtbar, spürbar, übernatürlich. Unter dem diesjährigen Thema **signs & wonders** wollen wir Raum schaffen für das, was Gott tun möchte: Heilung, Freiheit, Ermutigung und Momente, die Herzen verändern.\n\nSei dabei und erlebe, wie Gott in unserer Mitte Zeichen setzt und Wunder tut!",
-    "bild": "assets/images/ankuendigungen/united.jpg",
-    "link": "https://www.gospelhouse.de/united-conference"
-  },
-  {
     "titel": "Konkordia Infoabend",
     "datum": "10.07. | 19:30 | Konkordia",
     "beschreibung": "wir laden euch herzlich zu unserem Infoabend ein. An diesem Abend stellen wir unsere neue Gemeindestruktur vor – wie wir zusammen arbeiten und noch besser funktionieren können. Danach haben wir Zeit für echte Gemeinschaft, gute Gespräche und eure Fragen. Wir möchten auch darüber austauschen, wie wir das gemeinsame Gebet weiter gestalten wollen. Lasst uns gemeinsam schauen, wohin Gott uns führt. Kommt vorbei, wir freuen uns auf euch!",
     "bild": "assets/images/ankuendigungen/Infoabend.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Kontakt"
+  },
+  {
+    "titel": "Aussendung Brigitte & Jochen",
+    "datum": "05.07.26 | 10:00 Uhr | Konkordia",
+    "beschreibung": "Was für ein bewegender Sonntag! Am 5. Juli haben wir Brigitte und Jochen Geiselhart offiziell nach Haslach im Kinzigtal gesendet. Wir dürfen dankbar zurückblicken – und gespannt nach vorne schauen.\n\nWer den Gottesdienst verpasst hat oder ihn noch einmal erleben möchte: Das Video zur Aussendung könnt ihr euch anschauen.\n\nFalls du am Sonntag noch keine Karte für Brigitte und Jochen ausgefüllt hast: Kein Problem! Du kannst das nächsten Sonntag, den 12.07., nachholen. Oder du füllst zu Hause eine Karte aus und wirfst sie einfach in den Briefkasten.\nWir freuen uns auf euch!",
+    "bild": "assets/images/ankuendigungen/sendung1.jpg",
+    "link": "https://youtu.be/OjbsuM1MpsU",
+    "linkText": "Video"
   },
   {
     "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
@@ -37,10 +24,12 @@
     "linkText": "Kontakt"
   },
   {
-    "titel": "Mamatreff macht Sommerpause",
-    "datum": "01.07. bis 13.09.",
-    "beschreibung": "Der erste Mamatreff nach der Sommerpause ist am 16.09. zur gewohnten Zeit. Wir freuen uns auf euch!",
-    "bild": "assets/images/ankuendigungen/mamatreff.jpg"
+    "titel": "5 Jahre Hoffnungshaus Konstanz",
+    "datum": "26.07.26 | Stifterstraße 12 c/d | 78467 Konstanz",
+    "beschreibung": "Gemeinsam mit dir wollen wir auf 5 Jahre Hoffnungshaus Konstanz zurückblicken & feiern, was entstanden ist. Zur besseren Planung hilft uns deine Anmeldung bis 15. Juli:\nreberle@hoffnungstraeger.de\n· 10:00 Gottesdienst auf der Kirchwiese der Christuskirche beim Hoffnungshaus\n· im Anschluss: Ausstellung über die Geschichte und das gemeinsame Leben im Hoffnungshaus Konstanz\n· Mittagessen – internationale Gerichte, Getränke, Kaffee und Kuchen\n· Interviews und Beiträge der Bewohnenden\n· Mitgestalten eines kreativen Gemeinschaftswerks\n· Kinderprogramm auf der Kirchwiese\n\nWIR FREUEN UNS AUF DICH!\nDie Bewohner & Bewohnerinnen des Hoffnungshaus Konstanz",
+    "bild": "assets/images/ankuendigungen/Hoffnung.jpg",
+    "link": "https://hoffnungstraeger.de/was-wir-machen/hoffnungshaus/standorte/konstanz/",
+    "linkText": "Mehr erfahren"
   },
   {
     "titel": "Wir suchen Verstärkung",
