@@ -826,5 +826,29 @@
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": "",
     "link": "https://www.gemeinde-konkordia.de/kinder"
+  },
+  {
+    "id": "1112719_2026-10-07T07:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-10-07T07:30:00Z",
+    "endDate": "2026-10-07T09:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1112719_2026_10_07T07_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
+    "id": "1110981_2026-10-07T17:30:00Z",
+    "title": "Evangelisationsteamtreffen",
+    "startDate": "2026-10-07T17:30:00Z",
+    "endDate": "2026-10-07T19:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
