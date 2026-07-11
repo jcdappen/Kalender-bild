@@ -850,5 +850,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1110950_2026-10-09T17:00:00Z",
+    "title": "Men on Fire",
+    "startDate": "2026-10-09T17:00:00Z",
+    "endDate": "2026-10-09T20:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Ein Zeit  nur für Männer – völlig entspannt, mit guten Gesprächen und Raum zum Kraftschöpfen. Die Gemeinde Konkordia lädt herzlich ein zu Gemeinschaft, Impulsen und einer stärkenden Zeit.\n\nOrt wird bekannt gegeben",
+    "link": "https://www.gemeinde-konkordia.de/maenner"
   }
 ]
