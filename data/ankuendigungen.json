@@ -1,13 +1,5 @@
 [
   {
-    "titel": "Konkordia Infoabend",
-    "datum": "10.07. | 19:30 | Konkordia",
-    "beschreibung": "wir laden euch herzlich zu unserem Infoabend ein. An diesem Abend stellen wir unsere neue Gemeindestruktur vor – wie wir zusammen arbeiten und noch besser funktionieren können. Danach haben wir Zeit für echte Gemeinschaft, gute Gespräche und eure Fragen. Wir möchten auch darüber austauschen, wie wir das gemeinsame Gebet weiter gestalten wollen. Lasst uns gemeinsam schauen, wohin Gott uns führt. Kommt vorbei, wir freuen uns auf euch!",
-    "bild": "assets/images/ankuendigungen/Infoabend.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt",
-    "linkText": "Kontakt"
-  },
-  {
     "titel": "Aussendung Brigitte & Jochen",
     "datum": "05.07.26 | 10:00 Uhr | Konkordia",
     "beschreibung": "Was für ein bewegender Sonntag! Am 5. Juli haben wir Brigitte und Jochen Geiselhart offiziell nach Haslach im Kinzigtal gesendet. Wir dürfen dankbar zurückblicken – und gespannt nach vorne schauen.\n\nWer den Gottesdienst verpasst hat oder ihn noch einmal erleben möchte: Das Video zur Aussendung könnt ihr euch anschauen.\n\nFalls du am Sonntag noch keine Karte für Brigitte und Jochen ausgefüllt hast: Kein Problem! Du kannst das nächsten Sonntag, den 12.07., nachholen. Oder du füllst zu Hause eine Karte aus und wirfst sie einfach in den Briefkasten.\nWir freuen uns auf euch!",
@@ -18,7 +10,7 @@
   {
     "titel": "Das Sommerfest steht an - Möchtest du mitarbeiten?",
     "datum": "26.07. nach dem Gottesdienst",
-    "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders. Ob Grill, Getränke oder Dekoration – jede helfende Hand zählt. Melde dich gern im Büro. Gemeinsam wird es ein tolles Fest!",
+    "beschreibung": "Unser Sommerfest lebt von euch! Wer mitmacht, macht es besonders.\nWir benötigen noch fröhlicher Helfer zum abbauen und putzen.\nBitte meldet euch im Büro.\nVielen Dank!",
     "bild": "assets/images/ankuendigungen/Sommerfest.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Kontakt"
@@ -30,12 +22,5 @@
     "bild": "assets/images/ankuendigungen/Hoffnung.jpg",
     "link": "https://hoffnungstraeger.de/was-wir-machen/hoffnungshaus/standorte/konstanz/",
     "linkText": "Mehr erfahren"
-  },
-  {
-    "titel": "Wir suchen Verstärkung",
-    "datum": "Sachbearbeiter/in Buchhaltung (geringfügig)",
-    "beschreibung": "Du hast ein Faible für Zahlen und suchst eine sinnvolle Aufgabe in einem lebendigen Gemeindeumfeld? Wir suchen Unterstützung für unsere Buchhaltung – auf Minijob-Basis, flexibel und mit Gestaltungsspielraum.",
-    "bild": "assets/images/ankuendigungen/buchhaltung.jpg",
-    "link": "https://storage1.snappages.site/S74RKH/assets/files/Personalprofil-Buchhaltung-02_26.pdf"
   }
 ]
