@@ -802,5 +802,41 @@
     "location": "Gemeindezentrum Johanneskirche Raum 5, Johannesstr. 5, 77815 Bühl",
     "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben.",
     "link": ""
+  },
+  {
+    "id": "1110922_2026-10-18T07:30:00Z",
+    "title": "Gebet vor dem Gottesdienst",
+    "startDate": "2026-10-18T07:30:00Z",
+    "endDate": "2026-10-18T07:45:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1110922_2026_10_18T07_30_00Z.jpg",
+    "location": "GidK- Besprechungsraum, Eisenbahnstraße 31, 77815 Bühl",
+    "description": "Herzliche Einladung den Gottesdienst mit gemeinsamem Gebet zu beginnen.",
+    "link": ""
+  },
+  {
+    "id": "1108808_2026-10-18T08:00:00Z",
+    "title": "Tag der Inspiration Teil 1",
+    "startDate": "2026-10-18T08:00:00Z",
+    "endDate": "2026-10-18T10:00:00Z",
+    "category": "Gottesdienst",
+    "color": "#fbd75b",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Eisenbahnstraße 31, 77815 Bühl",
+    "description": "Im Johannesevangelium 8, 36 steht: „Wenn euch der Sohn frei macht seid ihr wirklich frei.“\n\nDoch wie komme ich in diese Freiheit, wie bleibe ich in dieser Freiheit? Spannende Fragen, bei denen uns Matthias Nowak weiterhelfen wird.\n\nMatthias Nowak gründete 1997 gemeinsam mit seiner Frau Fränzi die Gemeinde Delta Bern mit der Vision, eine Gemeinde zu sein, in der Menschen Jesus kennen-\nlernen, Liebe erfahren, Heilung finden, ausgebildet und ausgesandt werden können.\nNeben seinen Einsätzen in Indien schlägt sein Herz für den Befreiungsdienst und Freisetzung von Menschen.",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  },
+  {
+    "id": "1112433_2026-10-18T11:00:00Z",
+    "title": "Tag der Inspiration Teil 2",
+    "startDate": "2026-10-18T11:00:00Z",
+    "endDate": "2026-10-18T13:00:00Z",
+    "category": "Gottesdienst",
+    "color": "#fbd75b",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Eisenbahnstraße 31, 77815 Bühl",
+    "description": "Im Johannesevangelium 8, 36 steht: „Wenn euch der Sohn frei macht seid ihr wirklich frei.“\n\nDoch wie komme ich in diese Freiheit, wie bleibe ich in dieser Freiheit? Spannende Fragen, bei denen uns Matthias Nowak weiterhelfen wird.\n\nMatthias Nowak gründete 1997 gemeinsam mit seiner Frau Fränzi die Gemeinde Delta Bern mit der Vision, eine Gemeinde zu sein, in der Menschen Jesus kennen-\nlernen, Liebe erfahren, Heilung finden, ausgebildet und ausgesandt werden können.\nNeben seinen Einsätzen in Indien schlägt sein Herz für den Befreiungsdienst und Freisetzung von Menschen.",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienst"
   }
 ]
