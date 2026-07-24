@@ -838,5 +838,17 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1108215_2026-10-22T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2026-10-22T16:00:00Z",
+    "endDate": "2026-10-22T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
   }
 ]
