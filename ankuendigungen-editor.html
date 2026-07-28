@@ -153,6 +153,20 @@
         .md-hint { background: #f0f7ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #2b6cb0; margin-top: 6px; }
         .md-hint strong { color: #1a365d; }
 
+        /* ── Image upload ── */
+        .image-upload { display: flex; gap: 14px; align-items: flex-start; }
+        .image-preview {
+            width: 84px; height: 84px; object-fit: cover; border-radius: 8px;
+            border: 1.5px solid var(--border); background: #f1f1f1; flex-shrink: 0;
+        }
+        .image-preview.empty { visibility: hidden; }
+        .image-upload-controls { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+        .image-upload-row { display: flex; align-items: center; gap: 10px; }
+        .btn-upload { font-size: 13px; padding: 7px 14px; }
+        .upload-status { font-size: 12px; color: var(--text-muted); }
+        .upload-status.error { color: #c0392b; }
+        .upload-status.success { color: #276749; }
+
         /* ── Empty state ── */
         .empty-state { text-align: center; padding: 48px 24px; color: var(--text-muted); }
         .empty-state .icon { font-size: 40px; margin-bottom: 12px; }
@@ -200,6 +214,15 @@
             <input type="text" id="input-binid" placeholder="64abc123def456…" autocomplete="off">
         </div>
 
+        <div class="setup-hint">
+            Für den Bild-Upload zusätzlich ein <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub Personal Access Token</a>
+            mit Schreibrecht auf das Repo <code>jcdappen/Kalender-bild</code> hinterlegen (optional – ohne Token kannst du weiterhin Bild-Pfade manuell eintippen).
+        </div>
+        <div class="setup-field">
+            <label>GitHub Token (optional, für Bild-Upload)</label>
+            <input type="password" id="input-ghtoken" placeholder="github_pat_…" autocomplete="off">
+        </div>
+
         <div class="setup-actions">
             <button class="btn btn-ghost" id="btn-setup-cancel" style="color:#718096">Abbrechen</button>
             <button class="btn btn-primary" id="btn-setup-save" style="background:var(--primary);color:#fff">Verbinden</button>
@@ -238,10 +261,19 @@
 
     const STORAGE_KEY_API  = 'jb_apikey';
     const STORAGE_KEY_BIN  = 'jb_binid';
+    const STORAGE_KEY_GH   = 'gh_token';
+
+    const GH_OWNER  = 'jcdappen';
+    const GH_REPO   = 'Kalender-bild';
+    const GH_BRANCH = 'main';
+    const GH_UPLOAD_DIR = 'assets/images/ankuendigungen';
+    const MAX_IMG_DIMENSION = 1600;
+    const JPEG_QUALITY = 0.82;
 
     let items = [];
     let apiKey = '';
     let binId  = '';
+    let ghToken = '';
     let dragSrc = null;
 
     const listEl      = document.getElementById('entry-list');
@@ -263,6 +295,7 @@
     function showSetup() {
         document.getElementById('input-apikey').value = apiKey;
         document.getElementById('input-binid').value  = binId;
+        document.getElementById('input-ghtoken').value = ghToken;
         overlay.classList.remove('hidden');
     }
 
@@ -279,8 +312,11 @@
 
         apiKey = key;
         binId  = bin;
+        ghToken = document.getElementById('input-ghtoken').value.trim();
         localStorage.setItem(STORAGE_KEY_API, apiKey);
         localStorage.setItem(STORAGE_KEY_BIN, binId);
+        if (ghToken) localStorage.setItem(STORAGE_KEY_GH, ghToken);
+        else localStorage.removeItem(STORAGE_KEY_GH);
         hideSetup();
         await loadFromJsonBin();
     });
@@ -329,6 +365,103 @@
         } finally {
             saveBtn.disabled = false;
             saveBtn.innerHTML = '💾 Speichern';
+        }
+    }
+
+    // ── Image upload (compress + push to GitHub) ─────────────────────────────
+    function compressImage(file) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            const objectUrl = URL.createObjectURL(file);
+            img.onload = () => {
+                URL.revokeObjectURL(objectUrl);
+                let { width, height } = img;
+                if (width > MAX_IMG_DIMENSION || height > MAX_IMG_DIMENSION) {
+                    const scale = MAX_IMG_DIMENSION / Math.max(width, height);
+                    width  = Math.round(width * scale);
+                    height = Math.round(height * scale);
+                }
+                const canvas = document.createElement('canvas');
+                canvas.width = width;
+                canvas.height = height;
+                canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+                canvas.toBlob(
+                    blob => blob ? resolve(blob) : reject(new Error('Bild konnte nicht verarbeitet werden.')),
+                    'image/jpeg',
+                    JPEG_QUALITY
+                );
+            };
+            img.onerror = () => { URL.revokeObjectURL(objectUrl); reject(new Error('Bild konnte nicht gelesen werden.')); };
+            img.src = objectUrl;
+        });
+    }
+
+    function blobToBase64(blob) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result.split(',')[1]);
+            reader.onerror = () => reject(new Error('Bild konnte nicht kodiert werden.'));
+            reader.readAsDataURL(blob);
+        });
+    }
+
+    function slugifyFilename(name) {
+        const base = name.replace(/\.[^/.]+$/, '');
+        return base
+            .toLowerCase()
+            .normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .slice(0, 60) || 'bild';
+    }
+
+    async function uploadImageToGitHub(file, card) {
+        if (!ghToken) { showSetup(); showToast('Bitte zuerst ein GitHub-Token hinterlegen.', 'error'); return; }
+
+        const statusEl  = card.querySelector('.upload-status');
+        const previewEl = card.querySelector('.image-preview');
+        const pathInput = card.querySelector('[data-field="bild"]');
+
+        statusEl.textContent = 'Wird komprimiert …';
+        statusEl.className = 'upload-status';
+
+        try {
+            const blob = await compressImage(file);
+            const base64 = await blobToBase64(blob);
+            const filename = `${slugifyFilename(file.name)}-${Date.now()}.jpg`;
+            const repoPath = `${GH_UPLOAD_DIR}/${filename}`;
+
+            statusEl.textContent = 'Lädt zu GitHub hoch …';
+
+            const res = await fetch(
+                `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${repoPath}`,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${ghToken}`,
+                        'Accept': 'application/vnd.github+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: `chore: Ankündigungsbild hochgeladen (${filename})`,
+                        content: base64,
+                        branch: GH_BRANCH
+                    })
+                }
+            );
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.message || `HTTP ${res.status}`);
+
+            pathInput.value = repoPath;
+            previewEl.src = repoPath;
+            previewEl.classList.remove('empty');
+            statusEl.textContent = 'Hochgeladen ✓';
+            statusEl.className = 'upload-status success';
+            showToast('Bild hochgeladen ✓', 'success');
+        } catch (e) {
+            statusEl.textContent = 'Fehler: ' + e.message;
+            statusEl.className = 'upload-status error';
+            showToast('Bild-Upload fehlgeschlagen: ' + e.message, 'error');
         }
     }
 
@@ -393,8 +526,20 @@
                         </div>
                     </div>
                     <div class="field field-full">
-                        <label>Bild-Pfad</label>
-                        <input type="text" data-field="bild" value="${esc(item.bild || '')}" placeholder="assets/images/ankuendigungen/dateiname.jpg">
+                        <label>Bild</label>
+                        <div class="image-upload">
+                            <img class="image-preview ${item.bild ? '' : 'empty'}" src="${esc(item.bild || '')}" alt="">
+                            <div class="image-upload-controls">
+                                <input type="text" data-field="bild" value="${esc(item.bild || '')}" placeholder="assets/images/ankuendigungen/dateiname.jpg">
+                                <div class="image-upload-row">
+                                    <label class="btn btn-ghost btn-upload">
+                                        📤 Bild hochladen
+                                        <input type="file" class="file-input" accept="image/*" hidden>
+                                    </label>
+                                    <span class="upload-status"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="field">
                         <label>Link (URL)</label>
@@ -474,6 +619,18 @@
             preview.classList.toggle('empty', !e.target.value);
         });
 
+        card.querySelector('[data-field="bild"]').addEventListener('input', e => {
+            const previewImg = card.querySelector('.image-preview');
+            previewImg.src = e.target.value;
+            previewImg.classList.toggle('empty', !e.target.value);
+        });
+
+        card.querySelector('.file-input').addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (file) uploadImageToGitHub(file, card);
+            e.target.value = '';
+        });
+
         card.querySelector('.btn-delete').addEventListener('click', () => {
             if (confirm('Diesen Eintrag wirklich löschen?')) { card.remove(); renumberCards(); }
         });
@@ -500,8 +657,9 @@
     }
 
     // ── Init ───────────────────────────────────────────────────────────────
-    apiKey = localStorage.getItem(STORAGE_KEY_API) || '';
-    binId  = localStorage.getItem(STORAGE_KEY_BIN) || '';
+    apiKey  = localStorage.getItem(STORAGE_KEY_API) || '';
+    binId   = localStorage.getItem(STORAGE_KEY_BIN) || '';
+    ghToken = localStorage.getItem(STORAGE_KEY_GH) || '';
 
     statusBadge.addEventListener('click', showSetup);
     document.getElementById('btn-save').addEventListener('click', saveToJsonBin);
