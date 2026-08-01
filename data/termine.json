@@ -814,5 +814,17 @@
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
+  },
+  {
+    "id": "1111165_2026-10-30",
+    "title": "Check Up Seminar",
+    "startDate": "2026-10-30",
+    "endDate": "2026-10-31",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
