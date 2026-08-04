@@ -1,17 +1,15 @@
 [
   {
-    "titel": "Projekt Lebensräume",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/leben-1-1785225114637.jpg"
+    "titel": "Müslimittwoch",
+    "datum": "05.08. | 9:30 Uhr | Steinweg 2 in Steinbach",
+    "beschreibung": "Bring dein Lieblingsmüslitopping, deine Schüssel und dein Löffel mit und hab einen gemütlichen, ermutigenden Vormittag mit anderen tollen Frauen, Mamas und Kindern. \nMilch, Joghurt und Haferflocken, sowie Getränke stehen zur Verfügung.\n\n**Freu mich auf euch!**",
+    "bild": "assets/images/ankuendigungen/muesli-1785830090170.jpg"
   },
   {
-    "titel": "Urlaub | Gemeindebüro in den Sommerferien",
-    "datum": "03.08 - 11.09.",
-    "beschreibung": "Vom 17.08. bis 06.09. macht unser Pastor Johannes Urlaub.\nVom 17.08 bis 28.08. macht Alicya Urlaub.\n\nFür organisatorische Fragen ist in dieser Zeit Bettina im Gemeindebüro die richtige Ansprechpartnerin. Bei allen anderen Anliegen wendet euch gerne an den Gemeinderat.\n\nDas Gemeindebüro ist in den Sommerferien nur montags von 9-12 Uhr besetzt. Per Email ist Bettina auch an den übrigen Tag erreichbar.",
-    "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt",
-    "linkText": "Kontakt"
+    "titel": "Projekt Lebensräume - UPDATE",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/umbau-2-1785830294667.jpg"
   },
   {
     "titel": "Zwetschgenfest 2026",
@@ -20,6 +18,14 @@
     "bild": "assets/images/ankuendigungen/zwetschge-1-1785224702550.jpg",
     "link": "https://www.voluntira.com/event/RKltYv1CLutl6kG",
     "linkText": "Jetzt für eine Schicht anmelden"
+  },
+  {
+    "titel": "Urlaub | Gemeindebüro in den Sommerferien",
+    "datum": "03.08 - 11.09.",
+    "beschreibung": "Vom 17.08. bis 06.09. macht unser Pastor Johannes Urlaub.\nVom 17.08 bis 28.08. macht Alicya Urlaub.\n\nFür organisatorische Fragen ist in dieser Zeit Bettina im Gemeindebüro die richtige Ansprechpartnerin. Bei allen anderen Anliegen wendet euch gerne an den Gemeinderat.\n\nDas Gemeindebüro ist in den Sommerferien nur montags von 9-12 Uhr besetzt. Per Email ist Bettina auch an den übrigen Tag erreichbar.",
+    "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
+    "link": "https://www.gemeinde-konkordia.de/kontakt",
+    "linkText": "Kontakt"
   },
   {
     "titel": "Bayless Conles in Baden Baden",
