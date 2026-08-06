@@ -850,5 +850,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1112719_2026-11-04T08:30:00Z",
+    "title": "Mamatreff",
+    "startDate": "2026-11-04T08:30:00Z",
+    "endDate": "2026-11-04T10:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1112719_2026_11_04T08_30_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
+    "link": "https://www.gemeinde-konkordia.de/frauen"
   }
 ]
