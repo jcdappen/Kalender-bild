@@ -898,5 +898,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1109955_2026-11-07T08:30:00Z",
+    "title": "Kontemplatives Gebet",
+    "startDate": "2026-11-07T08:30:00Z",
+    "endDate": "2026-11-07T11:30:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Brücke zum Leben, Rastatt",
+    "description": "",
+    "link": ""
   }
 ]
