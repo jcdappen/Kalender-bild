@@ -1,9 +1,19 @@
 [
   {
-    "titel": "Projekt Lebensräume - UPDATE",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/umbau-2-1785830294667.jpg"
+    "titel": "Möchtest du deine eigene Lebensregel entwickeln?",
+    "datum": "",
+    "beschreibung": "Eine Lebensregel ist wie ein Kompass. Sie zeigt dir, wohin du in deiner Beziehung zu Jesus wachsen möchtest.\n\nKein starres Regelwerk – sondern eine persönliche Richtschnur, die dir hilft, bewusst zu leben.\n\nWir haben dafür ein Workbook erstellt. Es begleitet dich Schritt für Schritt dabei, deine eigene Lebensregel zu finden.",
+    "bild": "assets/images/ankuendigungen/lebensregel-1786438197107.jpg",
+    "link": "https://gemeindekonkordia.church.tools/publicgroup/305",
+    "linkText": "Mehr erfahren"
+  },
+  {
+    "titel": "Entdecke die 9 Kernpraktiken der Nachfolge",
+    "datum": "",
+    "beschreibung": "Nachfolge ist kein Sprint – sie ist ein Weg. Ein Weg, auf dem wir Jesus immer ähnlicher werden.\n\nDie 9 Kernpraktiken sind keine Checkliste zum Abhaken. Sie sind Gewohnheiten, die dir helfen, Raum für Gott in deinem Alltag zu schaffen.\n\nSchritt für Schritt, Praktik für Praktik – so wächst du in deiner Beziehung zu Jesus. Nicht durch Druck, sondern durch dranbleiben.\n\nWir haben dir alle 9 Praktiken zusammengestellt – mit praktischen Impulsen für deinen Alltag.",
+    "bild": "assets/images/ankuendigungen/1praktiken-1786438472277.jpg",
+    "link": "https://www.gemeinde-konkordia.de/praktiken",
+    "linkText": "Mehr erfahren"
   },
   {
     "titel": "Zwetschgenfest 2026",
@@ -20,6 +30,12 @@
     "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
     "link": "https://www.gemeinde-konkordia.de/kontakt",
     "linkText": "Kontakt"
+  },
+  {
+    "titel": "Projekt Lebensräume - UPDATE",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/umbau-2-1785830294667.jpg"
   },
   {
     "titel": "Bayless Conles in Baden Baden",
