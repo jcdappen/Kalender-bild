@@ -946,5 +946,17 @@
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  },
+  {
+    "id": "1109036_2026-11-15",
+    "title": "FSQ Live",
+    "startDate": "2026-11-15",
+    "endDate": "2026-11-17",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
