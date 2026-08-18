@@ -958,5 +958,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1109836_2026-11-16T14:30:00Z",
+    "title": "Espresso & mehr...",
+    "startDate": "2026-11-16T14:30:00Z",
+    "endDate": "2026-11-16T17:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
+    "description": "",
+    "link": "https://www.gemeinde-konkordia.de/kinder"
   }
 ]
