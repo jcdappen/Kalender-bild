@@ -44,24 +44,6 @@
             padding: 48px 24px;
         }
 
-        .aktuelles-head {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 20px;
-        }
-
-        .aktuelles-all-link {
-            font-family: 'public-sans-v21-latin-500', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 1.5px solid var(--accent);
-            padding-bottom: 2px;
-            white-space: nowrap;
-        }
-        .aktuelles-all-link:hover { opacity: 0.75; }
-
         #aktuelles-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -144,9 +126,6 @@
 </head>
 <body>
 <div id="aktuelles-container">
-    <div class="aktuelles-head">
-        <a class="aktuelles-all-link" href="index.html">Alle Termine →</a>
-    </div>
     <div id="aktuelles-grid"></div>
     <div id="aktuelles-status"></div>
 </div>
