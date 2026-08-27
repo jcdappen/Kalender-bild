@@ -476,6 +476,7 @@
             const bild = get('bild');     if (bild)     item.bild     = bild;
             const link = get('link');     if (link)     item.link     = link;
             const lt   = get('linkText'); if (lt)       item.linkText = lt;
+            if (card.querySelector('[data-field="startseite"]')?.checked) item.startseite = true;
             items.push(item);
         });
     }
@@ -516,6 +517,13 @@
                         <label>Datum / Ort</label>
                         <input type="text" data-field="datum" value="${esc(item.datum || '')}" placeholder="z. B. 03. Juli 2026 | Baden-Baden">
                         <div class="field-hint">Einheitliches Format: TT.MM. · HH:MM Uhr · Ort</div>
+                    </div>
+                    <div class="field field-full">
+                        <label style="display:flex;align-items:center;gap:8px;text-transform:none;font-size:14px;color:var(--text);">
+                            <input type="checkbox" data-field="startseite" ${item.startseite ? 'checked' : ''} style="width:auto;">
+                            Auf Startseite zeigen
+                        </label>
+                        <div class="field-hint">Es werden maximal die ersten zwei so markierten Einträge auf der Startseite angezeigt.</div>
                     </div>
                     <div class="field field-full">
                         <label>Beschreibung</label>
