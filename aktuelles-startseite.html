@@ -16,12 +16,6 @@
             src: url('https://storage1.snappages.site/S74RKH/assets/files/public-sans-v21-latin-500.woff2');
             font-display: swap;
         }
-        @font-face {
-            font-family: 'bebas-neue-v16-latin-regular';
-            src: url('https://storage1.snappages.site/S74RKH/assets/files/bebas-neue-v16-latin-regular.woff2');
-            font-display: swap;
-        }
-
         *, *::before, *::after { box-sizing: border-box; }
 
         :root {
@@ -52,20 +46,8 @@
 
         .aktuelles-head {
             display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 28px;
-        }
-
-        .aktuelles-title {
-            font-family: 'bebas-neue-v16-latin-regular', 'public-sans-v21-latin-regular', sans-serif;
-            font-size: 34px;
-            letter-spacing: 0.01em;
-            line-height: 1.05;
-            margin: 0;
-            text-transform: uppercase;
+            justify-content: flex-end;
+            margin-bottom: 20px;
         }
 
         .aktuelles-all-link {
@@ -157,14 +139,12 @@
 
         @media (max-width: 860px) {
             #aktuelles-grid { grid-template-columns: 1fr; }
-            .aktuelles-title { font-size: 28px; }
         }
     </style>
 </head>
 <body>
 <div id="aktuelles-container">
     <div class="aktuelles-head">
-        <h2 class="aktuelles-title">Aktuelles aus der Konkordia</h2>
         <a class="aktuelles-all-link" href="index.html">Alle Termine →</a>
     </div>
     <div id="aktuelles-grid"></div>
