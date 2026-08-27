@@ -22,9 +22,7 @@
             --text-color: #1e1b16;
             --text-muted: #6b6459;
             --accent: #bb2232;      /* Konkordia Logo-Rot */
-            --badge-1: #cde3ac;     /* Pastellgrün */
-            --badge-2: #f4dc8f;     /* Hellgold */
-            --badge-3: #7ad6cd;     /* Helles Türkis */
+            --badge-bg: #f7dde1;    /* Helles Rot, aus --accent abgeleitet */
             --card-bg: #ffffff;
             --border: #ece6d9;
         }
@@ -71,19 +69,14 @@
             justify-content: center;
             flex-shrink: 0;
             font-family: 'public-sans-v21-latin-500', sans-serif;
-            color: var(--text-color);
-        }
-        .aktuelles-badge .day { font-size: 17px; font-weight: 500; line-height: 1; }
-        .aktuelles-badge .month { font-size: 10px; letter-spacing: 0.05em; margin-top: 2px; }
-
-        .aktuelles-card-eyebrow {
-            font-family: 'public-sans-v21-latin-500', sans-serif;
-            font-size: 11px;
-            font-weight: 500;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+            background: var(--badge-bg);
             color: var(--accent);
+            text-align: center;
+            padding: 4px;
         }
+        .aktuelles-badge .day { font-size: 17px; font-weight: 500; line-height: 1.1; }
+        .aktuelles-badge .day.small { font-size: 12px; line-height: 1.2; }
+        .aktuelles-badge .month { font-size: 10px; letter-spacing: 0.05em; margin-top: 2px; }
 
         .aktuelles-card-title {
             font-family: 'public-sans-v21-latin-500', sans-serif;
@@ -137,7 +130,6 @@
     const grid   = document.getElementById('aktuelles-grid');
     const status = document.getElementById('aktuelles-status');
     const MONTHS = ['JAN','FEB','MÄR','APR','MAI','JUN','JUL','AUG','SEP','OKT','NOV','DEZ'];
-    const BADGE_COLORS = ['var(--badge-1)', 'var(--badge-2)', 'var(--badge-3)'];
 
     function escapeHtml(str) {
         if (!str) return '';
@@ -158,23 +150,26 @@
         return { day: String(date.getDate()).padStart(2, '0'), month: MONTHS[date.getMonth()] };
     }
 
-    function cardHTML({ badge, eyebrow, color, title, desc, link, linkText }) {
-        const badgeHTML = badge
-            ? `<div class="aktuelles-badge" style="background:${color};">
-                   <div class="day">${badge.day}</div>
-                   <div class="month">${badge.month}</div>
-               </div>`
-            : '';
-        const eyebrowHTML = !badge && eyebrow
-            ? `<div class="aktuelles-card-eyebrow">${escapeHtml(eyebrow)}</div>`
-            : '';
+    // Ankündigungen haben nur ein freies Text-Datumsfeld (oder gar keins) –
+    // liefert trotzdem immer einen Badge, damit alle Karten gleich hoch starten.
+    function freeTextBadge(datum) {
+        const clean = (datum || '').trim();
+        if (!clean) return { day: 'NEU', month: '', small: false };
+        return { day: truncate(clean, 10), month: '', small: true };
+    }
+
+    function cardHTML({ badge, title, desc, link, linkText }) {
+        const badgeHTML = `
+            <div class="aktuelles-badge">
+                <div class="day${badge.small ? ' small' : ''}">${escapeHtml(badge.day)}</div>
+                ${badge.month ? `<div class="month">${escapeHtml(badge.month)}</div>` : ''}
+            </div>`;
         const linkHTML = link
             ? `<a class="aktuelles-card-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(linkText || 'Mehr erfahren')} →</a>`
             : '';
         return `
             <div class="aktuelles-card">
                 ${badgeHTML}
-                ${eyebrowHTML}
                 <h3 class="aktuelles-card-title">${escapeHtml(title)}</h3>
                 <p class="aktuelles-card-desc">${escapeHtml(desc)}</p>
                 ${linkHTML}
@@ -207,7 +202,6 @@
                 const start = new Date(naechsterTermin.startDate);
                 cards.push(cardHTML({
                     badge: dateBadge(start),
-                    color: BADGE_COLORS[0],
                     title: naechsterTermin.title || 'Termin',
                     desc: truncate(naechsterTermin.description, 90),
                     link: naechsterTermin.link || 'index.html',
@@ -215,11 +209,9 @@
                 }));
             }
 
-            highlights.forEach((item, i) => {
+            highlights.forEach(item => {
                 cards.push(cardHTML({
-                    badge: null,
-                    eyebrow: item.datum || '',
-                    color: BADGE_COLORS[(i + 1) % BADGE_COLORS.length],
+                    badge: freeTextBadge(item.datum),
                     title: item.titel || 'Ankündigung',
                     desc: truncate(item.beschreibung, 90),
                     link: item.link || '',
