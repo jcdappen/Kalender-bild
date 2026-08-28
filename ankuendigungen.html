@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankündigungen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* ── Website-Schriften (Snappages CDN, aus dem <head> von gemeinde-konkordia.de) ── */
+        @font-face {
+            font-family: 'public-sans-v21-latin-regular';
+            src: url('https://storage1.snappages.site/S74RKH/assets/files/public-sans-v21-latin-regular.woff2');
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'public-sans-v21-latin-500';
+            src: url('https://storage1.snappages.site/S74RKH/assets/files/public-sans-v21-latin-500.woff2');
+            font-display: swap;
+        }
+
         *, *::before, *::after {
             box-sizing: border-box;
         }
@@ -23,7 +32,7 @@
         }
 
         body {
-            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+            font-family: 'public-sans-v21-latin-regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
                          'Helvetica Neue', Helvetica, Arial, sans-serif;
             background: transparent;
             margin: 0;
@@ -75,8 +84,8 @@
             left: 0;
             background: var(--primary);
             color: #fff;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 700;
+            font-family: 'public-sans-v21-latin-500', sans-serif;
+            font-weight: 500;
             font-size: 15px;
             letter-spacing: 0.03em;
             padding: 8px 18px 8px 16px;
@@ -91,9 +100,9 @@
         }
 
         .card-titel {
-            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'public-sans-v21-latin-500', sans-serif;
             font-size: 23px;
-            font-weight: 700;
+            font-weight: 500;
             color: var(--primary-dark);
             line-height: 1.22;
             margin: 0 0 10px;
@@ -140,8 +149,8 @@
             padding: 0;
             border: none;
             background: none;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 600;
+            font-family: 'public-sans-v21-latin-500', sans-serif;
+            font-weight: 500;
             font-size: 13px;
             color: #4d4d4d;
             text-decoration: underline;
@@ -156,9 +165,9 @@
         .card-link {
             align-self: flex-start;
             margin-top: 18px;
-            font-family: 'Work Sans', sans-serif;
+            font-family: 'public-sans-v21-latin-500', sans-serif;
             font-size: 15px;
-            font-weight: 600;
+            font-weight: 500;
             color: #fff;
             background: var(--primary);
             text-decoration: none;
