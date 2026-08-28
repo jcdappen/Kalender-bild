@@ -44,7 +44,7 @@
         #ankuendigungen-wrapper {
             container-type: inline-size;
             background: var(--page-bg);
-            padding: 40px 32px 48px;
+            padding: 40px 32px;
         }
 
         #ankuendigungen-grid {
@@ -189,6 +189,10 @@
             font-size: 15px;
         }
 
+        #ankuendigungen-status:empty {
+            padding: 0;
+        }
+
         /* ── Tablet ── */
         @container (max-width: 1100px) {
             #ankuendigungen-grid {
@@ -199,7 +203,7 @@
         /* ── Mobile ── */
         @container (max-width: 700px) {
             #ankuendigungen-wrapper {
-                padding: 24px 16px 32px;
+                padding: 24px 16px;
             }
 
             #ankuendigungen-grid {
