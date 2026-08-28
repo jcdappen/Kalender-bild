@@ -86,6 +86,13 @@
             margin: 0;
         }
 
+        .aktuelles-card-meta {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin: -4px 0 0;
+        }
+
         .aktuelles-card-desc {
             font-size: 14px;
             line-height: 1.5;
@@ -150,6 +157,15 @@
         return { day: String(date.getDate()).padStart(2, '0'), month: MONTHS[date.getMonth()] };
     }
 
+    function formatTime(startDateStr, startDate, endDate) {
+        const isAllDay = !startDateStr.includes('T');
+        if (isAllDay) return '';
+        const opts = { hour: '2-digit', minute: '2-digit' };
+        const from = startDate.toLocaleTimeString('de-DE', opts);
+        const to   = endDate.toLocaleTimeString('de-DE', opts);
+        return from === to ? `${from} Uhr` : `${from} – ${to} Uhr`;
+    }
+
     // Ankündigungen haben nur ein freies Text-Datumsfeld (oder gar keins) –
     // liefert trotzdem immer einen Badge, damit alle Karten gleich hoch starten.
     function freeTextBadge(datum) {
@@ -158,12 +174,13 @@
         return { day: truncate(clean, 10), month: '', small: true };
     }
 
-    function cardHTML({ badge, title, desc, link, linkText }) {
+    function cardHTML({ badge, title, meta, desc, link, linkText }) {
         const badgeHTML = `
             <div class="aktuelles-badge">
                 <div class="day${badge.small ? ' small' : ''}">${escapeHtml(badge.day)}</div>
                 ${badge.month ? `<div class="month">${escapeHtml(badge.month)}</div>` : ''}
             </div>`;
+        const metaHTML = meta ? `<div class="aktuelles-card-meta">${escapeHtml(meta)}</div>` : '';
         const linkHTML = link
             ? `<a class="aktuelles-card-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(linkText || 'Mehr erfahren')} →</a>`
             : '';
@@ -171,6 +188,7 @@
             <div class="aktuelles-card">
                 ${badgeHTML}
                 <h3 class="aktuelles-card-title">${escapeHtml(title)}</h3>
+                ${metaHTML}
                 <p class="aktuelles-card-desc">${escapeHtml(desc)}</p>
                 ${linkHTML}
             </div>`;
@@ -200,9 +218,11 @@
 
             if (naechsterTermin) {
                 const start = new Date(naechsterTermin.startDate);
+                const end   = new Date(naechsterTermin.endDate || naechsterTermin.startDate);
                 cards.push(cardHTML({
                     badge: dateBadge(start),
                     title: naechsterTermin.title || 'Termin',
+                    meta: formatTime(naechsterTermin.startDate, start, end),
                     desc: truncate(naechsterTermin.description, 90),
                     link: naechsterTermin.link || 'https://www.gemeinde-konkordia.de/news#termine',
                     linkText: naechsterTermin.link ? 'Mehr erfahren' : 'Zu den Terminen'
