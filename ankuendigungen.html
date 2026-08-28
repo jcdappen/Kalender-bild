@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankündigungen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
@@ -11,15 +14,16 @@
 
         :root {
             --primary: #bb2232;
+            --primary-dark: #70141e;
             --text-color: #1a202c;
             --text-meta: #000000;
             --text-desc: #4a5568;
             --border-color: #e2e8f0;
-            --card-radius: 0;
+            --page-bg: #faeec7;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
                          'Helvetica Neue', Helvetica, Arial, sans-serif;
             background: transparent;
             margin: 0;
@@ -30,89 +34,86 @@
 
         #ankuendigungen-wrapper {
             container-type: inline-size;
+            background: var(--page-bg);
+            padding: 40px 32px 48px;
         }
 
         #ankuendigungen-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
             padding: 0;
         }
 
         /* ── Card ── */
         .ankuendigung-card {
             border: 1px solid var(--border-color);
-            border-radius: var(--card-radius);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             background: #fff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-media {
             position: relative;
-        }
-
-        .ankuendigung-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
-        }
-
-        .card-image {
             width: 100%;
             aspect-ratio: 16 / 9;
             overflow: hidden;
-            background: #f0f0f0;
-            border-radius: 0;
+            background: #e6e6e6;
         }
 
-        .card-image img {
+        .card-media img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
 
+        .card-datebadge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--primary);
+            color: #fff;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.03em;
+            padding: 8px 18px 8px 16px;
+            clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+        }
+
         .card-body {
-            padding: 16px 18px 20px;
+            padding: 22px 24px 24px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            position: relative;
-        }
-
-        .card-body::before {
-            content: '';
-            position: absolute;
-            top: -16px;
-            right: -16px;
-            width: 64px;
-            height: 64px;
-            background: rgba(187, 34, 50, 0.06);
-            border-radius: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .card-datum {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-meta);
-            margin-bottom: 6px;
         }
 
         .card-titel {
-            font-size: 20px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 23px;
             font-weight: 700;
-            color: var(--primary);
-            line-height: 1.35;
-            margin-bottom: 8px;
+            color: var(--primary-dark);
+            line-height: 1.22;
+            margin: 0 0 10px;
         }
 
         .card-beschreibung {
-            font-size: 17px;
+            font-size: 16px;
             color: var(--text-desc);
             line-height: 1.55;
-            flex-grow: 1;
-            margin-bottom: 14px;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-beschreibung.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
+            overflow: visible;
         }
 
         .card-beschreibung p {
@@ -132,64 +133,71 @@
             margin-bottom: 0.25em;
         }
 
+        .card-more {
+            display: none;
+            align-self: flex-start;
+            margin: 8px 0 0;
+            padding: 0;
+            border: none;
+            background: none;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            color: #4d4d4d;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        .card-more.visible {
+            display: inline-block;
+        }
+
         .card-link {
+            align-self: flex-start;
+            margin-top: 18px;
+            font-family: 'Work Sans', sans-serif;
             font-size: 15px;
             font-weight: 600;
-            color: #bb2232;
+            color: #fff;
+            background: var(--primary);
             text-decoration: none;
-            display: inline-block;
-            border: 1.5px solid #bb2232;
-            border-radius: 0;
-            padding: 6px 16px;
-            transition: background 0.2s ease, color 0.2s ease;
+            padding: 12px 22px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .card-link:hover {
-            background: #bb2232;
+            background: var(--primary-dark);
             color: #fff;
-            text-decoration: none;
         }
 
         /* ── Status ── */
         #ankuendigungen-status {
-            padding: 24px 0;
+            padding: 24px 0 0;
             color: var(--text-meta);
             font-size: 15px;
         }
 
-        /* ── Tablet ── */
-        @container (max-width: 900px) {
-            #ankuendigungen-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 18px;
+        /* ── Tablet / Mobile ── */
+        @container (max-width: 700px) {
+            #ankuendigungen-wrapper {
+                padding: 24px 16px 32px;
             }
-        }
 
-        /* ── Mobile ── */
-        @container (max-width: 600px) {
             #ankuendigungen-grid {
                 grid-template-columns: 1fr;
-                gap: 12px;
+                gap: 24px;
             }
-
-            .card-body {
-                padding: 12px 14px 14px;
-            }
-
-            .card-titel { font-size: 18px; }
 
             .card-beschreibung {
-                font-size: 16px;
-                margin-bottom: 10px;
+                -webkit-line-clamp: 2;
             }
-        }
 
-        /* Touch: Link-Hover deaktivieren */
-        @media (hover: none) and (pointer: coarse) {
-            .card-link:hover {
-                background: transparent;
-                color: #bb2232;
-            }
+            .card-titel { font-size: 20px; }
+
+            .card-body { padding: 16px 18px 18px; }
         }
     </style>
 </head>
@@ -268,6 +276,7 @@
 
     function render(items) {
         status.textContent = '';
+        grid.innerHTML = '';
 
         if (!items.length) {
             status.textContent = 'Keine Ankündigungen vorhanden.';
@@ -285,25 +294,48 @@
             const card = document.createElement('div');
             card.className = 'ankuendigung-card';
             card.innerHTML = `
-                <div class="card-image">
+                <div class="card-media">
                     <img
                         src="${bild}"
                         alt="${titel}"
                         loading="lazy"
                         onerror="this.src='${PLACEHOLDER}'; this.onerror=null;"
                     >
+                    ${datum ? `<div class="card-datebadge">${datum}</div>` : ''}
                 </div>
                 <div class="card-body">
-                    ${datum ? `<div class="card-datum">${datum}</div>` : ''}
                     <div class="card-titel">${titel}</div>
                     ${desc ? `<div class="card-beschreibung">${desc}</div>` : ''}
+                    ${desc ? `<button type="button" class="card-more">mehr anzeigen</button>` : ''}
                     ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noopener">${linkText} &rarr;</a>` : ''}
                 </div>
             `;
             grid.appendChild(card);
+
+            const descEl = card.querySelector('.card-beschreibung');
+            const moreBtn = card.querySelector('.card-more');
+            if (descEl && moreBtn) {
+                setupMoreToggle(descEl, moreBtn);
+            }
         });
 
         sendHeight();
+    }
+
+    // Zeigt "mehr anzeigen" nur, wenn der Text tatsächlich abgeschnitten wird,
+    // und schaltet zwischen gekürzter und voller Ansicht um.
+    function setupMoreToggle(descEl, moreBtn) {
+        requestAnimationFrame(() => {
+            if (descEl.scrollHeight > descEl.clientHeight + 1) {
+                moreBtn.classList.add('visible');
+            }
+        });
+
+        moreBtn.addEventListener('click', () => {
+            const expanded = descEl.classList.toggle('expanded');
+            moreBtn.textContent = expanded ? 'weniger anzeigen' : 'mehr anzeigen';
+            sendHeight();
+        });
     }
 
     function sendHeight() {
