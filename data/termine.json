@@ -1186,5 +1186,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1110984_2026-11-28T09:30:00Z",
+    "title": "Evangel. Aktion im Advent",
+    "startDate": "2026-11-28T09:30:00Z",
+    "endDate": "2026-11-28T11:30:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
