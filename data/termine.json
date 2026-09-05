@@ -1234,5 +1234,17 @@
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
+  },
+  {
+    "id": "1113122_2026-12-04T17:00:00Z",
+    "title": "Hauskreis Ralph",
+    "startDate": "2026-12-04T17:00:00Z",
+    "endDate": "2026-12-04T20:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
