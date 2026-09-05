@@ -240,6 +240,18 @@
     "link": ""
   },
   {
+    "id": "1113141_2026-09-25T15:00:00Z",
+    "title": "Teensabend",
+    "startDate": "2026-09-25T15:00:00Z",
+    "endDate": "2026-09-25T17:00:00Z",
+    "category": "Jugend",
+    "color": "#f691b2",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
     "id": "1113122_2026-09-25T16:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2026-09-25T16:00:00Z",
@@ -561,6 +573,18 @@
     "image": "assets/images/1112546_2026_10_15T16_30_00Z.jpg",
     "location": "Gemeindezentrum Johanneskirche Raum 5, Johannesstr. 5, 77815 Bühl",
     "description": "Wir laden herzlich zum ökumenischen Gebetstreffen für unsere Stadt Bühl ein. Gemeinsam wollen wir für die Menschen, Anliegen und Herausforderungen unserer Stadt beten und Gottes Segen für Bühl erbitten. Christinnen und Christen aller Konfessionen sind willkommen, in Gemeinschaft zu beten und die Verbundenheit im Glauben zu erleben.",
+    "link": ""
+  },
+  {
+    "id": "1113141_2026-10-16T15:00:00Z",
+    "title": "Teensabend",
+    "startDate": "2026-10-16T15:00:00Z",
+    "endDate": "2026-10-16T17:00:00Z",
+    "category": "Jugend",
+    "color": "#f691b2",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
     "link": ""
   },
   {
@@ -1149,6 +1173,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
+    "id": "1113141_2026-11-27T16:00:00Z",
+    "title": "Teensabend",
+    "startDate": "2026-11-27T16:00:00Z",
+    "endDate": "2026-11-27T18:00:00Z",
+    "category": "Jugend",
+    "color": "#f691b2",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
     "link": ""
   },
   {
