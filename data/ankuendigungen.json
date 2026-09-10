@@ -9,13 +9,38 @@
     "startseite": true
   },
   {
+    "titel": "Gottesdienst am 13.09.26",
+    "datum": "Kath. Kirche Bühl um 10:00 Uhr",
+    "beschreibung": "Am Sonntag, den 13.09.2026, feiern wir gemeinsam den ökumenischen Gottesdienst zum Zwetschgenfest in der katholischen Kirche St. Peter und Paul in Bühl.\n\n(Bild: H.Helmlechner, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons)",
+    "link": "https://upload.wikimedia.org/wikipedia/commons/c/c9/St._Peter_und_Paul_Kirche_B%C3%BChl_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "startseite": true
+  },
+  {
+    "titel": "Zwetschgenfest-Umzug – lauft mit!",
+    "datum": "13.09.26 um 13.50 Uhr am Uhuparkplatz - Startnummer 30",
+    "beschreibung": "Am Sonntag ziehen wir mit unserem Motto-Banner \"Ich lass dich nicht im Regen stehen\" durch Bühl und machen unsere Gemeinde in der Stadt sichtbar. Mit dabei: Körbchen voller kleiner Geschenke für die Zuschauer am Straßenrand und jede Menge gute Laune. Habt ihr noch Zeit und Lust, spontan mitzulaufen? Wir freuen uns über jeden, der dabei ist!",
+    "bild": "assets/images/ankuendigungen/umzug26-1789023515941.jpg"
+  },
+  {
+    "titel": "Bayless Conles in Baden Baden",
+    "datum": "12.09 & 13.09.",
+    "beschreibung": "Fühlst du dich manchmal müde oder innerlich festgefahren? Dann ist diese Tour für dich: **„Gott sieht dich!”** Er kennt deine Kämpfe, deine Situation, deine Fragen. In einer schweren Zeit habe ich selbst erlebt, wie Gott mir Frieden und eine klare Perspektive geschenkt hat. Und was Gott verspricht, gilt auch für dich!\n\n12.09. | 18:30 Uhr\n13.09. | 9:00 & 11:00 Uhr\n\nGospelhouse Baden-Baden\nWilhelm-Drapp-Str. 5+7\n76532 Baden-Baden",
+    "bild": "assets/images/ankuendigungen/bayless-1-1785224402398.jpg",
+    "link": "https://bayless-conley.de/bayless-conley-treffen"
+  },
+  {
+    "titel": "Projekt Lebensräume - UPDATE",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/umbau-3-1789022489405.jpg"
+  },
+  {
     "titel": "Möchtest du deine eigene Lebensregel entwickeln?",
     "datum": "",
     "beschreibung": "Eine Lebensregel ist wie ein Kompass. Sie zeigt dir, wohin du in deiner Beziehung zu Jesus wachsen möchtest.\n\nKein starres Regelwerk – sondern eine persönliche Richtschnur, die dir hilft, bewusst zu leben.\n\nWir haben dafür ein Workbook erstellt. Es begleitet dich Schritt für Schritt dabei, deine eigene Lebensregel zu finden.",
     "bild": "assets/images/ankuendigungen/lebensregel-1786438197107.jpg",
     "link": "https://gemeindekonkordia.church.tools/publicgroup/305",
-    "linkText": "Mehr erfahren",
-    "startseite": true
+    "linkText": "Mehr erfahren"
   },
   {
     "titel": "Entdecke die 9 Kernpraktiken der Nachfolge",
@@ -24,26 +49,5 @@
     "bild": "assets/images/ankuendigungen/1praktiken-1786438472277.jpg",
     "link": "https://www.gemeinde-konkordia.de/praktiken",
     "linkText": "Mehr erfahren"
-  },
-  {
-    "titel": "Urlaub | Gemeindebüro in den Sommerferien",
-    "datum": "03.08 - 11.09.",
-    "beschreibung": "Vom 17.08. bis 09.09. macht unser Pastor Johannes Urlaub.\nVom 17.08 bis 28.08. macht Alicya Urlaub.\n\nFür organisatorische Fragen ist in dieser Zeit Bettina im Gemeindebüro die richtige Ansprechpartnerin. Bei allen anderen Anliegen wendet euch gerne an den Gemeinderat.\n\nDas Gemeindebüro ist in den Sommerferien nur montags von 9-12 Uhr besetzt. Per Email ist Bettina auch an den übrigen Tag erreichbar.",
-    "bild": "assets/images/ankuendigungen/abwesenheitjd.jpg",
-    "link": "https://www.gemeinde-konkordia.de/kontakt",
-    "linkText": "Kontakt"
-  },
-  {
-    "titel": "Projekt Lebensräume - UPDATE",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/umbau-2-1785830294667.jpg"
-  },
-  {
-    "titel": "Bayless Conles in Baden Baden",
-    "datum": "12.09 & 13.09.",
-    "beschreibung": "Fühlst du dich manchmal müde oder innerlich festgefahren? Dann ist diese Tour für dich: **„Gott sieht dich!”** Er kennt deine Kämpfe, deine Situation, deine Fragen. In einer schweren Zeit habe ich selbst erlebt, wie Gott mir Frieden und eine klare Perspektive geschenkt hat. Und was Gott verspricht, gilt auch für dich!\n\n12.09. | 18:30 Uhr\n13.09. | 9:00 & 11:00 Uhr\n\nGospelhouse Baden-Baden\nWilhelm-Drapp-Str. 5+7\n76532 Baden-Baden",
-    "bild": "assets/images/ankuendigungen/bayless-1-1785224402398.jpg",
-    "link": "https://bayless-conley.de/bayless-conley-treffen"
   }
 ]
