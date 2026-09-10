@@ -1,5 +1,17 @@
 [
   {
+    "id": "1110244_2026-09-10T13:00:00Z",
+    "title": "Gott und die Welt Cafe",
+    "startDate": "2026-09-10T13:00:00Z",
+    "endDate": "2026-09-10T14:30:00Z",
+    "category": "Senioren",
+    "color": "#a47ae2",
+    "image": "assets/images/1110244_2026_09_10T13_00_00Z.jpg",
+    "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!",
+    "link": ""
+  },
+  {
     "id": "1108215_2026-09-10T16:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-09-10T16:00:00Z",
@@ -393,6 +405,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1110244_2026-10-08T13:00:00Z",
+    "title": "Gott und die Welt Cafe",
+    "startDate": "2026-10-08T13:00:00Z",
+    "endDate": "2026-10-08T14:30:00Z",
+    "category": "Senioren",
+    "color": "#a47ae2",
+    "image": "assets/images/1110244_2026_10_08T13_00_00Z.jpg",
+    "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!",
     "link": ""
   },
   {
@@ -828,6 +852,18 @@
     "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
+    "id": "1110244_2026-11-05T14:00:00Z",
+    "title": "Gott und die Welt Cafe",
+    "startDate": "2026-11-05T14:00:00Z",
+    "endDate": "2026-11-05T15:30:00Z",
+    "category": "Senioren",
+    "color": "#a47ae2",
+    "image": "assets/images/1110244_2026_11_05T14_00_00Z.jpg",
+    "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!",
+    "link": ""
+  },
+  {
     "id": "1108215_2026-11-05T17:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-11-05T17:00:00Z",
@@ -1234,6 +1270,18 @@
     "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
     "description": "Der Alltag als Mama kann wirklich herausfordernd sein.\nWie gut tut es da, sich mit anderen Müttern zu treffen, sich auszutauschen und mit den Kindern spielerische Gemeinschaft zu haben!",
     "link": "https://www.gemeinde-konkordia.de/frauen"
+  },
+  {
+    "id": "1110244_2026-12-03T14:00:00Z",
+    "title": "Gott und die Welt Cafe",
+    "startDate": "2026-12-03T14:00:00Z",
+    "endDate": "2026-12-03T15:30:00Z",
+    "category": "Senioren",
+    "color": "#a47ae2",
+    "image": "assets/images/1110244_2026_12_03T14_00_00Z.jpg",
+    "location": "Tagespflege Rebland (CHD), Steinbacher Str. 79, 76534 Baden Baden - Steinbach",
+    "description": "Liebe Senioren, wir laden Sie herzlich zu unserem Senioren Café ein, wo Sie neue Freunde treffen, interessante Gespräche führen und sich von biblischen Impulsen inspirieren lassen können. Das Café wird vom CHD und der Gemeinde in der Konkordia gemeinsam veranstaltet. Wir freuen uns auf euer kommen!",
+    "link": ""
   },
   {
     "id": "1108215_2026-12-03T17:00:00Z",
