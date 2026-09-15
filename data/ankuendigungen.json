@@ -3,8 +3,7 @@
     "titel": "Zwetschgenfest 2026",
     "datum": "Vielen Dank",
     "beschreibung": "**Danke an alle Helfer beim Zwetschgenfest!**\n\nEin herzliches Dankeschön an alle, die beim Zwetschgenfest und beim Umzug mit angepackt haben! Das Feedback aus der Stadt war richtig toll – das zeigt, wie viel Kraft in unserem Team steckt. Herzlichen Dank an alle, die die Aktion vorbereitet und durchgeführt haben. Ihr seid spitze!",
-    "bild": "assets/images/ankuendigungen/umzugrew26-1789458114241.jpg",
-    "startseite": true
+    "bild": "assets/images/ankuendigungen/umzugrew26-1789458114241.jpg"
   },
   {
     "titel": "Einsatz in der JVA Bühl",
@@ -17,7 +16,8 @@
     "datum": "Start KW42",
     "beschreibung": "Was Christen glauben \n\nWoher komme ich? Wozu lebe ich? Gibt es Gott - und wie kann ich ihn kennenlernen? In vier Abenden gehen wir gemeinsam den grossen Fragen des Lebens auf die Spur.",
     "bild": "assets/images/ankuendigungen/gottundwelt-1-1789459999905.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gott-und-die-welt"
+    "link": "https://www.gemeinde-konkordia.de/gott-und-die-welt",
+    "startseite": true
   },
   {
     "titel": "Projekt Lebensräume - UPDATE",
@@ -27,8 +27,8 @@
   },
   {
     "titel": "Freiheit - nach der Du Dich sehnst",
-    "datum": "18.10.2026 | 10-15 Uhr",
-    "beschreibung": "In Freiheit leben ... was hindert mich daran?\n\nIm Johannesevangelium 8, 36 steht: „**Wenn euch der\nSohn frei macht seid ihr wirklich frei.**“\n\nDoch wie komme ich in diese Freiheit, wie bleibe ich in dieser Freiheit? Spannende Fragen, bei denen uns **Matthias Nowak** weiterhelfen wird.\n\nMatthias Nowak gründete 1997 gemeinsam mit seiner Frau Fränzi die Gemeinde Delta Bern mit der Vision, eine Gemeinde zu sein, in der Menschen Jesus kennen- lernen, Liebe erfahren, Heilung finden, ausgebildet und ausgesandt werden können. Neben seinen Einsätzen in Indien schlägt sein Herz für den Befreiungsdienst und Freisetzung von Menschen.",
+    "datum": "18.10. | 10-15 Uhr",
+    "beschreibung": "In Freiheit leben ... was hindert mich daran?\n\nIm Johannesevangelium 8, 36 steht: „ **Wenn euch der\nSohn frei macht seid ihr wirklich frei.** “\n\nDoch wie komme ich in diese Freiheit, wie bleibe ich in dieser Freiheit? Spannende Fragen, bei denen uns **Matthias Nowak** weiterhelfen wird.\n\nMatthias Nowak gründete 1997 gemeinsam mit seiner Frau Fränzi die Gemeinde Delta Bern mit der Vision, eine Gemeinde zu sein, in der Menschen Jesus kennen- lernen, Liebe erfahren, Heilung finden, ausgebildet und ausgesandt werden können. Neben seinen Einsätzen in Indien schlägt sein Herz für den Befreiungsdienst und Freisetzung von Menschen.",
     "bild": "assets/images/ankuendigungen/tdi-26-1789458589665.jpg",
     "startseite": true
   },
