@@ -1,17 +1,5 @@
 [
   {
-    "id": "1108215_2026-09-24T16:00:00Z",
-    "title": "Alpha Jünger",
-    "startDate": "2026-09-24T16:00:00Z",
-    "endDate": "2026-09-24T18:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
-    "link": ""
-  },
-  {
     "id": "1113141_2026-09-25T15:00:00Z",
     "title": "Teensabend",
     "startDate": "2026-09-25T15:00:00Z",
@@ -576,18 +564,6 @@
     "link": ""
   },
   {
-    "id": "1111165_2026-10-30",
-    "title": "Check Up Seminar",
-    "startDate": "2026-10-30",
-    "endDate": "2026-10-31",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1113122_2026-10-30T17:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2026-10-30T17:00:00Z",
@@ -598,6 +574,18 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1111165_2026-10-30T18:00:00Z",
+    "title": "Check Up Seminar",
+    "startDate": "2026-10-30T18:00:00Z",
+    "endDate": "2026-10-31T20:30:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/1111165_2026_10_30T18_00_00Z.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "Es geht darum unsere Bestimmung zu finden und Lebensausrichtung zu definieren und zu beschreiben. \n\nAls Christen glauben wir an eine göttliche Berufung, die es herauszufinden gilt. Welchen Plan hat Gott für uns? \n\nSelbst wenn wir keine Christen sind, treibt uns die Frage um: Was ist das Ziel meines Lebens? Wie kann ich ihm Sinn verleihen? Gemeinsam wollen wir darauf Antworten finden!",
+    "link": "https://www.gemeinde-konkordia.de/checkup"
   },
   {
     "id": "1110922_2026-11-01T08:30:00Z",
