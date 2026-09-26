@@ -1366,5 +1366,17 @@
     "location": "Eisenbahnstraße 31, 77815 Bühl",
     "description": "Der Gottesdienst ist unser Highlight der Woche! Wir lieben den Sonntag!\nAls Kirche feiern wir Gott, beten ihn an, hören eine herausfordernde Predigt und haben eine liebevolle Zeit der Gemeinschaft miteinander.",
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
+  },
+  {
+    "id": "1113122_2026-12-25T17:00:00Z",
+    "title": "Hauskreis Ralph",
+    "startDate": "2026-12-25T17:00:00Z",
+    "endDate": "2026-12-25T20:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
