@@ -1270,5 +1270,17 @@
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": "",
     "link": "https://www.gemeinde-konkordia.de/kinder"
+  },
+  {
+    "id": "1113122_2027-01-01T17:00:00Z",
+    "title": "Hauskreis Ralph",
+    "startDate": "2027-01-01T17:00:00Z",
+    "endDate": "2027-01-01T20:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
