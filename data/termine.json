@@ -1162,5 +1162,17 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1113122_2027-01-08T17:00:00Z",
+    "title": "Hauskreis Ralph",
+    "startDate": "2027-01-08T17:00:00Z",
+    "endDate": "2027-01-08T20:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
   }
 ]
