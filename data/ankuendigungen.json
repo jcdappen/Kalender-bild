@@ -1,40 +1,11 @@
 [
   {
-    "titel": "Taufe",
-    "datum": "11.10. | 10.00 Uhr | Konkordia",
-    "beschreibung": "Am Sonntag nach dem Gottesdienst feiern wir gemeinsam Taufe. \n\nDu kannst dich gerne noch dazu anmelden.\nMelde dich direkt bei unserem Pastor Johannes.",
-    "bild": "assets/images/ankuendigungen/taufe1026-1791273132878.jpg",
-    "link": "mailto:j.dappen@gemeinde-konkordia.de",
-    "linkText": "Kontakt"
-  },
-  {
-    "titel": "Aktion Bühler Tafel",
-    "datum": "Bis 11.10.",
-    "beschreibung": "Wir sammeln wieder haltbare Lebensmittel und Drogerieartikel für die Bühler Tafel! Ob Nudeln, Konserven, Hygieneartikel oder andere langlebige Produkte – jede Spende hilft. Bring sie einfach bis Sonntag, den 11.10., mit in die Gemeinde.",
-    "bild": "assets/images/ankuendigungen/tafel-1790079428130.jpg"
-  },
-  {
-    "titel": "Men on Fire",
-    "datum": "9.10. | Oberbruch",
-    "beschreibung": "Freitag, 9. Oktober | 19:00 Uhr | bei Familie Simon\n\nMänner, wir laden dich herzlich ein! Wir grillen Würste, haben gute Gespräche und hören einen Impuls, der im Alltag weiterhilft.\n\nEgal, wo du gerade im Glauben stehst: Du bist willkommen. Bring gern einen Freund mit.\n\nDie Adresse bekommst du bei der Anmeldung. Melde dich dafür einfach kurz unter dem Link an.",
-    "bild": "assets/images/ankuendigungen/men1026-1790683737966.jpg",
-    "link": "https://www.gemeinde-konkordia.de/maenner",
-    "linkText": "Anmeldung",
-    "startseite": true
-  },
-  {
     "titel": "Freiheit - nach der Du Dich sehnst",
     "datum": "18.10. | 10-15 Uhr",
     "beschreibung": "In Freiheit leben ... was hindert mich daran?\n\nIm Johannesevangelium 8, 36 steht: „ **Wenn euch der\nSohn frei macht seid ihr wirklich frei.** “\n\nDoch wie komme ich in diese Freiheit, wie bleibe ich in dieser Freiheit? Spannende Fragen, bei denen uns **Matthias Nowak** weiterhelfen wird.\n\nMatthias Nowak gründete 1997 gemeinsam mit seiner Frau Fränzi die Gemeinde Delta Bern mit der Vision, eine Gemeinde zu sein, in der Menschen Jesus kennen- lernen, Liebe erfahren, Heilung finden, ausgebildet und ausgesandt werden können. Neben seinen Einsätzen in Indien schlägt sein Herz für den Befreiungsdienst und Freisetzung von Menschen.",
-    "bild": "assets/images/ankuendigungen/tdi26n-1791271515076.jpg",
+    "bild": "assets/images/ankuendigungen/tdi-26-1789458589665.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/26-10-18-TDI-.pdf",
     "startseite": true
-  },
-  {
-    "titel": "Familie sucht Dreizimmerwohnung",
-    "datum": "dringend",
-    "beschreibung": "Familie sucht !dringend! eine **Dreizimmerwohnung** in Raum Achern, Bühl, Rastatt, Karlsruhe bis Stuttgart. Gern in kleinerer Ortschaft. KM max. 720€, WM 820€. \nMeldet euch bei Angela Lindemann :)\nangela_lindemann@web.de",
-    "bild": "assets/images/ankuendigungen/wohnung-1791271631555.jpg"
   },
   {
     "titel": "Gott und die Welt",
@@ -52,12 +23,20 @@
     "startseite": true
   },
   {
+    "titel": "Refofeier - für die ganze Familie",
+    "datum": "31.10. | Ab 16:00 Uhr",
+    "beschreibung": "Lasst uns bei Lagerfeuer, Fingerfoodbuffet und Stockbrot eine tolle Zeit haben. \n\nAb 16:00 Uhr an **Gudruns Pferdekoppel** (s. Link).\nSo lange es hell ist, gibt es die Möglichkeit zum Ponyreiten.\n\nNicht **vergessen**: passende Kleidung, Stirnlampe oder Laterne, dein Getränk und Fingerfood fürs Buffett.",
+    "bild": "assets/images/ankuendigungen/refo26-1791874661674.jpg",
+    "link": "https://maps.app.goo.gl/KV4DDgUWqicLt1RQ8",
+    "linkText": "Treffpunkt"
+  },
+  {
     "titel": "Frauenfrühstück",
-    "datum": "07.11. | 09:30 Uhr | Konkordia",
-    "beschreibung": "Freue dich auf ein leckeres Frühstück und nette Gespräche unter Frauen. Bring gern deine Freundin, Mama, Oma oder Nachbarin mit und genießt gemeinsam einen schönen Vormittag.\n\nDamit wir ein vielfältiges Frühstück genießen können, freuen wir uns, wenn du eine Kleinigkeit mitbringst. Für Brötchen, Wurst und Käse ist gesorgt.\n\nUm Anmeldung wird gebeten:",
-    "bild": "assets/images/ankuendigungen/frauenf-1791272234623.jpg",
-    "link": "https://www.gemeinde-konkordia.de/frauen",
-    "linkText": "Anmeldung"
+    "datum": "7.11. | Konkordia",
+    "beschreibung": "Du hast Lust auf ein Frühstück & nette Gespräche unter Frauen?  Dann komm vorbei - bringe deine Freundin, Mama, Oma oder Nachbarin mit und genießt zusammen mit uns den Vormittag. \n\nDamit wir ein vielfältiges Frühstück haben, freuen wir uns, wenn du eine Kleinigkeit mitbringen würdest :)\nFür Brötchen, Wurst & Käse ist gesorgt.",
+    "bild": "assets/images/ankuendigungen/frauenneu-1791875999277.jpg",
+    "link": "www.gemeinde-konkordia.de/frauen",
+    "linkText": "Um Anmeldung wird gebeten"
   },
   {
     "titel": "Projekt Lebensräume - Neues Foto",
