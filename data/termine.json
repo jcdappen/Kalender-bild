@@ -1080,6 +1080,18 @@
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
   },
   {
+    "id": "1113319_2026-12-24T17:00:00Z",
+    "title": "Weihnachten is(s)t keiner allein",
+    "startDate": "2026-12-24T17:00:00Z",
+    "endDate": "2026-12-24T21:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
+    "description": "",
+    "link": ""
+  },
+  {
     "id": "1113122_2026-12-25T17:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2026-12-25T17:00:00Z",
