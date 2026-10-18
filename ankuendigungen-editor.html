@@ -217,6 +217,7 @@
         <div class="setup-hint">
             Für den Bild-Upload zusätzlich ein <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub Personal Access Token</a>
             mit Schreibrecht auf das Repo <code>jcdappen/Kalender-bild</code> hinterlegen (optional – ohne Token kannst du weiterhin Bild-Pfade manuell eintippen).
+            Für „Jetzt veröffentlichen“ braucht der Token zusätzlich die Berechtigung <code>Actions: Read and write</code>.
         </div>
         <div class="setup-field">
             <label>GitHub Token (optional, für Bild-Upload)</label>
@@ -233,6 +234,7 @@
 <header>
     <h1>📢 Ankündigungen Editor</h1>
     <div class="header-actions">
+        <button class="btn btn-outline" id="btn-publish" title="GitHub Action „Fetch Ankündigungen from JSONBin“ jetzt starten">🚀 Jetzt veröffentlichen</button>
         <button class="btn btn-primary" id="btn-save" disabled>💾 Speichern</button>
     </div>
 </header>
@@ -267,6 +269,7 @@
     const GH_REPO   = 'Kalender-bild';
     const GH_BRANCH = 'main';
     const GH_UPLOAD_DIR = 'assets/images/ankuendigungen';
+    const GH_FETCH_WORKFLOW = 'fetch-ankuendigungen.yml';
     const MAX_IMG_DIMENSION = 1600;
     const JPEG_QUALITY = 0.82;
 
@@ -365,6 +368,38 @@
         } finally {
             saveBtn.disabled = false;
             saveBtn.innerHTML = '💾 Speichern';
+        }
+    }
+
+    // ── Trigger GitHub Action (fetch from JSONBin) ─────────────────────────
+    async function triggerFetchWorkflow() {
+        if (!ghToken) { showSetup(); showToast('Bitte zuerst ein GitHub-Token hinterlegen.', 'error'); return; }
+        const btn = document.getElementById('btn-publish');
+        btn.disabled = true;
+        btn.textContent = '⏳ Startet …';
+        try {
+            const res = await fetch(
+                `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/actions/workflows/${GH_FETCH_WORKFLOW}/dispatches`,
+                {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${ghToken}`,
+                        'Accept': 'application/vnd.github+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ref: GH_BRANCH })
+                }
+            );
+            if (!res.ok) {
+                const data = await res.json().catch(() => ({}));
+                throw new Error(data.message || `HTTP ${res.status}`);
+            }
+            showToast('GitHub Action gestartet ✓ Die Seite ist in ca. 1–2 Minuten aktuell.', 'success');
+        } catch (e) {
+            showToast('Action konnte nicht gestartet werden: ' + e.message, 'error');
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '🚀 Jetzt veröffentlichen';
         }
     }
 
@@ -671,6 +706,7 @@
 
     statusBadge.addEventListener('click', showSetup);
     document.getElementById('btn-save').addEventListener('click', saveToJsonBin);
+    document.getElementById('btn-publish').addEventListener('click', triggerFetchWorkflow);
     document.getElementById('btn-add').addEventListener('click', () => {
         const empty = listEl.querySelector('.empty-state');
         if (empty) empty.remove();
