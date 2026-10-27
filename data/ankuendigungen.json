@@ -1,5 +1,11 @@
 [
   {
+    "titel": "Projekt Lebensräume - Neues Foto",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/cafe1026-1793094671366.jpg"
+  },
+  {
     "titel": "Refofeier - für die ganze Familie",
     "datum": "31.10. | Ab 16:00 Uhr",
     "beschreibung": "Lasst uns bei Lagerfeuer, Fingerfoodbuffet und Stockbrot eine tolle Zeit haben. \n\nAb 16:00 Uhr an **Gudruns Pferdekoppel** (s. Link).\nSo lange es hell ist, gibt es die Möglichkeit zum Ponyreiten.\n\nNicht **vergessen**: passende Kleidung, Stirnlampe oder Laterne, dein Getränk und Fingerfood fürs Buffett.",
@@ -7,13 +13,6 @@
     "link": "https://maps.app.goo.gl/KV4DDgUWqicLt1RQ8",
     "linkText": "Treffpunkt",
     "startseite": true
-  },
-  {
-    "titel": "Check-up Seminar",
-    "datum": "30.-31.10 | Bühl",
-    "beschreibung": "Es geht darum unsere Bestimmung zu finden und Lebensausrichtung zu definieren und zu beschreiben. \n\nAls Christen glauben wir an eine göttliche Berufung, die es herauszufinden gilt. Welchen Plan hat Gott für uns? \n\nSelbst wenn wir keine Christen sind, treibt uns die Frage um: Was ist das Ziel meines Lebens? Wie kann ich ihm Sinn verleihen? Gemeinsam wollen wir darauf Antworten finden!",
-    "bild": "assets/images/ankuendigungen/check-up26-1790142353138.jpg",
-    "link": "https://www.gemeinde-konkordia.de/checkup"
   },
   {
     "titel": "Frauenfrühstück",
@@ -40,9 +39,11 @@
     "link": "https://www.gemeinde-konkordia.de/gottesdienste"
   },
   {
-    "titel": "Projekt Lebensräume - Neues Foto",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/lebensraeume2-1790142795366.jpg"
+    "titel": "Exerzitien 2027",
+    "datum": "Februar und August",
+    "beschreibung": "Exerzitien, haben in der Kirchengeschichte eine lange Tradition.\nEs geht dabei schlicht um das \"Einüben“ des geistlichen Lebens (lat. exercitia spiritualia).\n\nDabei steht paradoxerweise nicht die eigene Leistung im Vordergrund, sondern die Offenheit beschenkt zu werden. Zeiten der Stille, Bibelbetrachtung, Gebet, Feier des Abendmahls eröffnen einen Raum der Begegnung\nzwischen Gott und dem Übenden. \n\nHier findet Klärung, Umkehr, (Neu)Ausrichtung und Ver-\nsöhnung statt. Das tägliche Begleitgespräch hilft dabei.\n\nMehr Infos im Flyer",
+    "bild": "assets/images/ankuendigungen/ex2027-1793095136057.jpg",
+    "link": "https://freikirche-und-exerzitien.de/wp-content/uploads/2026/10/2027_Exerzitien_Flyer_Wickelfalz_Entwurf-1.pdf",
+    "linkText": "Flyer"
   }
 ]
