@@ -48,18 +48,6 @@
     "link": ""
   },
   {
-    "id": "1111165_2026-10-30T18:00:00Z",
-    "title": "Check Up Seminar",
-    "startDate": "2026-10-30T18:00:00Z",
-    "endDate": "2026-10-31T20:30:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/1111165_2026_10_30T18_00_00Z.jpg",
-    "location": "Gemeinde in der Konkordia Bühl, Eisenbahnstrasse 31, 77815 Bühl",
-    "description": "Es geht darum unsere Bestimmung zu finden und Lebensausrichtung zu definieren und zu beschreiben. \n\nAls Christen glauben wir an eine göttliche Berufung, die es herauszufinden gilt. Welchen Plan hat Gott für uns? \n\nSelbst wenn wir keine Christen sind, treibt uns die Frage um: Was ist das Ziel meines Lebens? Wie kann ich ihm Sinn verleihen? Gemeinsam wollen wir darauf Antworten finden!",
-    "link": "https://www.gemeinde-konkordia.de/checkup"
-  },
-  {
     "id": "1113442_2026-10-31T15:00:00Z",
     "title": "Refofeier bei den Pferden",
     "startDate": "2026-10-31T15:00:00Z",
@@ -180,18 +168,6 @@
     "link": ""
   },
   {
-    "id": "1109955_2026-11-07T08:30:00Z",
-    "title": "Einführung ins kontemplative Gebet",
-    "startDate": "2026-11-07T08:30:00Z",
-    "endDate": "2026-11-07T11:30:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Brücke zum Leben, Rastatt",
-    "description": "Einführung ins kontemplative Gebet, für alle, die es kennenlernen wollen und keine Vorerfahrungen haben.",
-    "link": ""
-  },
-  {
     "id": "1112367_2026-11-07T08:30:00Z",
     "title": "Frauenfrühstuck",
     "startDate": "2026-11-07T08:30:00Z",
@@ -201,6 +177,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "",
+    "link": ""
+  },
+  {
+    "id": "1109955_2026-11-07T08:30:00Z",
+    "title": "Einführung ins kontemplative Gebet",
+    "startDate": "2026-11-07T08:30:00Z",
+    "endDate": "2026-11-07T11:30:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Brücke zum Leben, Rastatt",
+    "description": "Einführung ins kontemplative Gebet, für alle, die es kennenlernen wollen und keine Vorerfahrungen haben.",
     "link": ""
   },
   {
