@@ -45,6 +45,14 @@
     "linkText": "Gottesdienste"
   },
   {
+    "titel": "🎬🎄 Weihnachtskino",
+    "datum": "13.12.26",
+    "beschreibung": "Unser Weihnachtskino ist jedes Jahr eines der Highlights in der Konkordia: Der Saal ist voll, Familien, Freunde und Nachbarn kommen zusammen, Kinderaugen leuchten – und viele Gäste erleben dabei zum ersten Mal unsere Gemeinde von innen. Genau das macht diesen Abend so wertvoll.\n\nDamit sich alle bei uns willkommen und wohlfühlen, brauchen wir ein starkes Team. Und dafür brauchen wir dich!\n\nDu kannst dich im Gottesdienstsaal oder online eintragen.\n\nLass uns gemeinsam einen Abend gestalten, an dem Menschen spüren: Hier bin ich willkommen. Danke, dass du dabei bist! ❤️",
+    "bild": "assets/images/ankuendigungen/wkino26-1793698731492.jpg",
+    "link": "https://www.voluntira.com/event/t3YjU59iawPxRC9",
+    "linkText": "Mitarbeit Eintragen"
+  },
+  {
     "titel": "Exerzitien 2027",
     "datum": "Februar und August",
     "beschreibung": "Exerzitien, haben in der Kirchengeschichte eine lange Tradition.\nEs geht dabei schlicht um das \"Einüben“ des geistlichen Lebens (lat. exercitia spiritualia).\n\nDabei steht paradoxerweise nicht die eigene Leistung im Vordergrund, sondern die Offenheit beschenkt zu werden. Zeiten der Stille, Bibelbetrachtung, Gebet, Feier des Abendmahls eröffnen einen Raum der Begegnung\nzwischen Gott und dem Übenden. \n\nHier findet Klärung, Umkehr, (Neu)Ausrichtung und Ver-\nsöhnung statt. Das tägliche Begleitgespräch hilft dabei.\n\nMehr Infos im Flyer",
@@ -52,13 +60,5 @@
     "link": "https://freikirche-und-exerzitien.de/wp-content/uploads/2026/10/2027_Exerzitien_Flyer_Wickelfalz_Entwurf-1.pdf",
     "linkText": "Flyer",
     "startseite": true
-  },
-  {
-    "titel": "🎬🎄 Weihnachtskino",
-    "datum": "13.12.26",
-    "beschreibung": "Unser Weihnachtskino ist jedes Jahr eines der Highlights in der Konkordia: Der Saal ist voll, Familien, Freunde und Nachbarn kommen zusammen, Kinderaugen leuchten – und viele Gäste erleben dabei zum ersten Mal unsere Gemeinde von innen. Genau das macht diesen Abend so wertvoll.\n\nDamit sich alle bei uns willkommen und wohlfühlen, brauchen wir ein starkes Team. Und dafür brauchen wir dich!\n\nDu kannst dich im Gottesdienstsaal oder online eintragen.\n\nLass uns gemeinsam einen Abend gestalten, an dem Menschen spüren: Hier bin ich willkommen. Danke, dass du dabei bist! ❤️",
-    "bild": "assets/images/ankuendigungen/wkino26-1793698731492.jpg",
-    "link": "https://www.voluntira.com/event/t3YjU59iawPxRC9",
-    "linkText": "Mitarbeit Eintragen"
   }
 ]
