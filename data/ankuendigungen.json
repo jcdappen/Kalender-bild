@@ -1,9 +1,17 @@
 [
   {
+    "titel": "Ausrichtung 2034 - Finanzen",
+    "datum": "Wichtige Infomrationen",
+    "beschreibung": "Am Sonntag hat uns Johannes mit hineingenommen in unsere strategische Ausrichtung bis 2034, also in die Frage, wohin Gott uns als Gemeinde führt. Außerdem hat der Finanzrat wichtige Infos zu unseren Gemeindefinanzen weitergegeben: Schaut euch dazu gern das Video an!",
+    "bild": "assets/images/ankuendigungen/thumbnail-unser-weg-2034-1793699746686.jpg",
+    "link": "https://konkordia.subspla.sh/9zc4nrf",
+    "linkText": "Video anschauen"
+  },
+  {
     "titel": "Projekt Lebensräume - Neues Foto",
     "datum": "Konkordia",
     "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/cafe1026-1793094671366.jpg"
+    "bild": "assets/images/ankuendigungen/leben1126-1793697727899.jpg"
   },
   {
     "titel": "Frauenfrühstück",
@@ -15,6 +23,13 @@
     "startseite": true
   },
   {
+    "titel": "Weltweiter Gebetstag für verfolgte Christen",
+    "datum": "08.11. | 19:30 Uhr | Johannesforum",
+    "beschreibung": "Herzliche Einladung zum Gebetsabend für verfolgte Christen.\nAm 8.11 um 19.30 Uhr in der \nEvangelische Kirchengemeinde Bühl\nJohannesstraße 5\n77815 Bühl",
+    "bild": "assets/images/ankuendigungen/gebetjohannes-1793697982791.jpg",
+    "link": "https://evkirchebuehl.de/termine/detail/termin/id/1008686-johannesforum/?vt=1&cb-id=241557"
+  },
+  {
     "titel": "Gottesdienst",
     "datum": "Samstag 14.11 um 19:30 Uhr",
     "beschreibung": "An diesem Wochenende feiern wir gemeinsam unseren traditionellen Samstagabendgottesdienst. Herzliche Einladung an alle!\n\nSamstag 14.11 um 19:30 Uhr in der Konkordia.\n\nAm Sonntag den 15.11. findet dann kein Gottesdienst statt.",
@@ -22,11 +37,28 @@
     "link": "https://www.gemeinde-konkordia.de/gottesdienste"
   },
   {
+    "titel": "Christen in der Verfolgung",
+    "datum": "29.11 | 10.00 | Konkordia",
+    "beschreibung": "Christsein in der Verfolgung - was hat das mit uns zu tun?\n\nherzliche Einladung zum Gottesdienst mit Gerhard Pfeiffer von OpenDoors.",
+    "bild": "assets/images/ankuendigungen/verfolgung26-1793698183988.jpg",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienste",
+    "linkText": "Gottesdienste"
+  },
+  {
     "titel": "Exerzitien 2027",
     "datum": "Februar und August",
     "beschreibung": "Exerzitien, haben in der Kirchengeschichte eine lange Tradition.\nEs geht dabei schlicht um das \"Einüben“ des geistlichen Lebens (lat. exercitia spiritualia).\n\nDabei steht paradoxerweise nicht die eigene Leistung im Vordergrund, sondern die Offenheit beschenkt zu werden. Zeiten der Stille, Bibelbetrachtung, Gebet, Feier des Abendmahls eröffnen einen Raum der Begegnung\nzwischen Gott und dem Übenden. \n\nHier findet Klärung, Umkehr, (Neu)Ausrichtung und Ver-\nsöhnung statt. Das tägliche Begleitgespräch hilft dabei.\n\nMehr Infos im Flyer",
     "bild": "assets/images/ankuendigungen/ex2027-1793095136057.jpg",
     "link": "https://freikirche-und-exerzitien.de/wp-content/uploads/2026/10/2027_Exerzitien_Flyer_Wickelfalz_Entwurf-1.pdf",
-    "linkText": "Flyer"
+    "linkText": "Flyer",
+    "startseite": true
+  },
+  {
+    "titel": "🎬🎄 Weihnachtskino",
+    "datum": "13.12.26",
+    "beschreibung": "Unser Weihnachtskino ist jedes Jahr eines der Highlights in der Konkordia: Der Saal ist voll, Familien, Freunde und Nachbarn kommen zusammen, Kinderaugen leuchten – und viele Gäste erleben dabei zum ersten Mal unsere Gemeinde von innen. Genau das macht diesen Abend so wertvoll.\n\nDamit sich alle bei uns willkommen und wohlfühlen, brauchen wir ein starkes Team. Und dafür brauchen wir dich!\n\nDu kannst dich im Gottesdienstsaal oder online eintragen.\n\nLass uns gemeinsam einen Abend gestalten, an dem Menschen spüren: Hier bin ich willkommen. Danke, dass du dabei bist! ❤️",
+    "bild": "assets/images/ankuendigungen/wkino26-1793698731492.jpg",
+    "link": "https://www.voluntira.com/event/t3YjU59iawPxRC9",
+    "linkText": "Mitarbeit Eintragen"
   }
 ]
