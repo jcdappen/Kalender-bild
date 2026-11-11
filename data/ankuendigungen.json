@@ -5,29 +5,8 @@
     "beschreibung": "Am Sonntag hat uns Johannes mit hineingenommen in unsere strategische Ausrichtung bis 2034, also in die Frage, wohin Gott uns als Gemeinde führt. Außerdem hat der Finanzrat wichtige Infos zu unseren Gemeindefinanzen weitergegeben: Schaut euch dazu gern das Video an!",
     "bild": "assets/images/ankuendigungen/thumbnail-unser-weg-2034-1793699746686.jpg",
     "link": "https://konkordia.subspla.sh/9zc4nrf",
-    "linkText": "Video anschauen"
-  },
-  {
-    "titel": "Projekt Lebensräume - Neues Foto",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/leben1126-1793697727899.jpg"
-  },
-  {
-    "titel": "Frauenfrühstück",
-    "datum": "7.11. | Konkordia",
-    "beschreibung": "Du hast Lust auf ein Frühstück & nette Gespräche unter Frauen?  Dann komm vorbei - bringe deine Freundin, Mama, Oma oder Nachbarin mit und genießt zusammen mit uns den Vormittag. \n\nDamit wir ein vielfältiges Frühstück haben, freuen wir uns, wenn du eine Kleinigkeit mitbringen würdest :)\nFür Brötchen, Wurst & Käse ist gesorgt.",
-    "bild": "assets/images/ankuendigungen/frauenneu-1791875999277.jpg",
-    "link": "https://www.gemeinde-konkordia.de/frauen",
-    "linkText": "Um Anmeldung wird gebeten",
+    "linkText": "Video anschauen",
     "startseite": true
-  },
-  {
-    "titel": "Weltweiter Gebetstag für verfolgte Christen",
-    "datum": "08.11. | 19:30 Uhr | Johannesforum",
-    "beschreibung": "Herzliche Einladung zum Gebetsabend für verfolgte Christen.\nAm 8.11 um 19.30 Uhr in der \nEvangelische Kirchengemeinde Bühl\nJohannesstraße 5\n77815 Bühl",
-    "bild": "assets/images/ankuendigungen/gebetjohannes-1793697982791.jpg",
-    "link": "https://evkirchebuehl.de/termine/detail/termin/id/1008686-johannesforum/?vt=1&cb-id=241557"
   },
   {
     "titel": "Gottesdienst",
@@ -35,6 +14,13 @@
     "beschreibung": "An diesem Wochenende feiern wir gemeinsam unseren traditionellen Samstagabendgottesdienst. Herzliche Einladung an alle!\n\nSamstag 14.11 um 19:30 Uhr in der Konkordia.\n\nAm Sonntag den 15.11. findet dann kein Gottesdienst statt.",
     "bild": "assets/images/ankuendigungen/samstag1811-1792487891566.jpg",
     "link": "https://www.gemeinde-konkordia.de/gottesdienste"
+  },
+  {
+    "titel": "Projekt Lebensräume - Neues Foto",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/leben1126a-1794406070064.jpg",
+    "startseite": true
   },
   {
     "titel": "Christen in der Verfolgung",
@@ -51,6 +37,14 @@
     "bild": "assets/images/ankuendigungen/wkino26-1793698731492.jpg",
     "link": "https://www.voluntira.com/event/t3YjU59iawPxRC9",
     "linkText": "Mitarbeit Eintragen"
+  },
+  {
+    "titel": "Adventsaktionen – „Ich glaub, ich lad ein!“",
+    "datum": "Dezember 26",
+    "beschreibung": "Am Sonntag, 13. Dezember, verwandeln wir die Konkordia in ein Kino: Ab 16:00 Uhr ist Einlass, um 16:15 Uhr starten parallel drei Filme, einer für Erwachsene und zwei für Kinder. Bringt eure Freunde, Nachbarn und Kollegen mit, Anmeldeschluss ist der 7. Dezember. Außerdem sind wir an drei Adventssamstagen unter dem Motto „Das größte Wunder braucht keine KI – Gott wurde Mensch“ vor unserer Haustür unterwegs, kommen mit Passanten ins Gespräch und laden zum Kino und zum Heiligabend-Gottesdienst ein. Dafür suchen wir noch Mitbeter und Helfer. Alle Termine, Infos und Kontakte findet ihr hier.",
+    "bild": "assets/images/ankuendigungen/evaktion1226-1794406840648.jpg",
+    "link": "https://storage1.snappages.site/S74RKH/assets/files/11_2026_Infos-f%26uuml%3Br-Konkorida-News_Advent-90.pdf",
+    "linkText": "Alle Infos"
   },
   {
     "titel": "Exerzitien 2027",
