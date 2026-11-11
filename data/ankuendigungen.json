@@ -23,14 +23,6 @@
     "startseite": true
   },
   {
-    "titel": "Christen in der Verfolgung",
-    "datum": "29.11 | 10.00 | Konkordia",
-    "beschreibung": "Christsein in der Verfolgung - was hat das mit uns zu tun?\n\nherzliche Einladung zum Gottesdienst mit Gerhard Pfeiffer von OpenDoors.",
-    "bild": "assets/images/ankuendigungen/verfolgung26-1793698183988.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienste",
-    "linkText": "Gottesdienste"
-  },
-  {
     "titel": "🎬🎄 Weihnachtskino",
     "datum": "13.12.26",
     "beschreibung": "Unser Weihnachtskino ist jedes Jahr eines der Highlights in der Konkordia: Der Saal ist voll, Familien, Freunde und Nachbarn kommen zusammen, Kinderaugen leuchten – und viele Gäste erleben dabei zum ersten Mal unsere Gemeinde von innen. Genau das macht diesen Abend so wertvoll.\n\nDamit sich alle bei uns willkommen und wohlfühlen, brauchen wir ein starkes Team. Und dafür brauchen wir dich!\n\nDu kannst dich im Gottesdienstsaal oder online eintragen.\n\nLass uns gemeinsam einen Abend gestalten, an dem Menschen spüren: Hier bin ich willkommen. Danke, dass du dabei bist! ❤️",
@@ -41,10 +33,18 @@
   {
     "titel": "Adventsaktionen – „Ich glaub, ich lad ein!“",
     "datum": "Dezember 26",
-    "beschreibung": "Am Sonntag, 13. Dezember, verwandeln wir die Konkordia in ein Kino: Ab 16:00 Uhr ist Einlass, um 16:15 Uhr starten parallel drei Filme, einer für Erwachsene und zwei für Kinder. Bringt eure Freunde, Nachbarn und Kollegen mit, Anmeldeschluss ist der 7. Dezember. Außerdem sind wir an drei Adventssamstagen unter dem Motto „Das größte Wunder braucht keine KI – Gott wurde Mensch“ vor unserer Haustür unterwegs, kommen mit Passanten ins Gespräch und laden zum Kino und zum Heiligabend-Gottesdienst ein. Dafür suchen wir noch Mitbeter und Helfer. Alle Termine, Infos und Kontakte findet ihr hier.",
+    "beschreibung": "Am Sonntag, 13. Dezember, verwandeln wir die Konkordia in ein Kino: Außerdem sind wir an drei Adventssamstagen unter dem Motto „Das größte Wunder braucht keine KI – Gott wurde Mensch“ vor unserer Haustür unterwegs, kommen mit Passanten ins Gespräch und laden zum Kino und zum Heiligabend-Gottesdienst ein. Dafür suchen wir noch Mitbeter und Helfer. Alle Termine, Infos und Kontakte findet ihr hier.",
     "bild": "assets/images/ankuendigungen/evaktion1226-1794406840648.jpg",
     "link": "https://storage1.snappages.site/S74RKH/assets/files/11_2026_Infos_Adventsaktionen.pdf",
     "linkText": "Alle Infos"
+  },
+  {
+    "titel": "Christen in der Verfolgung",
+    "datum": "29.11 | 10.00 | Konkordia",
+    "beschreibung": "Christsein in der Verfolgung - was hat das mit uns zu tun?\n\nherzliche Einladung zum Gottesdienst mit Gerhard Pfeiffer von OpenDoors.",
+    "bild": "assets/images/ankuendigungen/verfolgung26-1793698183988.jpg",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienste",
+    "linkText": "Gottesdienste"
   },
   {
     "titel": "Exerzitien 2027",
