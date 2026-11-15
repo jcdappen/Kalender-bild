@@ -1,0 +1,118 @@
+<!-- Countdown für den nächsten Gottesdienst (Daten aus dem ChurchTools-Kalender "Gottesdienst") -->
+<div id="gottesdienst-countdown" style="font-family: Arial, sans-serif; text-align: center; max-width: 600px; margin: 0 auto; padding: 20px;">
+<h2 id="cd-title" style="font-size: 24px; margin-bottom: 20px;">Nächster Gottesdienst in</h2>
+<div id="cd-boxes" style="display: flex; justify-content: center; flex-wrap: wrap;">
+<div style="margin: 0 10px 10px 10px; text-align: center;">
+<div id="cd-days" style="font-size: 36px; font-weight: bold; background-color: black; color: white; padding: 10px 15px; border-radius: 5px; min-width: 60px; display: inline-block;">00</div>
+<div style="font-size: 14px; margin-top: 5px; text-transform: uppercase; font-weight: bold;">Tage</div>
+</div>
+<div style="margin: 0 10px 10px 10px; text-align: center;">
+<div id="cd-hours" style="font-size: 36px; font-weight: bold; background-color: black; color: white; padding: 10px 15px; border-radius: 5px; min-width: 60px; display: inline-block;">00</div>
+<div style="font-size: 14px; margin-top: 5px; text-transform: uppercase; font-weight: bold;">Stunden</div>
+</div>
+<div style="margin: 0 10px 10px 10px; text-align: center;">
+<div id="cd-minutes" style="font-size: 36px; font-weight: bold; background-color: black; color: white; padding: 10px 15px; border-radius: 5px; min-width: 60px; display: inline-block;">00</div>
+<div style="font-size: 14px; margin-top: 5px; text-transform: uppercase; font-weight: bold;">Minuten</div>
+</div>
+<div style="margin: 0 10px 10px 10px; text-align: center;">
+<div id="cd-seconds" style="font-size: 36px; font-weight: bold; background-color: black; color: white; padding: 10px 15px; border-radius: 5px; min-width: 60px; display: inline-block;">00</div>
+<div style="font-size: 14px; margin-top: 5px; text-transform: uppercase; font-weight: bold;">Sekunden</div>
+</div>
+</div>
+<div id="cd-info" style="font-size: 16px; margin-top: 10px; font-weight: bold;"></div>
+</div>
+<script>
+(function() {
+  // Termine-Datei (wird alle 30 Min. per GitHub Action aus ChurchTools aktualisiert)
+  var TERMINE_URL = 'https://jcdappen.github.io/Kalender-bild/data/termine.json';
+  var KATEGORIE = 'Gottesdienst';
+  var NEU_LADEN_MS = 30 * 60 * 1000; // alle 30 Minuten neu laden
+
+  var termine = [];       // [{start: Date, end: Date, title: String}]
+  var geladen = false;
+
+  function $(id) { return document.getElementById(id); }
+  function zweistellig(n) { return n < 10 ? '0' + n : String(n); }
+
+  // Ersatz, falls die Termine nicht geladen werden können: nächster Sonntag 10:00 Uhr
+  function naechsterSonntag(jetzt) {
+    var d = new Date(jetzt);
+    d.setDate(jetzt.getDate() + (7 - jetzt.getDay()) % 7);
+    d.setHours(10, 0, 0, 0);
+    if (d <= jetzt) d.setDate(d.getDate() + 7);
+    var ende = new Date(d.getTime() + 90 * 60 * 1000);
+    return { start: d, end: ende, title: KATEGORIE };
+  }
+
+  function ladeTermine() {
+    fetch(TERMINE_URL, { cache: 'no-store' })
+      .then(function(res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function(daten) {
+        termine = (daten || [])
+          .filter(function(t) { return t.category === KATEGORIE && t.startDate; })
+          .map(function(t) {
+            var start = new Date(t.startDate);
+            var end = t.endDate ? new Date(t.endDate) : new Date(start.getTime() + 90 * 60 * 1000);
+            return { start: start, end: end, title: t.title || KATEGORIE };
+          })
+          .sort(function(a, b) { return a.start - b.start; });
+        geladen = true;
+        aktualisieren();
+      })
+      .catch(function() {
+        geladen = false; // Fallback auf Sonntag 10 Uhr
+        aktualisieren();
+      });
+  }
+
+  // Liefert {laeuft: true, termin} wenn gerade ein Gottesdienst stattfindet,
+  // sonst {laeuft: false, termin} mit dem nächsten Termin
+  function ermittleTermin(jetzt) {
+    if (geladen) {
+      for (var i = 0; i < termine.length; i++) {
+        var t = termine[i];
+        if (t.start <= jetzt && jetzt < t.end) return { laeuft: true, termin: t };
+        if (t.start > jetzt) return { laeuft: false, termin: t };
+      }
+    }
+    return { laeuft: false, termin: naechsterSonntag(jetzt) };
+  }
+
+  function formatDatum(d) {
+    var datum = d.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
+    var zeit = d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    return datum + ', ' + zeit + ' Uhr';
+  }
+
+  function aktualisieren() {
+    var jetzt = new Date();
+    var ergebnis = ermittleTermin(jetzt);
+    var t = ergebnis.termin;
+
+    if (ergebnis.laeuft) {
+      $('cd-title').textContent = 'Der Gottesdienst läuft gerade!';
+      $('cd-boxes').style.display = 'none';
+      $('cd-info').textContent = 'Seit ' + t.start.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) + ' Uhr – herzlich willkommen!';
+      return;
+    }
+
+    $('cd-title').textContent = 'Nächster Gottesdienst in';
+    $('cd-boxes').style.display = 'flex';
+    $('cd-info').textContent = (t.title && t.title !== KATEGORIE ? t.title + ' · ' : '') + formatDatum(t.start);
+
+    var rest = t.start - jetzt;
+    $('cd-days').textContent = zweistellig(Math.floor(rest / 86400000));
+    $('cd-hours').textContent = zweistellig(Math.floor((rest % 86400000) / 3600000));
+    $('cd-minutes').textContent = zweistellig(Math.floor((rest % 3600000) / 60000));
+    $('cd-seconds').textContent = zweistellig(Math.floor((rest % 60000) / 1000));
+  }
+
+  aktualisieren();                       // sofort anzeigen (Fallback bis Daten da sind)
+  ladeTermine();                         // Termine aus dem Kalender laden
+  setInterval(aktualisieren, 1000);      // jede Sekunde zählen
+  setInterval(ladeTermine, NEU_LADEN_MS); // regelmäßig neue Termine holen
+})();
+</script>
