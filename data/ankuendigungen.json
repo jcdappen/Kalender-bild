@@ -9,20 +9,6 @@
     "startseite": true
   },
   {
-    "titel": "Gottesdienst",
-    "datum": "Samstag 14.11 um 19:30 Uhr",
-    "beschreibung": "An diesem Wochenende feiern wir gemeinsam unseren traditionellen Samstagabendgottesdienst. Herzliche Einladung an alle!\n\nSamstag 14.11 um 19:30 Uhr in der Konkordia.\n\nAm Sonntag den 15.11. findet dann kein Gottesdienst statt.",
-    "bild": "assets/images/ankuendigungen/samstag1811-1792487891566.jpg",
-    "link": "https://www.gemeinde-konkordia.de/gottesdienste"
-  },
-  {
-    "titel": "Projekt Lebensräume - Neues Foto",
-    "datum": "Konkordia",
-    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
-    "bild": "assets/images/ankuendigungen/leben1126a-1794406070064.jpg",
-    "startseite": true
-  },
-  {
     "titel": "🎬🎄 Weihnachtskino",
     "datum": "13.12.26",
     "beschreibung": "Unser Weihnachtskino ist jedes Jahr eines der Highlights in der Konkordia: Der Saal ist voll, Familien, Freunde und Nachbarn kommen zusammen, Kinderaugen leuchten – und viele Gäste erleben dabei zum ersten Mal unsere Gemeinde von innen. Genau das macht diesen Abend so wertvoll.\n\nDamit sich alle bei uns willkommen und wohlfühlen, brauchen wir ein starkes Team. Und dafür brauchen wir dich!\n\nDu kannst dich im Gottesdienstsaal oder online eintragen.\n\nLass uns gemeinsam einen Abend gestalten, an dem Menschen spüren: Hier bin ich willkommen. Danke, dass du dabei bist! ❤️",
@@ -39,12 +25,26 @@
     "linkText": "Alle Infos"
   },
   {
+    "titel": "Projekt Lebensräume - Neues Foto",
+    "datum": "Konkordia",
+    "beschreibung": "Der Umbau in der Einsbehnstraße kommt gut voran – Schritt für Schritt wird sichtbar, wie viel Arbeit und Herzblut hier hineinfließt. Wir sind unglaublich dankbar für unser Team und die vielen fleißigen Helfer, die mit anpacken, ihre Zeit schenken und Hand in Hand arbeiten. Danke, dass ihr diesen Ort mitgestaltet – das ist gelebte Gemeinschaft!",
+    "bild": "assets/images/ankuendigungen/leben1126a-1794406070064.jpg",
+    "startseite": true
+  },
+  {
     "titel": "Christen in der Verfolgung",
     "datum": "29.11 | 10.00 | Konkordia",
     "beschreibung": "Christsein in der Verfolgung - was hat das mit uns zu tun?\n\nherzliche Einladung zum Gottesdienst mit Gerhard Pfeiffer von OpenDoors.",
     "bild": "assets/images/ankuendigungen/verfolgung26-1793698183988.jpg",
     "link": "https://www.gemeinde-konkordia.de/gottesdienste",
     "linkText": "Gottesdienste"
+  },
+  {
+    "titel": "Weihnachtsgottesdienst",
+    "datum": "24.12.26 | 16:00 Uhr | Konkordia",
+    "beschreibung": "Herzliche Einladung zum **Weihnachtsgottesdienst für die ganze Familie** – mit oder ohne Kirchenerfahrung.",
+    "bild": "assets/images/ankuendigungen/weihgodi26-1794993680784.jpg",
+    "link": "https://www.gemeinde-konkordia.de/gottesdienste"
   },
   {
     "titel": "Exerzitien 2027",
