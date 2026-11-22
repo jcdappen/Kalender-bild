@@ -898,5 +898,29 @@
     "location": "",
     "description": "",
     "link": ""
+  },
+  {
+    "id": "1113270_2027-02-20",
+    "title": "Tage der Inspiration",
+    "startDate": "2027-02-20",
+    "endDate": "2027-02-21",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": "1113473_2027-02-20T18:30:00Z",
+    "title": "Tag der Inspiration Lobpreisabend",
+    "startDate": "2027-02-20T18:30:00Z",
+    "endDate": "2027-02-20T20:00:00Z",
+    "category": "Gottesdienst",
+    "color": "#fbd75b",
+    "image": "assets/images/placeholder.jpg",
+    "location": "Arche, Eisenbahnstraße 21, 77833 Ottersweier",
+    "description": "",
+    "link": ""
   }
 ]
