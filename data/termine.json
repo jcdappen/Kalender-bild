@@ -1,17 +1,5 @@
 [
   {
-    "id": "1109836_2026-11-23T14:30:00Z",
-    "title": "Espresso & mehr...",
-    "startDate": "2026-11-23T14:30:00Z",
-    "endDate": "2026-11-23T17:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
-    "description": "",
-    "link": "https://www.gemeinde-konkordia.de/kinder"
-  },
-  {
     "id": "1113900_2026-11-24T16:30:00Z",
     "title": "Selbsthilfegruppe Lichtblicke",
     "startDate": "2026-11-24T16:30:00Z",
@@ -324,6 +312,18 @@
     "link": ""
   },
   {
+    "id": "1113910_2026-12-12T08:30:00Z",
+    "title": "Probe Krippenspiel",
+    "startDate": "2026-12-12T08:30:00Z",
+    "endDate": "2026-12-12T09:30:00Z",
+    "category": "Kinder",
+    "color": "#4986e7",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
     "id": "1110990_2026-12-12T09:30:00Z",
     "title": "Evangel. Aktion im Advent",
     "startDate": "2026-12-12T09:30:00Z",
@@ -408,7 +408,7 @@
     "link": "https://www.gemeinde-konkordia.de/frauen"
   },
   {
-    "id": "1113451_2026-12-17T16:00:00Z",
+    "id": "1113909_2026-12-17T16:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-12-17T16:00:00Z",
     "endDate": "2026-12-17T18:00:00Z",
@@ -450,6 +450,18 @@
     "endDate": "2026-12-18T20:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": "1113910_2026-12-19T08:30:00Z",
+    "title": "Probe Krippenspiel",
+    "startDate": "2026-12-19T08:30:00Z",
+    "endDate": "2026-12-19T09:30:00Z",
+    "category": "Kinder",
+    "color": "#4986e7",
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "",
@@ -513,6 +525,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Ralph Weber leitet die Gruppe",
+    "link": ""
+  },
+  {
+    "id": "1113913_2026-12-23T08:30:00Z",
+    "title": "Generalprobe Krippenspiel",
+    "startDate": "2026-12-23T08:30:00Z",
+    "endDate": "2026-12-23T10:00:00Z",
+    "category": "Kinder",
+    "color": "#4986e7",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "",
     "link": ""
   },
   {
@@ -624,6 +648,18 @@
     "link": ""
   },
   {
+    "id": "1113909_2027-01-07T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-01-07T16:00:00Z",
+    "endDate": "2027-01-07T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
     "id": "1113122_2027-01-08T17:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2027-01-08T17:00:00Z",
@@ -681,6 +717,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Ralph Weber leitet die Gruppe",
+    "link": ""
+  },
+  {
+    "id": "1113909_2027-01-14T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-01-14T16:00:00Z",
+    "endDate": "2027-01-14T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
   },
   {
@@ -756,6 +804,18 @@
     "link": ""
   },
   {
+    "id": "1113909_2027-01-21T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-01-21T16:00:00Z",
+    "endDate": "2027-01-21T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
     "id": "1113122_2027-01-22T17:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2027-01-22T17:00:00Z",
@@ -813,6 +873,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Ralph Weber leitet die Gruppe",
+    "link": ""
+  },
+  {
+    "id": "1113909_2027-01-28T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-01-28T16:00:00Z",
+    "endDate": "2027-01-28T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
   },
   {
@@ -888,6 +960,18 @@
     "link": ""
   },
   {
+    "id": "1113909_2027-02-04T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-02-04T16:00:00Z",
+    "endDate": "2027-02-04T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
     "id": "1113467_2027-02-05",
     "title": "Exerzitien",
     "startDate": "2027-02-05",
@@ -960,6 +1044,18 @@
     "link": ""
   },
   {
+    "id": "1113909_2027-02-11T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-02-11T16:00:00Z",
+    "endDate": "2027-02-11T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
+    "link": ""
+  },
+  {
     "id": "1113122_2027-02-12T17:00:00Z",
     "title": "Hauskreis Ralph",
     "startDate": "2027-02-12T17:00:00Z",
@@ -1017,6 +1113,18 @@
     "image": "assets/images/placeholder.jpg",
     "location": "",
     "description": "Ralph Weber leitet die Gruppe",
+    "link": ""
+  },
+  {
+    "id": "1113909_2027-02-18T16:00:00Z",
+    "title": "Alpha Jünger",
+    "startDate": "2027-02-18T16:00:00Z",
+    "endDate": "2027-02-18T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Gruppe von leidenschaftlichen Startern im Glauben teilen Leben und lernen Jesus immer besser kennen.",
     "link": ""
   },
   {
