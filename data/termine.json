@@ -1,17 +1,5 @@
 [
   {
-    "id": "1113900_2026-11-24T16:30:00Z",
-    "title": "Selbsthilfegruppe Lichtblicke",
-    "startDate": "2026-11-24T16:30:00Z",
-    "endDate": "2026-11-24T18:00:00Z",
-    "category": "Sonstige Veranstaltung",
-    "color": "#16a765",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "Ralph Weber leitet die Gruppe",
-    "link": ""
-  },
-  {
     "id": "1112719_2026-11-25T08:30:00Z",
     "title": "Mamatreff",
     "startDate": "2026-11-25T08:30:00Z",
@@ -180,10 +168,10 @@
     "link": ""
   },
   {
-    "id": "1113813_2026-12-04T17:00:00Z",
-    "title": "Ankerplatz Weihnachtsfeier",
+    "id": "1113122_2026-12-04T17:00:00Z",
+    "title": "Hauskreis Ralph",
     "startDate": "2026-12-04T17:00:00Z",
-    "endDate": "2026-12-04T22:00:00Z",
+    "endDate": "2026-12-04T20:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
@@ -192,10 +180,10 @@
     "link": ""
   },
   {
-    "id": "1113122_2026-12-04T17:00:00Z",
-    "title": "Hauskreis Ralph",
+    "id": "1113813_2026-12-04T17:00:00Z",
+    "title": "Ankerplatz Weihnachtsfeier",
     "startDate": "2026-12-04T17:00:00Z",
-    "endDate": "2026-12-04T20:00:00Z",
+    "endDate": "2026-12-04T22:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
@@ -1198,5 +1186,17 @@
     "location": "Gemeinde in der Konkordia, Eisenbahnstraße 31, 77815 Bühl",
     "description": "Espresso & mehr ist unser Café als Begegnungsort für Menschen unterschiedlicher Herkunft. Montagnachmittags laden wir Geflüchtete, Immigranten und Einheimische zu Kaffee, Tee und Kuchen ein. Dazu gibt es Hausaufgabenhilfe und Angebote für Kinder und Jugendliche sowie gemeinsame Aktivitäten. So bauen wir Brücken, und alle sollen sich willkommen fühlen, voneinander lernen und gemeinsam wachsen. Du kannst mitmachen, wenn du Freude an Begegnung hast, ob beim Bewirten, bei der Hausaufgabenbetreuung oder bei der Vorbereitung.",
     "link": "https://www.gemeinde-konkordia.de/kinder"
+  },
+  {
+    "id": "1113900_2027-02-23T16:30:00Z",
+    "title": "Selbsthilfegruppe Lichtblicke",
+    "startDate": "2027-02-23T16:30:00Z",
+    "endDate": "2027-02-23T18:00:00Z",
+    "category": "Sonstige Veranstaltung",
+    "color": "#16a765",
+    "image": "assets/images/placeholder.jpg",
+    "location": "",
+    "description": "Ralph Weber leitet die Gruppe",
+    "link": ""
   }
 ]
