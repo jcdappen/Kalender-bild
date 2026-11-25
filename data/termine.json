@@ -1,17 +1,5 @@
 [
   {
-    "id": "1110067_2026-11-25T14:30:00Z",
-    "title": "Singkreis für kleine Kinder",
-    "startDate": "2026-11-25T14:30:00Z",
-    "endDate": "2026-11-25T15:15:00Z",
-    "category": "Kinder",
-    "color": "#4986e7",
-    "image": "assets/images/placeholder.jpg",
-    "location": "",
-    "description": "",
-    "link": ""
-  },
-  {
     "id": "1113451_2026-11-26T16:00:00Z",
     "title": "Alpha Jünger",
     "startDate": "2026-11-26T16:00:00Z",
@@ -156,10 +144,10 @@
     "link": ""
   },
   {
-    "id": "1113122_2026-12-04T17:00:00Z",
-    "title": "Hauskreis Ralph",
+    "id": "1113813_2026-12-04T17:00:00Z",
+    "title": "Ankerplatz Weihnachtsfeier",
     "startDate": "2026-12-04T17:00:00Z",
-    "endDate": "2026-12-04T20:00:00Z",
+    "endDate": "2026-12-04T22:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
@@ -168,10 +156,10 @@
     "link": ""
   },
   {
-    "id": "1113813_2026-12-04T17:00:00Z",
-    "title": "Ankerplatz Weihnachtsfeier",
+    "id": "1113122_2026-12-04T17:00:00Z",
+    "title": "Hauskreis Ralph",
     "startDate": "2026-12-04T17:00:00Z",
-    "endDate": "2026-12-04T22:00:00Z",
+    "endDate": "2026-12-04T20:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
     "image": "assets/images/placeholder.jpg",
@@ -540,9 +528,9 @@
     "link": "https://www.gemeinde-konkordia.de/gottesdienst"
   },
   {
-    "id": "1113319_2026-12-24T17:00:00Z",
+    "id": "1113319_2026-12-24T16:30:00Z",
     "title": "Weihnachten is(s)t keiner allein",
-    "startDate": "2026-12-24T17:00:00Z",
+    "startDate": "2026-12-24T16:30:00Z",
     "endDate": "2026-12-24T21:00:00Z",
     "category": "Sonstige Veranstaltung",
     "color": "#16a765",
